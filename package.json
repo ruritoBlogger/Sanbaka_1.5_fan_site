@@ -1,0 +1,9 @@
+{
+  "name": "Sanbaka_1.5_fan_site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ruritoBlogger/Sanbaka_1.5_fan_site.git",
+  "author": "rurito0125 <rurito.blog@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
