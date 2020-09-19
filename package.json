@@ -12,5 +12,23 @@
     "start": "webpack-dev-server --hot --inline",
     "start:prod": "webpack-dev-server --hot --inline --mode=production",
     "test": "jest"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/register": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "dotenv-webpack": "^3.0.0",
+    "jest": "^26.4.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
