@@ -5,5 +5,12 @@
   "repository": "git@github.com:ruritoBlogger/Sanbaka_1.5_fan_site.git",
   "author": "rurito0125 <rurito.blog@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "build": "webpack",
+    "build:prod": "webpack --mode=production",
+    "start": "webpack-dev-server --hot --inline",
+    "start:prod": "webpack-dev-server --hot --inline --mode=production",
+    "test": "jest"
+  }
 }
