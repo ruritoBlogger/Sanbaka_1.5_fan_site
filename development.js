@@ -7,7 +7,7 @@ const pub  = path.resolve(__dirname, 'public')
 
 export default {
   mode: 'development',
-  entry: src + '/index.tsx',
+  entry: src + '/index.js',
 
   output: {
     path: pub,
@@ -17,9 +17,9 @@ export default {
   module: {
     rules: [
       {
-        test: /\.tsx$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        loader: ['babel-loader', 'ts-loader']
+        loader: ['babel-loader']
       }
     ]
   },
@@ -30,9 +30,9 @@ export default {
   },
 
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
-  
+
   plugins: [
     new HtmlWebpackPlugin({
       template: pub + '/index.html',
