@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <>
-      <AppBar>
+      <AppBar position="sticky">
         <Toolbar>
           <button onClick={MoveHomePage} >さんばか</button>
           <button onClick={MoveMemberPage} >愉快な仲間たち</button>
