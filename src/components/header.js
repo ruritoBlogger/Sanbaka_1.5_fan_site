@@ -2,9 +2,6 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,14 +34,12 @@ const Header = () => {
 
   return (
     <>
-      <AppBar position="sticky" className={styles.root}>
-        <Toolbar>
-          <Button onClick={MoveHomePage} >さんばか</Button>
-          <Button onClick={MoveMemberPage} >愉快な仲間たち</Button>
-          <Button onClick={MoveRoadPage} >1.5周年までの道のり</Button>
-          <Button onClick={MoveSitePage} >このサイトについて</Button>
-        </Toolbar>
-      </AppBar>
+      <div>
+        <button onClick={MoveHomePage} >さんばか</button>
+        <button onClick={MoveMemberPage} >愉快な仲間たち</button>
+        <button onClick={MoveRoadPage} >1.5周年までの道のり</button>
+        <button onClick={MoveSitePage} >このサイトについて</button>
+      </div>
     </>
   )
 };
