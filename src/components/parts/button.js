@@ -15,6 +15,10 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       "border-bottom": "solid 3px",
     },
+    "&:focus": {
+      "outline": "none",
+      "border-bottom": "solid 3px",
+    },
   },
 }));
 
