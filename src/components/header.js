@@ -1,6 +1,16 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+
+const useStyles = makeStyles((theme) => ({
+  button: {
+    "font-size": "40",
+  }
+}));
+
 const Header = () => {
   const history = useHistory();
 
@@ -21,13 +31,16 @@ const Header = () => {
   }
 
   return (
-    <div>
-      <button onClick={MoveHomePage} >さんばか</button>
-      <p>Header</p>
-      <button onClick={MoveMemberPage} >愉快な仲間たち</button>
-      <button onClick={MoveRoadPage} >1.5周年までの道のり</button>
-      <button onClick={MoveSitePage} >このサイトについて</button>
-    </div>
+    <>
+      <AppBar>
+        <Toolbar>
+          <button onClick={MoveHomePage} >さんばか</button>
+          <button onClick={MoveMemberPage} >愉快な仲間たち</button>
+          <button onClick={MoveRoadPage} >1.5周年までの道のり</button>
+          <button onClick={MoveSitePage} >このサイトについて</button>
+        </Toolbar>
+      </AppBar>
+    </>
   )
 };
 
