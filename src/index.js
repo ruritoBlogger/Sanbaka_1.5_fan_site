@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './root';
-import './index.css';
+import './index.scss';
 
 const App = () => (
   <>

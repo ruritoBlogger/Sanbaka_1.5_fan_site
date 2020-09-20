@@ -1,20 +1,11 @@
 import React from 'react';
-
-/*
-const useStyles = makeStyles((theme) => ({
-  scroll: {
-    "scroll-snap-align": "start",
-    "height": "100vh",
-    "background-color": "#EEE3C6",
-  }
-}));
-*/
+import styles from './window.scss';
 
 const TopWindow = () => {
 
   return (
     <>
-      <section>
+      <section className={styles.scroll}>
         <p>さんばか1.5周年(非公式)ファンサイト</p>
       </section>
     </>

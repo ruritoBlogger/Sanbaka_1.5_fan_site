@@ -1,20 +1,12 @@
 import React from 'react';
-
-/*
-const useStyles = makeStyles((theme) => ({
-  scroll: {
-    "scroll-snap-align": "start",
-    "height": "100vh"
-  }
-}));
-*/
+import styles from './window.scss';
 
 const MemberWindow = () => {
 
   return (
     <>
-      <section>
-        <h1>メンバー紹介</h1>
+      <section className={styles.scroll}>
+        <h1 className={styles.text}>メンバー紹介</h1>
       </section>
     </>
   );

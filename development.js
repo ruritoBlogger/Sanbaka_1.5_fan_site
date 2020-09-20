@@ -22,13 +22,16 @@ export default {
         loader: ['babel-loader']
       },
       {
-        test: /\.css/,
+        test: /\.scss/,
         exclude: /node_modules/,
         use: [
           "style-loader",
           {
             loader: "css-loader",
             options: { url: false }
+          },
+          {
+            loader: 'sass-loader',
           }
         ]
       }
