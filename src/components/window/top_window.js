@@ -1,13 +1,13 @@
 import React from 'react';
-import styles from './window.module.scss';
+import styles from './top_window.module.scss';
 
 const TopWindow = () => {
 
   return (
     <>
-      <section className={styles.scroll}>
+      <div className={styles.root}>
         <p>さんばか1.5周年(非公式)ファンサイト</p>
-      </section>
+      </div>
     </>
   );
 };

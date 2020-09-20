@@ -1,14 +1,12 @@
 import React from 'react';
-import styles from './window.module.scss';
+import styles from './member_window.module.scss'
 
 const MemberWindow = () => {
 
   return (
-    <>
-      <section className={styles.scroll}>
-        <h1 className={styles.text}>メンバー紹介</h1>
-      </section>
-    </>
+    <React.Fragment className={styles.root}>
+      <h1>メンバー紹介</h1>
+    </React.Fragment>
   );
 };
 

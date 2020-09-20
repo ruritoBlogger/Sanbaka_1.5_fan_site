@@ -1,5 +1,3 @@
 .scroll {
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-  height: 100vh;
+  position: relative;
 }
