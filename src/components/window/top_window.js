@@ -4,7 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   scroll: {
     "scroll-snap-align": "start",
-    "height": "100vh"
+    "height": "100vh",
+    "background-color": "#EEE3C6",
   }
 }));
 
