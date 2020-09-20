@@ -4,8 +4,12 @@ import { useHistory } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    "background-color": "transparent"
+  },
   button: {
     "font-size": "40",
   }
@@ -13,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
   const history = useHistory();
+  const styles = useStyles();
 
   const MoveMemberPage = () => {
     history.push("/member");
@@ -32,12 +37,12 @@ const Header = () => {
 
   return (
     <>
-      <AppBar position="sticky">
+      <AppBar position="sticky" className={styles.root}>
         <Toolbar>
-          <button onClick={MoveHomePage} >さんばか</button>
-          <button onClick={MoveMemberPage} >愉快な仲間たち</button>
-          <button onClick={MoveRoadPage} >1.5周年までの道のり</button>
-          <button onClick={MoveSitePage} >このサイトについて</button>
+          <Button onClick={MoveHomePage} >さんばか</Button>
+          <Button onClick={MoveMemberPage} >愉快な仲間たち</Button>
+          <Button onClick={MoveRoadPage} >1.5周年までの道のり</Button>
+          <Button onClick={MoveSitePage} >このサイトについて</Button>
         </Toolbar>
       </AppBar>
     </>
