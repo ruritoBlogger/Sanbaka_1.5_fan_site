@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { makeStyles } from '@material-ui/core/styles';
-
+/*
 const useStyles = makeStyles((theme) => ({
   button: {
     "-webkit-appearance": "none",
@@ -21,13 +20,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
+*/
 
 const Button = (props) => {
-  const styles = useStyles();
 
   return (
     <>
-      <button onClick={props.handleClick} className={styles.button}>
+      <button onClick={props.handleClick}>
         {props.msg}
       </button>
     </>
