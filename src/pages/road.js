@@ -7,4 +7,3 @@ const Road = () => (
 );
 
 export default Road;
-
