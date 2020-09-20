@@ -8,6 +8,10 @@ const Header = () => {
     history.push("/member");
   }
 
+  const MoveRoadPage = () => {
+    history.push("/road");
+  }
+
   const MoveHomePage = () => {
     history.push("/");
   }
@@ -17,6 +21,7 @@ const Header = () => {
       <button onClick={MoveHomePage} >さんばか</button>
       <p>Header</p>
       <button onClick={MoveMemberPage} >愉快な仲間たち</button>
+      <button onClick={MoveRoadPage} >1.5周年までの道のり</button>
     </div>
   )
 };
