@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
-import { red } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -12,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     "border-radius": 0,
     "font-size": "25px",
     "background": "transparent",
+    "padding-bottom": "10px",
     "&:hover": {
       "border-bottom": "solid 3px",
     },
