@@ -1,7 +1,7 @@
 import React from 'react';
 import TopWindow from '../components/window/top_window';
 import MemberWindow from '../components/window/member_window';
-import styles from './home.scss';
+import styles from './home.module.scss';
 
 const Home = () => {
 

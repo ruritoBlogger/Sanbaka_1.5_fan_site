@@ -23,7 +23,6 @@ export default {
       },
       {
         test: /\.scss/,
-        exclude: /node_modules/,
         use: [
           "style-loader",
           {
