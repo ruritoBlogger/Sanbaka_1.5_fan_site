@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Scrollbars autoHeight autoHeightMin={900}>
+      <Scrollbars autoHeight autoHeightMin={975}>
         <TopWindow />
         <MemberWindow />
         <p>Home page</p>
