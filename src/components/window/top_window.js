@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './top_window.module.scss';
+import styles from './window_layout.module.scss';
 
 const TopWindow = () => {
 
