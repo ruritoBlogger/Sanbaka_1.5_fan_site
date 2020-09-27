@@ -2,6 +2,7 @@ import React from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
 import styles from './site.module.scss';
 import Header from '../components/header'
+import Footer from '../components/footer';
 
 const Site = () => {
 
@@ -23,6 +24,7 @@ const Site = () => {
             <p className={styles.content}>このサイトは〜</p>
           </div>
         </div>
+        <Footer />
       </Scrollbars>
     </>
   )

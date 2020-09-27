@@ -3,6 +3,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import HistoryWindow from '../components/window/history/history_window';
 import Archive from '../components/parts/archive';
 import Header from '../components/header'
+import Footer from '../components/footer';
 
 const Road = () => {
 
@@ -14,6 +15,7 @@ const Road = () => {
         <Archive />
         <Archive />
         <Archive right={true} />
+        <Footer />
       </Scrollbars>
     </>
   )
