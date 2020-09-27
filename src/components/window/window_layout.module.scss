@@ -13,7 +13,36 @@
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+}
+
+.flex {
+  display: flex;
+}
+
+.frame {
+	display: inline-block;
+	position: relative;
+}
+
+.frame:after {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transform: rotate(3deg); /* 回転させる */
+	background: #fff;
+	z-index: -1;
+}
+
+.img {
+  height: 50vh;
+  width: 44vw;
+  object-fit: cover;
 }
 
 .title {
@@ -30,6 +59,14 @@
 
 .content {
   font-size: 27px;
+}
+
+.right_padding {
+  padding-right: 8%;
+}
+
+.left_padding {
+  padding-left: 8%;
 }
 
 .right {
