@@ -5,33 +5,31 @@ const Archive = (props) => {
 
   return (
     <>
-      <div className={styles.root}>
-        {(() => {
-          if( props.right ) {
-            return (
-              <div className={styles.archive}>
-                <div className={styles.video_img}>
-                  <p>test</p>
-                </div>
-                <div className={styles.content}>
-                  <p>アーカイブとか</p>
-                </div>
+      {(() => {
+        if( props.right ) {
+          return (
+            <div className={styles.archive}>
+              <div className={styles.video_img}>
+                <p>test</p>
               </div>
-            )
-          } else {
-            return (
-              <div className={styles.archive}>
-                <div className={styles.content}>
-                  <p>アーカイブとか</p>
-                </div>
-                <div className={styles.video_img}>
-                  <p>test</p>
-                </div>
+              <div className={styles.content}>
+                <p>アーカイブとか</p>
               </div>
-            )
-          }
-        })()}
-      </div>
+            </div>
+          )
+        } else {
+          return (
+            <div className={styles.archive}>
+              <div className={styles.content}>
+                <p>アーカイブとか</p>
+              </div>
+              <div className={styles.video_img}>
+                <p>test</p>
+              </div>
+            </div>
+          )
+        }
+      })()}
     </>
   )
 };

@@ -1,0 +1,33 @@
+.root {
+  width: 96vw;
+  margin-top: 15vh;
+  margin-left: 2vw;
+  background: red;
+}
+
+.block {
+  margin-bottom: 1vh;
+}
+
+.title {
+  font-size: 30px;
+  letter-spacing: 10px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 24px;
+  letter-spacing: 7px;
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+  font-size: 17px;
+}
+
+.right {
+  text-align: right;
+}

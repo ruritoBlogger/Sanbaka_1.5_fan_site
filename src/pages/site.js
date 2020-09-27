@@ -1,10 +1,32 @@
 import React from 'react';
+import { Scrollbars } from 'react-custom-scrollbars';
+import styles from './site.module.scss';
+import Header from '../components/header'
 
-const Site = () => (
-  <div>
-    <p>Site page</p>
-  </div>
-);
+const Site = () => {
+
+  return (
+    <>
+      <Header />
+      <Scrollbars autoHeight autoHeightMin={975}>
+        <div className={styles.root}>
+          <div className={styles.block}>
+            <h2 className={styles.title}>このサイトについて</h2>
+            <p className={styles.content}>このサイトは〜</p>
+            <p className={styles.content}>このサイトは〜</p>
+            <p className={styles.content}>このサイトは〜</p>
+          </div>
+          <div className={styles.block}>
+            <h3 className={styles.subtitle}>使用させていただいた素材</h3>
+            <p className={styles.content}>このサイトは〜</p>
+            <p className={styles.content}>このサイトは〜</p>
+            <p className={styles.content}>このサイトは〜</p>
+          </div>
+        </div>
+      </Scrollbars>
+    </>
+  )
+};
 
 export default Site;
 
