@@ -13,7 +13,7 @@ const Home = () => {
       <Header />
       <Scrollbars autoHeight autoHeightMin={975}>
         <TopWindow />
-        <MemberWindow />
+        <MemberWindow isRight={true} />
         <HistoryWindow />
         <p>Home page</p>
       </Scrollbars>
