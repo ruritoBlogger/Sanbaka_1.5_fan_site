@@ -12,6 +12,8 @@ const Road = () => {
       <Scrollbars autoHeight autoHeightMin={975}>
         <HistoryWindow />
         <Archive />
+        <Archive />
+        <Archive right={true} />
       </Scrollbars>
     </>
   )
