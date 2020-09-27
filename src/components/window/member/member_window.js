@@ -10,7 +10,7 @@ const MemberWindow = (props) => {
             if( props.isRight ) {
               return (
                 <div className={`${styles.main} ${styles.flex}`} >
-                  <div className={styles.right_padding}>
+                  <div className={`${styles.right_padding} ${styles.frame}`}>
                     <img className={styles.img} src={`${window.location.origin}/image/sanbaka.png`} />
                   </div>
                   <div>
@@ -27,7 +27,9 @@ const MemberWindow = (props) => {
                     <p className={styles.content}>いい感じの紹介文が欲しいわね...</p>
                   </div>
                   <div>
-                    <img className={styles.img} src={`${window.location.origin}/image/sanbaka.png`} />
+                    <div className={styles.frame}>
+                      <img className={styles.img} src={`${window.location.origin}/image/sanbaka.png`} />
+                    </div>
                   </div>
                 </div>
               )
