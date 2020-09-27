@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './window_layout.module.scss';
+import styles from '../window_layout.module.scss';
 
 const HistoryWindow = () => {
 
