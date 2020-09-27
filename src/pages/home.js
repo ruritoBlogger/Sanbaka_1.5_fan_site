@@ -5,6 +5,7 @@ import MemberWindow from '../components/window/member/member_window';
 import HistoryWindow from '../components/window/history/history_window';
 import Header from '../components/header'
 import styles from './home.module.scss';
+import Footer from '../components/footer';
 
 const Home = () => {
 
@@ -15,7 +16,7 @@ const Home = () => {
         <TopWindow />
         <MemberWindow isRight={true} />
         <HistoryWindow />
-        <p>Home page</p>
+        <Footer />
       </Scrollbars>
     </>
   )
