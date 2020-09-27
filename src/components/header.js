@@ -1,5 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import Button from './parts/button';
+import styles from './header.module.scss';
 
 const Header = () => {
   const history = useHistory();
@@ -21,13 +23,14 @@ const Header = () => {
   }
 
   return (
-    <div>
-      <button onClick={MoveHomePage} >さんばか</button>
-      <p>Header</p>
-      <button onClick={MoveMemberPage} >愉快な仲間たち</button>
-      <button onClick={MoveRoadPage} >1.5周年までの道のり</button>
-      <button onClick={MoveSitePage} >このサイトについて</button>
-    </div>
+    <>
+      <nav className={styles.root}>
+        <Button handleClick={ () => MoveHomePage()} msg="さんばか" />
+        <Button handleClick={ () => MoveMemberPage()} msg="愉快な仲間たち" />
+        <Button handleClick={ () => MoveRoadPage()} msg="1.5周年までの道のり" />
+        <Button handleClick={() => MoveSitePage()} msg="このサイトについて" />
+      </nav>
+    </>
   )
 };
 

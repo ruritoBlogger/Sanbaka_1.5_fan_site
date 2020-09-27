@@ -13,7 +13,6 @@ const Notfound = () => (
 
 const Root = () => (
   <Router>
-    <Header />
     <Switch>
       <Route exact path="/" render={() => <Home />} />
       <Route exact path="/member" render={() => <Member />} />
