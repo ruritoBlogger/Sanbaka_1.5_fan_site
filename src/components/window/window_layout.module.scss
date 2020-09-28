@@ -19,9 +19,27 @@
   display: flex;
 }
 
+.flex_column {
+	position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_row {
+	position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_img {
+  position: relative;
+  padding: 10px;
+}
+
 .frame {
 	display: inline-block;
 	position: relative;
+  margin-bottom: 15px;
 }
 
 .frame:after {
@@ -41,6 +59,18 @@
 .img {
   height: 50vh;
   width: 44vw;
+  object-fit: cover;
+}
+
+.img_small {
+  height: 13vh;
+  width: 12vw;
+  object-fit: cover;
+}
+
+.img_large {
+  height: 16vh;
+  width: 15vw;
   object-fit: cover;
 }
 
