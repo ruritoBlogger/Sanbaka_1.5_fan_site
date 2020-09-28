@@ -7,6 +7,7 @@ const MemberWindow = (props) => {
   const history = useHistory();
 
   const MoveMemberPage = () => {
+    window.scrollTo({top: 0});
     history.push("/member");
   }
 
@@ -21,12 +22,16 @@ const MemberWindow = (props) => {
                   <img className={styles.img} src={`${window.location.origin}/image/sanbaka.png`} />
                 </div>
                 <div className={styles.left_padding}>
-                  <h2 className={`${styles.title} ${styles.right}`}>メンバー紹介</h2>
-                  <p className={`${styles.content} ${styles.right}`}>さんばかを彩る愉快な仲間たち</p>
-                  <p className={`${styles.content} ${styles.font_ange}`}><br/>- アンジュ・カトリーナ</p>
-                  <p className={`${styles.content} ${styles.font_lize}`}>- リゼ・ヘルエスタ</p>
-                  <p className={`${styles.content} ${styles.font_inui}`}>- 戌亥とこ</p>
-                  <Button handleClick={ () => MoveMemberPage()} msg="詳細" />
+                  <div>
+                    <h2 className={`${styles.title} ${styles.center}`}>メンバー紹介</h2>
+                    <p className={`${styles.content} ${styles.center}`}>それぞれの個性が噛み合った愉快なグループ</p>
+                    <p className={`${styles.content} ${styles.font_ange}`}><br/>- アンジュ・カトリーナ</p>
+                    <p className={`${styles.content} ${styles.font_lize}`}>- リゼ・ヘルエスタ</p>
+                    <p className={`${styles.content} ${styles.font_inui}`}>- 戌亥とこ</p>
+                  </div>
+                  <div className={styles.center_component}>
+                    <Button handleClick={ () => MoveMemberPage()} msg="もっと詳しく" />
+                  </div>
                 </div>
               </div>
             )
@@ -34,11 +39,11 @@ const MemberWindow = (props) => {
             return (
               <div className={`${styles.main} ${styles.flex}`} >
                 <div className={styles.right_padding}>
-                  <h2 className={styles.title}>メンバー紹介</h2>
-                  <p className={styles.content}>さんばかを彩る愉快な仲間たち</p>
-                  <p className={`${styles.content} ${styles.font_ange}`}><br/>- アンジュ・カトリーナ</p>
-                  <p className={`${styles.content} ${styles.font_lize}`}>- リゼ・ヘルエスタ</p>
-                  <p className={`${styles.content} ${styles.font_inui}`}>- 戌亥とこ</p>
+                  <h2 className={`${styles.title} ${styles.center}`}>メンバー紹介</h2>
+                  <p className={`${styles.content} ${styles.center}`}>それぞれの個性が噛み合った愉快なグループ</p>
+                  <p className={`${styles.content} ${styles.center} ${styles.font_ange}`}><br/>アンジュ・カトリーナ</p>
+                  <p className={`${styles.content} ${styles.center} ${styles.font_lize}`}>リゼ・ヘルエスタ</p>
+                  <p className={`${styles.content} ${styles.center} ${styles.font_inui}`}>戌亥とこ</p>
                 </div>
                 <div>
                   <div className={styles.frame}>
