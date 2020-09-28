@@ -5,7 +5,13 @@ import './index.scss';
 
 const App = () => (
   <>
-    <Root />
+    {(() => {
+      if( navigator.userAgent.match(/(iPhone|iPod|Android.*Mobile)/i)){
+        return <Smartphone />
+      }else{
+        return <Root />
+      }
+    })()}
   </>
 );
 
