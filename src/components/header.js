@@ -13,18 +13,22 @@ const Header = () => {
   }
 
   const MoveMemberPage = () => {
+    window.scrollTo({top: 0});
     history.push("/member");
   }
 
   const MoveRoadPage = () => {
+    window.scrollTo({top: 0});
     history.push("/road");
   }
 
   const MoveSitePage = () => {
+    window.scrollTo({top: 0});
     history.push("/site");
   }
 
   const MoveHomePage = () => {
+    window.scrollTo({top: 0});
     history.push("/");
   }
 
