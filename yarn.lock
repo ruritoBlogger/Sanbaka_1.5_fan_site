@@ -7269,6 +7269,11 @@ react-dom@^16.13.1:
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
+react-genie-styled-components@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-genie-styled-components/-/react-genie-styled-components-0.1.1.tgz#a95791e45cfb65c007ef99c635a213e1a9539cac"
+  integrity sha512-JKjd2hJ9xU0OkOCFY+WUqdMpMG6sr7UiUU5VqI81h/iCnMKajOY9GOGan8oNTlpc83cEhk48x9pyKjEZjvQaYA==
+
 react-genie@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/react-genie/-/react-genie-0.2.2.tgz#9ad1c615b6744467e41bd8af9be3274d7e302520"
