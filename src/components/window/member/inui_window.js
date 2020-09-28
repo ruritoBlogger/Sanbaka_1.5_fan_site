@@ -10,6 +10,7 @@ const InuiWindow = () => {
   const MoveToTwitter = () => {
     window.open("https://twitter.com/inui_toko", "_blank")
   }
+
   return (
     <>
       <div className={`${styles.root} ${styles.color_inui}`}>
