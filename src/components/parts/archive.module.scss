@@ -22,7 +22,8 @@
   height: 30vh;
   width: 29vw;
   margin: 2% 3%;
-  background: yellow;
+  background: #fff;
+  box-shadow: 0 0 8px;
 }
 
 .content {
@@ -55,8 +56,12 @@
   justify-content: space-around;
 }
 
+.margin_bottom {
+  margin-bottom: 10px;
+}
+
 .buttons {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .button_ange,

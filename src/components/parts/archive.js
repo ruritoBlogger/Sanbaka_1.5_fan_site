@@ -16,6 +16,7 @@ const Button = (props) => {
  * @param {string} props.id - youtubeのID
  * @param {string} props.title - 説明部分のタイトル
  * @param {string} props.text - 説明部分
+ * @param {string} props.day - 投稿時間の情報
  * @param {Array} props.data - 各動画情報[アンジュ・リゼ・戌亥]
  * @param {Object} props.dataの各要素 - {time: number, key: string}
  */
@@ -36,6 +37,7 @@ const Archive = (props) => {
               <div className={styles.content_box}>
                 <div className={styles.content}>
                   <h2 className={styles.title}>{props.title}</h2>
+                  <p className={`${styles.text} ${styles.margin_bottom}`}>{props.day}</p>
                   <p className={styles.text}>{props.text}</p>
                   <div className={`${styles.buttons} ${styles.flex_row}`} >
                     <Button handleClick={() => MovePage(props.data[0])} msg="アンジュ視点" button={styles.button_ange} className={`${styles.text}`} />
@@ -52,6 +54,7 @@ const Archive = (props) => {
               <div className={styles.content_box}>
                 <div className={styles.content}>
                   <h2 className={styles.title}>{props.title}</h2>
+                  <p className={`${styles.text} ${styles.margin_bottom}`}>{props.day}</p>
                   <p className={styles.text}>{props.text}</p>
                   <div className={`${styles.buttons} ${styles.flex_row}`} >
                     <Button handleClick={() => MovePage(props.data[0])} msg="アンジュ視点" button={styles.button_ange} className={`${styles.text}`} />
