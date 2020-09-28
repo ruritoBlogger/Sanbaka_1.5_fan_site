@@ -19,14 +19,47 @@ const Road = () => {
     {
       key: "1",
       content: <Archive
-                  data="pOXjuyKjD98"
-                  title="初コラボ！"
+                  id="pOXjuyKjD98"
+                  title="さんばか初コラボ！"
                   text="さんばかの初コラボ. さんばか鯖でわいわいマインクラフトを楽しむ姿が観られます"
-                  times={[44, 25, 1]} />
+                  times={
+                    [
+                      {
+                        time: 44,
+                        key: "ZlpG8R_biw4"
+                      },
+                      {
+                        time: 25,
+                        key: "Wh2bMyxrXb0"
+                      },
+                      {
+                        time: 1,
+                        key: "pOXjuyKjD98"
+                      }
+                    ]} />
     },
     {
       key: "2",
-      content: <Archive right={true} />
+      content: <Archive
+                  right={true}
+                  id="pOXjuyKjD98"
+                  title="さんばか初コラボ！"
+                  text="さんばかの初コラボ. さんばか鯖でわいわいマインクラフトを楽しむ姿が観られます"
+                  times={
+                    [
+                      {
+                        time: 44,
+                        key: "ZlpG8R_biw4"
+                      },
+                      {
+                        time: 25,
+                        key: "Wh2bMyxrXb0"
+                      },
+                      {
+                        time: 1,
+                        key: "pOXjuyKjD98"
+                      }
+                    ]} />
     },
     {
       key: "3",
