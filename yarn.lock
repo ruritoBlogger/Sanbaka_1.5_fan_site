@@ -1494,6 +1494,13 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@terwanerik/scrolltrigger@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@terwanerik/scrolltrigger/-/scrolltrigger-1.0.5.tgz#4cc699e97b913c5769b8653aec84ea97ae797c9b"
+  integrity sha512-8hdH7QFlNku+Gq4X8pDwyWGqkLjEirNn0YsGdD9D6TqAQ9onucJS458N/gqnSJGrTCKplciAI10Q3Q69UbJQCg==
+  dependencies:
+    object-extend "^0.5.0"
+
 "@testing-library/dom@^7.24.2":
   version "7.24.3"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-7.24.3.tgz#dae3071463cf28dc7755b43d9cf2202e34cbb85d"
@@ -6492,6 +6499,11 @@ object-copy@^0.1.0:
     copy-descriptor "^0.1.0"
     define-property "^0.2.5"
     kind-of "^3.0.3"
+
+object-extend@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/object-extend/-/object-extend-0.5.0.tgz#f73c5cad05d520d882ccb1ff4cde79fe9880e8bb"
+  integrity sha1-9zxcrQXVINiCzLH/TN55/piA6Ls=
 
 object-inspect@^1.7.0, object-inspect@^1.8.0:
   version "1.8.0"
