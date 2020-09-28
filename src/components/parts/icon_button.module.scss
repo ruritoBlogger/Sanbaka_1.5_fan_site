@@ -2,15 +2,22 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: 0;
-  border-bottom: solid 3px;
   border-color: transparent;
   background: transparent;
-  padding-top: 50px;
-  padding-left: 30px;
-  &:hover {
+  padding: 0px;
+  margin: 0px;
+  border-radius: 50%;
+  outline: none;
+  height: 84px;
+  width: 84px;
+  overflow: hidden;
+  &:hover .circle{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
   }
-  &:focus {
+  &:focus .circle{
+    transform: scale(0.8);
+    transition-duration: 0.5s;
   }
 }
 
