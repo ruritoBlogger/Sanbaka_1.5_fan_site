@@ -8,13 +8,8 @@
   border-radius: 0;
   font-size: 25px;
   background: transparent;
-  padding-bottom: 10px;
   &:hover {
-    border-color: black;
   }
   &:focus {
-    outline: none;
-    border-color: black;
-    border-bottom: solid 3px;
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 // import './button.scss';
 import styles from './header_button.module.scss';
 
-const Button = (props) => {
+const HeaderButton = (props) => {
 
   return (
     <>
@@ -13,5 +13,5 @@ const Button = (props) => {
   )
 };
 
-export default Button;
+export default HeaderButton;
 
