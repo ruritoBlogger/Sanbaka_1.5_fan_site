@@ -56,27 +56,101 @@
 }
 
 .buttons {
-  margin-top: 90px;
+  margin-top: 60px;
 }
 
-.button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 0;
-  border-bottom: solid 3px;
-  border-color: transparent;
-  border-radius: 0;
-  font-size: 25px;
-  background: transparent;
-  &:hover {
-  }
-  &:focus {
-  }
+.button_ange,
+.button_inui,
+.button_lize {
+  display: inline-block;
+  width: 120px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  overflow: hidden;
 }
 
-.button_text {
-  font-size: 23px;
+.button_ange{
+  border: 2px solid rgba($color: #C83C35, $alpha: 0.9);
+  color: rgba($color: #C83C35, $alpha: 0.9);
+}
+
+.button_inui{
+  border: 2px solid rgba($color: #9D3757, $alpha: 0.9);
+  color: rgba($color: #9D3757, $alpha: 0.9);
+}
+
+.button_lize{
+  border: 2px solid rgba($color: #42FFFF, $alpha: 0.9);
+  color: rgba($color: #42FFFF, $alpha: 0.9);
+}
+
+.button_ange::before,
+.button_ange::after,
+.button_inui::before,
+.button_inui::after,
+.button_lize::before,
+.button_lize::after{
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+
+.button_ange,
+.button_inui,
+.button_lize,
+.button_ange::before,
+.button_ange::after,
+.button_inui::before,
+.button_inui::after,
+.button_lize::before,
+.button_lize::after{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.button_ange:hover,
+.button_inui:hover,
+.button_lize:hover{
+  color: #fff;
+}
+
+.button_ange::after,
+.button_inui::after,
+.button_lize::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+}
+
+.button_ange:hover::after {
+  background: rgba($color: #C83C35, $alpha: 0.9);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.button_inui:hover::after {
+  background: rgba($color: #9D3757, $alpha: 0.9);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.button_lize:hover::after {
+  background: rgba($color: #42FFFF, $alpha: 0.9);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .color_ange {

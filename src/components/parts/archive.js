@@ -4,8 +4,8 @@ import styles from './archive.module.scss';
 const Button = (props) => {
   return (
     <>
-      <button className={styles.button} onClick={props.handleClick}>
-        <p className={`${styles.button_text} ${props.color}`}>{props.msg}</p>
+      <button className={`${props.button}`} onClick={props.handleClick}>
+        <p>{props.msg}</p>
       </button>
     </>
   )
@@ -38,9 +38,9 @@ const Archive = (props) => {
                   <h2 className={styles.title}>{props.title}</h2>
                   <p className={styles.text}>{props.text}</p>
                   <div className={`${styles.buttons} ${styles.flex_row}`} >
-                    <Button handleClick={() => MovePage(props.data[0])} msg="アンジュ視点" color={styles.color_ange} className={`${styles.text}`} />
-                    <Button handleClick={() => MovePage(props.data[1])} msg="リゼ視点" color={styles.color_lize} className={`${styles.text}`} />
-                    <Button handleClick={() => MovePage(props.data[2])} msg="戌亥視点" color={styles.color_inui} className={`${styles.text}`} />
+                    <Button handleClick={() => MovePage(props.data[0])} msg="アンジュ視点" button={styles.button_ange} className={`${styles.text}`} />
+                    <Button handleClick={() => MovePage(props.data[1])} msg="リゼ視点" button={styles.button_lize} className={`${styles.text}`} />
+                    <Button handleClick={() => MovePage(props.data[2])} msg="戌亥視点" button={styles.button_inui} className={`${styles.text}`} />
                   </div>
                 </div>
               </div>
@@ -54,9 +54,9 @@ const Archive = (props) => {
                   <h2 className={styles.title}>{props.title}</h2>
                   <p className={styles.text}>{props.text}</p>
                   <div className={`${styles.buttons} ${styles.flex_row}`} >
-                    <Button handleClick={() => MovePage(props.data[0])} msg="アンジュ視点" color={styles.color_ange} className={`${styles.text}`} />
-                    <Button handleClick={() => MovePage(props.data[1])} msg="リゼ視点" color={styles.color_lize} className={`${styles.text}`} />
-                    <Button handleClick={() => MovePage(props.data[2])} msg="戌亥視点" color={styles.color_inui} className={`${styles.text}`} />
+                    <Button handleClick={() => MovePage(props.data[0])} msg="アンジュ視点" button={styles.button_ange} className={`${styles.text}`} />
+                    <Button handleClick={() => MovePage(props.data[1])} msg="リゼ視点" button={styles.button_lize} className={`${styles.text}`} />
+                    <Button handleClick={() => MovePage(props.data[2])} msg="戌亥視点" button={styles.button_inui} className={`${styles.text}`} />
                   </div>
                 </div>
               </div>
