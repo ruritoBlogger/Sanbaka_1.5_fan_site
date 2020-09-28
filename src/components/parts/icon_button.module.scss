@@ -1,0 +1,29 @@
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-color: transparent;
+  background: transparent;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 50%;
+  outline: none;
+  height: 64px;
+  width: 64px;
+  overflow: hidden;
+  &:hover .circle{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+  }
+  &:focus .circle{
+    transform: scale(1.0);
+    transition-duration: 0.5s;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
