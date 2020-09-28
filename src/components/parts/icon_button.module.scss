@@ -1,0 +1,22 @@
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-bottom: solid 3px;
+  border-color: transparent;
+  background: transparent;
+  padding-top: 50px;
+  padding-left: 30px;
+  &:hover {
+  }
+  &:focus {
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+}

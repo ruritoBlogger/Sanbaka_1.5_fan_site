@@ -1,7 +1,16 @@
 import React from 'react';
+import IconButton from '../../parts/icon_button';
 import styles from '../window_layout.module.scss';
 
 const AngeWindow = () => {
+
+  const MoveToYoutube = () => {
+
+  }
+
+  const MoveToTwitter = () => {
+
+  }
 
   return (
     <>
@@ -14,8 +23,8 @@ const AngeWindow = () => {
             大人っぽい女性的な体に憧れており<br/>実はその研究をしているとかしていないとか.
           </p>
           <div className={`${styles.flex_row} ${styles.right_component}`}>
-            <p>Youtube</p>
-            <p>Twitter</p>
+            <IconButton handleClick={() => MoveToYoutube()} link={`${window.location.origin}/image/youtube.png`} />
+            <IconButton handleClick={() => MoveToTwitter()} link={`${window.location.origin}/image/twitter.png`} />
           </div>
         </div>
       </div>
