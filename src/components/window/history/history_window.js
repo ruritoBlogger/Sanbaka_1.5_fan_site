@@ -12,23 +12,22 @@ const HistoryWindow = () => {
             <p className={styles.content}>いい感じの紹介文が欲しいわね...</p>
           </div>
           <div className={styles.flex_column}>
-            <div className={styles.flex_img}>
-              <div className={`${styles.grid_one}`}>
+            <div className={styles.flex_row}>
+              <div className={styles.flex_img}>
+                <img className={styles.img_small} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
+              </div>
+              <div className={styles.flex_img}>
                 <img className={styles.img_small} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
               </div>
             </div>
-            <div className={styles.flex_img}>
-              <div className={`${styles.grid_two}`}>
+            <div className={styles.flex_row}>
+              <div className={styles.flex_img}>
                 <img className={styles.img_small} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
               </div>
-            </div>
-            <div className={styles.flex_img}>
-              <div className={`${styles.grid_three}`}>
+              <div className={styles.flex_img}>
                 <img className={styles.img_small} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
               </div>
-            </div>
-            <div className={styles.flex_img}>
-              <div className={`${styles.grid_four}`}>
+              <div className={styles.flex_img}>
                 <img className={styles.img_small} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
               </div>
             </div>

@@ -25,9 +25,15 @@
   flex-direction: column;
 }
 
+.flex_row {
+	position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
 .flex_img {
-  height: 200px;
-  width: 100px;
+  height: 130px;
+  width: 235px;
   position: relative;
 }
 
@@ -35,30 +41,6 @@
 	display: inline-block;
 	position: relative;
   margin-bottom: 15px;
-}
-
-.grid_one, .grid_two, .grid_three, .grid_four {
-  position: absolute;
-}
-
-.grid_one {
-  top: -100px;
-  left: 0px;
-}
-
-.grid_two {
-  top: -120px;
-  left: 210px;
-}
-
-.grid_three {
-  top: -140px;
-  left: 0px;
-}
-
-.grid_four {
-  top: -160px;
-  left: 210px;
 }
 
 .frame:after {
