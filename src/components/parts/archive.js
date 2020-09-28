@@ -64,7 +64,7 @@ const Archive = (props) => {
                   </div>
                 </div>
               </div>
-              <div className={styles.frame}>
+              <div className={styles.frame_right}>
                 <img className={styles.img} src={`https://i.ytimg.com/vi/${props.id}/hqdefault.jpg`} />
               </div>
             </div>

@@ -9,7 +9,16 @@
 
 .frame {
   margin-top: 2vh;
+  display: inline-block;
+  transform: rotate(5deg);
 }
+
+.frame_right {
+  margin-top: 2vh;
+  display: inline-block;
+  transform: rotate(-5deg);
+}
+
 
 .img {
   height: 32vh;
