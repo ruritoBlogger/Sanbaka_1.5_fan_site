@@ -1,15 +1,8 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 import IconButton from '../../parts/icon_button';
 import styles from '../window_layout.module.scss';
 
 const AngeWindow = () => {
-  const history = useHistory();
-
-  var createHref = function createHref(location) {
-    return basename + (0, _PathUtils.createPath)(location);
-  };
-
   const MoveToYoutube = () => {
     window.open("https://www.youtube.com/channel/UCHVXbQzkl3rDfsXWo8xi2qw", "_blank")
   }
