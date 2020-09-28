@@ -37,9 +37,6 @@ const Header = () => {
           <HeaderButton handleClick={ () => MoveRoadPage()} msg="1.5周年までの道のり" />
           <HeaderButton handleClick={() => MoveSitePage()} msg="このサイトについて" />
         </Headroom>
-        <div>
-          <MoveButton handleClick={() => MoveTop()} />
-        </div>
       </div>
     </>
   )
