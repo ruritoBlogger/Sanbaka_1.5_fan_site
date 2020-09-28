@@ -37,7 +37,7 @@ const Header = () => {
       <div className={styles.root} id="scroll" >
         <Headroom>
           <HeaderButton handleClick={ () => MoveHomePage()} msg="さんばか" />
-          <HeaderButton handleClick={ () => MoveMemberPage()} msg="愉快な仲間たち" />
+          <HeaderButton handleClick={ () => MoveMemberPage()} msg="さんばかとは" />
           <HeaderButton handleClick={ () => MoveRoadPage()} msg="1.5周年までの道のり" />
           <HeaderButton handleClick={() => MoveSitePage()} msg="このサイトについて" />
         </Headroom>
