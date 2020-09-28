@@ -18,7 +18,11 @@ const Road = () => {
     },
     {
       key: "1",
-      content: <Archive />
+      content: <Archive
+                  data="pOXjuyKjD98"
+                  title="初コラボ！"
+                  text="さんばかの初コラボ. さんばか鯖でわいわいマインクラフトを楽しむ姿が観られます"
+                  times={[44, 25, 1]} />
     },
     {
       key: "2",
