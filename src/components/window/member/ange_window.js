@@ -5,7 +5,7 @@ const AngeWindow = () => {
 
   return (
     <>
-      <div className={styles.root}>
+      <div className={`${styles.root} ${styles.color_ange}`}>
         <div className={styles.main} >
           <h3 className={`${styles.subtitle} ${styles.right}`}>公式美少女錬金術師ライバー</h3>
           <h2 className={`${styles.title} ${styles.right}`}>アンジュ・カトリーナ</h2>

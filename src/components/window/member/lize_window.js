@@ -5,7 +5,7 @@ const LizeWindow = () => {
 
   return (
     <>
-      <div className={styles.root}>
+      <div className={`${styles.root} ${styles.color_lize}`}>
         <div className={styles.main} >
           <h3 className={styles.subtitle}>人望激アツプリンセス</h3>
           <h2 className={styles.title}>リゼ・ヘルエスタ</h2>

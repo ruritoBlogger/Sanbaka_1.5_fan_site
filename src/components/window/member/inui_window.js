@@ -5,7 +5,7 @@ const InuiWindow = () => {
 
   return (
     <>
-      <div className={styles.root}>
+      <div className={`${styles.root} ${styles.color_inui}`}>
         <div className={styles.main} >
           <h3 className={`${styles.subtitle} ${styles.right}`}>公式つよつよケルベロス</h3>
           <h2 className={`${styles.title} ${styles.right}`}>戌亥とこ</h2>
