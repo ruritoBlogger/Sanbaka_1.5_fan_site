@@ -20,6 +20,9 @@ const Button = (props) => {
  * @param {Object} props.dataの各要素 - {time: number, key: string}
  */
 const Archive = (props) => {
+  const MovePage = (data) => {
+    window.open(`https://youtu.be/${data.key}?autoplay=1&t=${data.time}`, "_blank")
+  }
 
   return (
     <>

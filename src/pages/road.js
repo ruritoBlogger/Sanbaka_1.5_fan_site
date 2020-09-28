@@ -22,7 +22,7 @@ const Road = () => {
                   id="pOXjuyKjD98"
                   title="さんばか初コラボ！"
                   text="さんばかの初コラボ. さんばか鯖でわいわいマインクラフトを楽しむ姿が観られます"
-                  times={
+                  data={
                     [
                       {
                         time: 44,
@@ -45,7 +45,7 @@ const Road = () => {
                   id="pOXjuyKjD98"
                   title="さんばか初コラボ！"
                   text="さんばかの初コラボ. さんばか鯖でわいわいマインクラフトを楽しむ姿が観られます"
-                  times={
+                  data={
                     [
                       {
                         time: 44,
