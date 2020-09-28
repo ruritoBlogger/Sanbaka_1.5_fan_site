@@ -17,12 +17,12 @@ const HistoryWindow = () => {
                 <img className={styles.img_small} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
               </div>
               <div className={styles.flex_img}>
-                <img className={styles.img_small} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
+                <img className={styles.img_large} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
               </div>
             </div>
             <div className={styles.flex_row}>
               <div className={styles.flex_img}>
-                <img className={styles.img_small} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
+                <img className={styles.img_large} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
               </div>
               <div className={styles.flex_img}>
                 <img className={styles.img_small} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
