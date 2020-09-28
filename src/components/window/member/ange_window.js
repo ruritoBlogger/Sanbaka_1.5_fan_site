@@ -28,7 +28,7 @@ const AngeWindow = () => {
             ボロボロの小屋で時間を忘れて<br/>錬金術の研究に明け暮れている.<br/>
             大人っぽい女性的な体に憧れており<br/>実はその研究をしているとかしていないとか.
           </p>
-          <div className={`${styles.flex_row} ${styles.right_component}`}>
+          <div className={`${styles.flex_row} ${styles.right_component} ${styles.margin_top}`}>
             <IconButton handleClick={() => MoveToYoutube()} link={`${window.location.origin}/image/youtube.png`} />
             <IconButton handleClick={() => MoveToTwitter()} link={`${window.location.origin}/image/twitter.png`} />
           </div>

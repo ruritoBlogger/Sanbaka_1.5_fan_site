@@ -6,10 +6,11 @@
   background: transparent;
   padding: 0px;
   margin: 0px;
+  margin-left: 30px;
   border-radius: 50%;
   outline: none;
-  height: 84px;
-  width: 84px;
+  height: 64px;
+  width: 64px;
   overflow: hidden;
   &:hover .circle{
     transform: scale(1.2);
@@ -23,7 +24,7 @@
 
 .circle {
   border-radius: 50%;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   object-fit: cover;
 }
