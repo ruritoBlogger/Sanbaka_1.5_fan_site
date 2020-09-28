@@ -9,7 +9,7 @@ const Header = () => {
   const history = useHistory();
 
   const MoveTop = () => {
-
+    window.scrollTo({top: 0, behavior: "smooth"});
   }
 
   const MoveMemberPage = () => {
@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <>
-      <div className={styles.root} >
+      <div className={styles.root} id="scroll" >
         <Headroom>
           <HeaderButton handleClick={ () => MoveHomePage()} msg="さんばか" />
           <HeaderButton handleClick={ () => MoveMemberPage()} msg="愉快な仲間たち" />
