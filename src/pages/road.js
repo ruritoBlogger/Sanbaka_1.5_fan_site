@@ -6,8 +6,6 @@ import Footer from '../components/footer';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
-import TopWindow from '../components/window/top/top_window';
-import MemberWindow from '../components/window/member/member_window';
 
 const Road = () => {
   const headerRef = useRef(null);
@@ -55,7 +53,7 @@ const Road = () => {
         scrollTrigger: {
           id: `section-${index+1}`,
           trigger: el,
-          start: 'top center+=150',
+          start: 'top center+=200',
           toggleActions: 'play none none reverse'
         }
       });
@@ -83,77 +81,6 @@ const Road = () => {
       <Footer />
     </>
   )
-  /*
-  const headerRef = useRef(null);
-  const revealRefs = useRef([]);
-
-  const windows = [
-    {
-      key: "ContentA",
-      component: <HistoryWindow />
-    },
-    {
-      key: "ContentB",
-      component: <Archive />
-    },
-    {
-      key: "ContentC",
-      component: <Archive right={true} />
-    },
-    {
-      key: "ContentD",
-      component: <Archive />
-    }
-  ]
-
-  useEffect(() => {
-
-    gsap.from(headerRef.current, {
-      autoAlpha: 0,
-      ease: 'none',
-      delay: 1
-    });
-
-    revealRefs.current.forEach((el, index) => {
-
-      gsap.fromTo(el, {
-        autoAlpha: 0
-      }, {
-        duration: 1,
-        autoAlpha: 1,
-        ease: 'none',
-        scrollTrigger: {
-          id: `section-${index+1}`,
-          trigger: el,
-          start: 'top center+=100',
-          toggleActions: 'play none none reverse'
-        }
-      });
-
-    });
-
-  }, []);
-
-  const addToRefs = el => {
-    if (el && !revealRefs.current.includes(el)) {
-        revealRefs.current.push(el);
-    }
-  };
-
-  return (
-    <>
-      <Header />
-      {
-        windows.map(({key, component}) => {
-          <div key={key} ref={addToRefs}>
-            {component}
-          </div>
-        })
-      }
-      <Footer />
-    </>
-  )
-  */
 };
 
 export default Road;
