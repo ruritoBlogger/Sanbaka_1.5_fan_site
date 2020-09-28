@@ -1,7 +1,6 @@
 .root {
   height: 100vh;
-  width: 100vw;
-  background: #EEE3C6;
+  width: 98vw;
   position: relative;
   display: grid;
 }
@@ -71,4 +70,16 @@
 
 .right {
   text-align: right;
+}
+
+.color_ange {
+  background-color: rgba($color: #C83C35, $alpha: 0.5);
+}
+
+.color_lize {
+  background-color: rgba($color: #42FFFF, $alpha: 0.5);
+}
+
+.color_inui {
+  background-color: rgba($color: #9D3757, $alpha: 0.5);
 }

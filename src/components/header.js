@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import Button from './parts/button';
+import HeaderButton from './parts/header_button';
 import styles from './header.module.scss';
 
 const Header = () => {
@@ -25,10 +25,10 @@ const Header = () => {
   return (
     <>
       <nav className={styles.root}>
-        <Button handleClick={ () => MoveHomePage()} msg="さんばか" />
-        <Button handleClick={ () => MoveMemberPage()} msg="愉快な仲間たち" />
-        <Button handleClick={ () => MoveRoadPage()} msg="1.5周年までの道のり" />
-        <Button handleClick={() => MoveSitePage()} msg="このサイトについて" />
+        <HeaderButton handleClick={ () => MoveHomePage()} msg="さんばか" />
+        <HeaderButton handleClick={ () => MoveMemberPage()} msg="愉快な仲間たち" />
+        <HeaderButton handleClick={ () => MoveRoadPage()} msg="1.5周年までの道のり" />
+        <HeaderButton handleClick={() => MoveSitePage()} msg="このサイトについて" />
       </nav>
     </>
   )
