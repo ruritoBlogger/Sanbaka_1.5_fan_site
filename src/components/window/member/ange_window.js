@@ -15,10 +15,13 @@ const AngeWindow = () => {
     <>
       <div className={`${styles.root} ${styles.color_ange}`}>
         <div className={`${styles.main} ${styles.flex}`} >
-          <div className={styles.frame}>
-            <img className={styles.img} src={`${window.location.origin}/image/ange.png`} />
+          <div className={styles.char_frame}>
+            <div className={styles.balloon1}>
+              <p className={styles.char_msg}>おまたせ、待った？</p>
+            </div>
+            <img className={styles.char_img} src={`${window.location.origin}/image/ange.png`} />
           </div>
-          <div className={styles.left_padding}>
+          <div className={`${styles.left_padding} ${styles.margin_top_twice}`}>
             <h3 className={`${styles.subtitle} ${styles.right}`}>公式美少女錬金術師ライバー</h3>
             <h2 className={`${styles.title} ${styles.right}`}>アンジュ・カトリーナ</h2>
             <p className={`${styles.content} ${styles.right}`}>

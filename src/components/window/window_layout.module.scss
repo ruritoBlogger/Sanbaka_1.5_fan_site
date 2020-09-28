@@ -56,6 +56,25 @@
 	z-index: -1;
 }
 
+.char_frame {
+  height: 50vh;
+  width: 35vw;
+  text-align: center;
+  position: relative;
+}
+
+.char_msg {
+  font-size: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.char_img {
+  height: 45vh;
+  width: 30vw;
+  object-fit: cover;
+}
+
 .img {
   height: 50vh;
   width: 44vw;
@@ -102,6 +121,10 @@
   margin-top: 30px;
 }
 
+.margin_top_twice {
+  margin-top: 80px;
+}
+
 .right {
   text-align: right;
 }
@@ -120,4 +143,28 @@
 
 .color_inui {
   background-color: rgba($color: #9D3757, $alpha: 0.5);
+}
+
+.balloon1 {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  margin-bottom: 50px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+  border-radius: 15px;
+}
+
+.balloon1:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
 }
