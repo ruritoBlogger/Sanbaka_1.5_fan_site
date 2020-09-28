@@ -1,5 +1,4 @@
 import React from 'react';
-import { Scrollbars } from 'react-custom-scrollbars';
 import MemberWindow from '../components/window/member/member_window';
 import AngeWindow from '../components/window/member/ange_window';
 import LizeWindow from '../components/window/member/lize_window';
@@ -10,13 +9,11 @@ import Footer from '../components/footer';
 const Member = () => (
   <>
     <Header />
-    <Scrollbars autoHeight autoHeightMin={975}>
-      <MemberWindow />
-      <AngeWindow />
-      <LizeWindow />
-      <InuiWindow />
-      <Footer />
-    </Scrollbars>
+    <MemberWindow />
+    <AngeWindow />
+    <LizeWindow />
+    <InuiWindow />
+    <Footer />
   </>
 );
 
