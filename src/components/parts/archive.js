@@ -13,6 +13,7 @@ const Button = (props) => {
 
 /**
  * アーカイブコンポーネント
+ * @param {boolean} props.right - 右側に説明文を置くかどうか
  * @param {string} props.id - youtubeのID
  * @param {string} props.title - 説明部分のタイトル
  * @param {string} props.text - 説明部分
