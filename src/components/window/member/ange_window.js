@@ -13,6 +13,10 @@ const AngeWindow = () => {
             ボロボロの小屋で時間を忘れて<br/>錬金術の研究に明け暮れている.<br/>
             大人っぽい女性的な体に憧れており<br/>実はその研究をしているとかしていないとか.
           </p>
+          <div className={`${styles.flex_row} ${styles.right_component}`}>
+            <p>Youtube</p>
+            <p>Twitter</p>
+          </div>
         </div>
       </div>
     </>

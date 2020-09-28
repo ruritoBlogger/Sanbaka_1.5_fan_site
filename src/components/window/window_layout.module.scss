@@ -102,6 +102,10 @@
   text-align: right;
 }
 
+.right_component {
+  justify-content: flex-end;
+}
+
 .color_ange {
   background-color: rgba($color: #C83C35, $alpha: 0.5);
 }
