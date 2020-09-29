@@ -1,0 +1,52 @@
+.root {
+  font-family: sans-serif;
+  font-style: normal;
+  margin: 0px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.title {
+  font-size: 35px;
+  letter-spacing: 7px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 35px;
+  letter-spacing: 7px;
+  margin-bottom: 17px;
+}
+
+.content {
+  font-size: 15px;
+}
+
+.center {
+  text-align: center;
+}
+
+.frame {
+	display: inline-block;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.frame:after {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transform: rotate(3deg); /* 回転させる */
+	background: #fff;
+	z-index: -1;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+}
