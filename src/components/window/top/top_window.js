@@ -7,8 +7,8 @@ const TopWindow = () => {
     <>
       <div className={styles.root}>
         <div className={styles.main} >
-          <h2 className={styles.title}>さんばか1.5周年 <br/>(非公式)ファンサイト</h2>
-          <p className={styles.content}>さんばかの皆さんがデビューしてから<br />1.5周年をお祝いする非公式ファンサイト</p>
+          <h2 className={`${styles.title} ${styles.center}`}>⚖ 👑🍹<br/>さんばか1.5周年 <br/>おめでとうございます🎉🎉🎉</h2>
+          <p className={`${styles.content} ${styles.center}`}>本サイトはさんばかの皆さんがデビューしてから<br />1.5周年をお祝いする非公式ファンサイトです.</p>
         </div>
       </div>
     </>
