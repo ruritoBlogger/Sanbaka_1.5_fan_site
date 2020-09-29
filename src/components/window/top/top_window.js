@@ -11,6 +11,9 @@ const TopWindow = () => {
           <p className={`${styles.content} ${styles.center}`}>本サイトはさんばかが結成されてから<br />1.5周年をお祝いする非公式ファンサイトです.</p>
         </div>
       </div>
+      <div className={styles.center}>
+        <a className={styles.scroll} href="#">Scroll</a>
+      </div>
     </>
   );
 };

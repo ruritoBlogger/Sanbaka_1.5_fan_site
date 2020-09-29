@@ -12,7 +12,7 @@ const HistoryWindow = (props) => {
   }
   return (
     <>
-      <div className={styles.root}>
+      <div className={`${styles.root} ${styles.flex_column}`}>
         <div className={`${styles.main} ${styles.flex}`} >
           <div className={styles.right_padding}>
             <h2 className={`${styles.title} ${styles.center}`}>1.5周年までの道のり</h2>
@@ -65,6 +65,9 @@ const HistoryWindow = (props) => {
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles.center}>
+        <a className={styles.scroll} href="#">Scroll</a>
       </div>
     </>
   );

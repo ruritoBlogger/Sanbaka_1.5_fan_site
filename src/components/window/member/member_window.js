@@ -56,6 +56,9 @@ const MemberWindow = (props) => {
           }
         })()}
       </div>
+      <div className={styles.center}>
+        <a className={styles.scroll} href="#">Scroll</a>
+      </div>
     </>
   );
 };
