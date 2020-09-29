@@ -1,11 +1,12 @@
 .root {
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   display: grid;
 }
 
 .content {
+  z-index: 10;
   background-color: rgba($color: #9D3757, $alpha: 1);
   display: grid;
   grid-template-columns: repeat(7, 1fr);
