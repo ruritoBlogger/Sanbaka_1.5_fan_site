@@ -43,24 +43,24 @@ const HistoryWindow = (props) => {
           <div className={styles.flex_column}>
             <div className={styles.flex_row}>
               <div className={styles.flex_img}>
-                <img className={styles.img_small} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
+                <img className={styles.img_small} src="https://i.ytimg.com/vi/pOXjuyKjD98/hqdefault.jpg" />
               </div>
               <div className={styles.flex_img}>
-                <img className={styles.img_large} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
+                <img className={styles.img_large} src="https://i.ytimg.com/vi/PcXH2IAXI_w/hqdefault.jpg" />
               </div>
               <div className={styles.flex_img}>
-                <img className={styles.img_small} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
+                <img className={styles.img_small} src="https://i.ytimg.com/vi/66Sj7l3sLcM/hqdefault.jpg" />
               </div>
             </div>
             <div className={styles.flex_row}>
               <div className={styles.flex_img}>
-                <img className={styles.img_large} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
+                <img className={styles.img_large} src="https://i.ytimg.com/vi/lPW5D3uHFvI/hqdefault.jpg" />
               </div>
               <div className={styles.flex_img}>
-                <img className={styles.img_small} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
+                <img className={styles.img_small} src="https://i.ytimg.com/vi/HWcemG6YO_U/hqdefault.jpg" />
               </div>
               <div className={styles.flex_img}>
-                <img className={styles.img_large} src="https://i.ytimg.com/vi/ZlpG8R_biw4/hqdefault.jpg" />
+                <img className={styles.img_large} src="https://i.ytimg.com/vi/S7f5htYwawA/hqdefault.jpg" />
               </div>
             </div>
           </div>
