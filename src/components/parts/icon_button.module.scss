@@ -11,6 +11,7 @@
   height: 64px;
   width: 64px;
   overflow: hidden;
+  cursor: pointer;
   &:hover .circle{
     transform: scale(1.2);
     transition-duration: 0.5s;
