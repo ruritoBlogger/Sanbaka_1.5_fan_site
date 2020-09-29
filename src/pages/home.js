@@ -23,7 +23,7 @@ const Home = () => {
     },
     {
       key: "history",
-      content: <HistoryWindow />
+      content: <HistoryWindow isTop={true} />
     }
   ]
 

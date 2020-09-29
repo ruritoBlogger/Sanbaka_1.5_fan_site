@@ -21,7 +21,7 @@ const Road = () => {
       content: <Archive
                   id="ZlpG8R_biw4"
                   title="さんばかサーバー第一回"
-                  text="さんばかの初コラボ. さんばか鯖でわいわいマインクラフトを楽しむ姿が観られます"
+                  text="さんばかの初コラボ."
                   day="2019/03/30"
                   data={
                       [{ time: 44, key: "ZlpG8R_biw4" },
@@ -59,19 +59,19 @@ const Road = () => {
                   right={true}
                   id="UYvM47QCxZg"
                   title="にじさんじサーバー第二回"
-                  text="にじさんじサーバーでの二回目のコラボ. "
+                  text="にじさんじ鯖の観光の続き. "
                   day="2019/05/19"
                   data={
                     [{ time: 32, key: "UYvM47QCxZg" },
                       { time: 40, key: "jB3JNinXYe0" },
-                      { time: 37, key: "lPW5D3uHFv" }]} />
+                      { time: 37, key: "lPW5D3uHFvI" }]} />
     },
     {
       key: "5",
       content: <Archive
                   id="HWcemG6YO_U"
                   title="にじさんじサーバー第三回"
-                  text="にじさんじサーバーでの三回目のコラボ. "
+                  text="風雲さんばか城, 築城開始！"
                   day="2019/06/10"
                   data={
                       [{ time: 28, key: "AoPQ3D4NrlI" },
@@ -84,7 +84,7 @@ const Road = () => {
                   right={true}
                   id="kAxyrXTANYQ"
                   title="にじさんじサーバー第四回"
-                  text="にじさんじサーバーでの四回目のコラボ. "
+                  text="風雲さんばか城完成に向けて "
                   day="2019/08/25"
                   data={
                     [{ time: 92, key: "S7f5htYwawA" },
