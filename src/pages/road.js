@@ -2,7 +2,6 @@ import React, { useEffect, useRef }  from 'react';
 import HistoryWindow from '../components/window/history/history_window';
 import Archive from '../components/parts/archive';
 import Header from '../components/header'
-import Footer from '../components/footer';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -149,7 +148,6 @@ const Road = () => {
           </div>
         ))
       }
-      <Footer />
     </>
   )
 };

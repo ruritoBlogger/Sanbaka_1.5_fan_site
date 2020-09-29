@@ -3,7 +3,6 @@ import TopWindow from '../components/window/top/top_window';
 import MemberWindow from '../components/window/member/member_window';
 import HistoryWindow from '../components/window/history/history_window';
 import Header from '../components/header'
-import Footer from '../components/footer';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -71,7 +70,6 @@ const Home = () => {
           </div>
         ))
       }
-      <Footer />
     </>
   )
 };
