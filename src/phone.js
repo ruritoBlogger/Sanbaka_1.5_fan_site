@@ -10,8 +10,8 @@ const Phone = () => {
           <img className={styles.img} src={`${window.location.origin}/image/sanbaka.png`} />
         </div>
         <p className={styles.content}>
-          本サイトはpcからのアクセスのみに対応しています.<br/>
-          大変申し訳無いのですが, pcからアクセスしていただけると助かります.<br/>
+          本サイトはpcからのアクセスのみに対応しています.
+          大変申し訳無いのですが, pcからアクセスしていただけると助かります.
           本サイトにアクセスしていただきありがとうございます.
         </p>
       </div>
