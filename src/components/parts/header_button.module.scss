@@ -1,21 +1,28 @@
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 .button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   border: 0;
-  border-bottom: solid 3px;
-  border-color: transparent;
   border-radius: 0;
   font-size: 25px;
   background: transparent;
   padding-bottom: 10px;
   color: #fff;
   &:hover {
-    border-color: black;
+    background-color: #fff;
+    color: rgba($color: #9D3757, $alpha: 1);
   }
   &:focus {
     outline: none;
-    border-color: black;
-    border-bottom: solid 3px;
   }
 }
