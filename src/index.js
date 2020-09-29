@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {isMobile} from 'react-device-detect';
 import Root from './root';
+import Phone from './phone';
 import './index.scss';
 
 const App = () => {
@@ -9,12 +10,7 @@ const App = () => {
     <>
       {(() => {
         if (isMobile) {
-          return (
-            <div id="smartphone">
-              このサイトはpcのみに対応しています.
-              大変申し訳無いのですが, pcからアクセスしていただけると助かります.
-            </div>
-          );
+          return <Phone />
         }else{
           return <Root />
         }
