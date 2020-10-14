@@ -23,6 +23,10 @@
   display: flex;
 }
 
+.dynamic_flex {
+  display: flex;
+}
+
 .flex_column {
 	position: relative;
   display: flex;
@@ -43,7 +47,6 @@
 .frame {
 	display: inline-block;
 	position: relative;
-  margin-bottom: 15px;
 }
 
 .frame:after {
@@ -79,11 +82,7 @@
   object-fit: cover;
 }
 
-.img {
-  height: 50vh;
-  width: 44vw;
-  object-fit: cover;
-}
+
 
 .img_small {
   height: 13vh;
@@ -121,6 +120,24 @@
   .scroll {
     display: none;
   }
+
+  .dynamic_flex {
+    flex-direction: column;
+  }
+
+  .frame {
+    margin-bottom: 50px;
+  }
+
+  .img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .font_ange, .font_lize, .font_inui {
+    font-size: 25px;
+    font-weight: 500;
+  }
 }
 
 // for pc
@@ -141,6 +158,21 @@
 
   .content {
     font-size: 27px;
+  }
+
+  .img {
+    height: 50vh;
+    width: 44vw;
+    object-fit: cover;
+  }
+
+  .frame {
+    margin-bottom: 15px;
+  }
+
+  .font_ange, .font_lize, .font_inui {
+    font-size: 30px;
+    font-weight: 600;
   }
 
   .scroll {
@@ -240,20 +272,14 @@
 }
 
 .font_ange {
-  font-size: 30px;
-  font-weight: 600;
   color: rgba($color: #C83C35, $alpha: 0.8);
 }
 
 .font_lize {
-  font-size: 30px;
-  font-weight: 600;
   color: rgba($color: #42FFFF, $alpha: 0.8);
 }
 
 .font_inui {
-  font-size: 30px;
-  font-weight: 600;
   color: rgba($color: #9D3757, $alpha: 0.8);
 }
 

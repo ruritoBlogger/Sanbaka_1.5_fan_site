@@ -45,7 +45,7 @@ const Home = () => {
         scrollTrigger: {
           id: `section-${index+1}`,
           trigger: el,
-          start: 'top center+=100',
+          start: 'top center+=250',
           toggleActions: 'play none none reverse'
         }
       });

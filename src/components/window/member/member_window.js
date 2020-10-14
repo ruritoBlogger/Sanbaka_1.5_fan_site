@@ -17,7 +17,7 @@ const MemberWindow = (props) => {
         {(() => {
           if( props.isRight ) {
             return (
-              <div className={`${styles.main} ${styles.flex}`} >
+              <div className={`${styles.main} ${styles.dynamic_flex}`} >
                 <div className={styles.frame}>
                   <img className={styles.img} src={`${window.location.origin}/image/sanbaka.png`} />
                 </div>
