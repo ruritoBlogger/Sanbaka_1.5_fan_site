@@ -66,9 +66,15 @@ const HistoryWindow = (props) => {
           </div>
         </div>
       </div>
-      <div className={styles.center}>
-        <a className={styles.scroll} href="#">Scroll</a>
-      </div>
+      {(() => {
+        if( !props.isTop ) {
+          return (
+            <div className={styles.center}>
+              <a className={styles.scroll} href="#">Scroll</a>
+            </div>
+          )
+        }
+      })()}
     </>
   );
 };
