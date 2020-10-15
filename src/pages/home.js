@@ -31,7 +31,7 @@ const Home = () => {
   useEffect(() => {
 
     if( isMobile ) {
-      scroll_size = 250;
+      scroll_size = 100;
     }
 
     gsap.from(headerRef.current, {
