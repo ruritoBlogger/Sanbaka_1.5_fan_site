@@ -25,6 +25,11 @@
   display: flex;
 }
 
+.dynamic_flex_reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .flex_column {
 	position: relative;
   display: flex;
@@ -116,6 +121,10 @@
   }
 
   .dynamic_flex {
+    flex-direction: column;
+  }
+
+  .dynamic_flex_reverse {
     flex-direction: column;
   }
 
