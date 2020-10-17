@@ -5,7 +5,7 @@ import MoveButton from './parts/move_button';
 import Headroom from 'react-headroom';
 import styles from './header.module.scss';
 import { isMobile } from 'react-device-detect';
-import Menu from '@material-ui/icons/Menu';
+import Dialog from './dialog';
 
 const Header = () => {
   const history = useHistory();
@@ -51,7 +51,7 @@ const Header = () => {
             } else {
               return (
                 <div className={styles.content}>
-                  <Menu />
+                  <Dialog />
                 </div>
               )
             }
