@@ -35,14 +35,22 @@ const Dialog = () => {
   const showModal = useCallback(() => {
     if( ref.current ) {
       ref.current.showModal();
+      document.addEventListener("mousewheel", scrollControl, { passive: false });
+      document.addEventListener("touchmove", scrollControl, { passive: false });
     }
   }, []);
 
   const closeModal = useCallback(() => {
     if( ref.current ) {
       ref.current.close();
+      document.removeEventListener("mousewheel", scrollControl, { passive: false });
+      document.removeEventListener("touchmove", scrollControl, { passive: false });
     }
   }, []);
+
+  const scrollControl = (e) => {
+    e.preventDefault();
+  }
 
   return (
     <>
