@@ -55,13 +55,13 @@ const Dialog = () => {
   return (
     <>
       <div className={styles.header}>
-        <button className={styles.icon_button} onClick={showModal} >
+        <button className={`${styles.icon_button} ${styles.default_color}`} onClick={showModal} >
           <Menu />
         </button>
       </div>
       <dialog ref={ref} className={styles.root}>
         <div className={styles.header} >
-          <button className={styles.icon_button} onClick={closeModal} >
+          <button className={`${styles.icon_button} ${styles.white}`} onClick={closeModal} >
             <Menu />
           </button>
         </div>

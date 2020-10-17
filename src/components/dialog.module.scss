@@ -1,8 +1,45 @@
 .header {
-  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.white {
+  color: white;
+}
+
+.default_color {
+  color: rgba($color: #9D3757, $alpha: 1);
 }
 
 .icon_button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-color: transparent;
+  background: transparent;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 50%;
+  outline: none;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover .circle{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+  }
+  &:focus .circle{
+    transform: scale(1.0);
+    transition-duration: 0.5s;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
 }
 
 .root {
