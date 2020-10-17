@@ -1,8 +1,14 @@
-.disable_dialog {
-  background-color: rgba($color: #9D3757, $alpha: 1);
+.header {
+  margin-left: auto;
+}
+
+.icon_button {
 }
 
 .root {
+  margin: 0px;
+  padding: 0px;
+  border: none;
   width: 100vw;
   height: 100vh;
   z-index: 100;

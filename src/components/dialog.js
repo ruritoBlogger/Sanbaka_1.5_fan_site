@@ -46,15 +46,17 @@ const Dialog = () => {
 
   return (
     <>
-      <div className={styles.disable_dialog}>
+      <div className={styles.header}>
         <button className={styles.icon_button} onClick={showModal} >
           <Menu />
         </button>
       </div>
       <dialog ref={ref} className={styles.root}>
-        <button className={styles.icon_button} onClick={closeModal} >
-          <Menu />
-        </button>
+        <div className={styles.header} >
+          <button className={styles.icon_button} onClick={closeModal} >
+            <Menu />
+          </button>
+        </div>
         <HeaderButton handleClick={ () => MoveHomePage()} msg="トップページ" />
         <HeaderButton handleClick={ () => MoveMemberPage()} msg="さんばかとは" />
         <HeaderButton handleClick={ () => MoveRoadPage()} msg="1.5周年までの道のり" />
