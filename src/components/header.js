@@ -4,6 +4,7 @@ import HeaderButton from './parts/header_button';
 import MoveButton from './parts/move_button';
 import Headroom from 'react-headroom';
 import styles from './header.module.scss';
+import { isMobile } from 'react-device-detect';
 
 const Header = () => {
   const history = useHistory();
@@ -36,12 +37,24 @@ const Header = () => {
     <>
       <div className={styles.root} id="scroll" >
         <Headroom>
-          <div className={styles.content}>
-            <HeaderButton handleClick={ () => MoveHomePage()} msg="トップページ" />
-            <HeaderButton handleClick={ () => MoveMemberPage()} msg="さんばかとは" />
-            <HeaderButton handleClick={ () => MoveRoadPage()} msg="1.5周年までの道のり" />
-            <HeaderButton handleClick={() => MoveSitePage()} msg="このサイトについて" />
-          </div>
+          {(() => {
+            if( !isMobile ) {
+              return (
+                <div className={styles.content}>
+                  <HeaderButton handleClick={ () => MoveHomePage()} msg="トップページ" />
+                  <HeaderButton handleClick={ () => MoveMemberPage()} msg="さんばかとは" />
+                  <HeaderButton handleClick={ () => MoveRoadPage()} msg="1.5周年までの道のり" />
+                  <HeaderButton handleClick={() => MoveSitePage()} msg="このサイトについて" />
+                </div>
+              )
+            } else {
+              return (
+                <div className={styles.content}>
+                  <p>test</p>
+                </div>
+              )
+            }
+          })()}
         </Headroom>
       </div>
     </>
