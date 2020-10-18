@@ -19,7 +19,7 @@
   border-color: transparent;
   background: transparent;
   padding: 0px;
-  margin: 0px;
+  margin: 20px;
   border-radius: 50%;
   outline: none;
   height: 40px;
@@ -44,6 +44,8 @@
 }
 
 .root {
+  animation: fadeIn 1s ease 0s 1 normal;
+  -webkit-animation: fadeIn 1s ease 0s 1 normal;
   margin: 0px;
   padding: 0px;
   border: none;
@@ -51,4 +53,14 @@
   height: 100vh;
   z-index: 100;
   background-color: rgba($color: #9D3757, $alpha: 1);
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
