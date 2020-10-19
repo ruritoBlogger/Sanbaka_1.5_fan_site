@@ -44,8 +44,8 @@
 }
 
 .root {
-  animation: fadeIn 1s ease 0s 1 normal;
-  -webkit-animation: fadeIn 1s ease 0s 1 normal;
+  animation: fadeRight 0.7s ease-out 0s 1 forwards;
+  -webkit-animation: fadeRight 0.7s ease-out 0s 1 forwards;
   margin: 0px;
   padding: 0px;
   border: none;
@@ -55,12 +55,24 @@
   background-color: rgba($color: #9D3757, $alpha: 1);
 }
 
-@keyframes fadeIn {
-    0% {opacity: 0}
-    100% {opacity: 1}
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-@-webkit-keyframes fadeIn {
-    0% {opacity: 0}
-    100% {opacity: 1}
+@-webkit-keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
