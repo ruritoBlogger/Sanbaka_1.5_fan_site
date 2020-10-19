@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
   const headerRef = useRef(null);
   const revealRefs = useRef([]);
-  let scroll_size = 50;
+  let scroll_size = 25;
 
   const windows = [
     {
