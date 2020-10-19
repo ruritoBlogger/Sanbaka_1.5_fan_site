@@ -49,7 +49,7 @@ const HistoryWindow = (props) => {
             {(() => {
               if( props.isTop ) {
                 return (
-                  <div className={styles.center_component}>
+                  <div className={`${styles.center_component} ${styles.bottom_padding}`}>
                     <Button handleClick={ () => MoveHistoryPage()} msg="もっと詳しく" />
                   </div>
                 )
