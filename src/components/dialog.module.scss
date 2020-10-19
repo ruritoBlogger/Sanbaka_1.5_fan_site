@@ -1,0 +1,78 @@
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.white {
+  color: white;
+}
+
+.default_color {
+  color: rgba($color: #9D3757, $alpha: 1);
+}
+
+.icon_button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-color: transparent;
+  background: transparent;
+  padding: 0px;
+  margin: 20px;
+  border-radius: 50%;
+  outline: none;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover .circle{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+  }
+  &:focus .circle{
+    transform: scale(1.0);
+    transition-duration: 0.5s;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+.root {
+  animation: fadeRight 0.7s ease-out 0s 1 forwards;
+  -webkit-animation: fadeRight 0.7s ease-out 0s 1 forwards;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba($color: #9D3757, $alpha: 1);
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

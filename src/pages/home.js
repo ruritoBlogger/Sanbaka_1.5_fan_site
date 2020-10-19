@@ -5,11 +5,13 @@ import HistoryWindow from '../components/window/history/history_window';
 import Header from '../components/header'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { isMobile } from 'react-device-detect';
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const headerRef = useRef(null);
   const revealRefs = useRef([]);
+  let scroll_size = 50;
 
   const windows = [
     {
@@ -28,6 +30,10 @@ const Home = () => {
 
   useEffect(() => {
 
+    if( isMobile ) {
+      scroll_size = 100;
+    }
+
     gsap.from(headerRef.current, {
       autoAlpha: 0,
       ease: 'none',
@@ -45,7 +51,7 @@ const Home = () => {
         scrollTrigger: {
           id: `section-${index+1}`,
           trigger: el,
-          start: 'top center+=100',
+          start: `top center+=${scroll_size}`,
           toggleActions: 'play none none reverse'
         }
       });
