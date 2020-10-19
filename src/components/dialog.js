@@ -68,7 +68,7 @@ const Dialog = () => {
         <HeaderButton handleClick={ () => MoveHomePage()} msg="トップページ" />
         <HeaderButton handleClick={ () => MoveMemberPage()} msg="さんばかとは" />
         <HeaderButton handleClick={ () => MoveRoadPage()} msg="1.5周年までの道のり" />
-        <HeaderButton handleClick={() => MoveSitePage()} msg="このサイトについて" />
+        <HeaderButton handleClick={ () => MoveSitePage()} msg="このサイトについて" />
       </dialog>
     </>
   )
