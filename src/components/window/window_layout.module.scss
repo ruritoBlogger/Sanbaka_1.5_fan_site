@@ -85,16 +85,9 @@
   object-fit: cover;
 }
 
-
-
-
-
-
-
 // for smartphone
 @media screen and (max-width: 768px) {
   .root {
-    padding-top: 15vh;
     height: auto;
   }
 
@@ -246,14 +239,11 @@
   }
 }
 
-
 .subtitle {
   font-size: 35px;
   letter-spacing: 7px;
   margin-bottom: 17px;
 }
-
-
 
 .right_padding {
   padding-right: 8%;
@@ -261,6 +251,10 @@
 
 .left_padding {
   padding-left: 8%;
+}
+
+.bottom_padding {
+  padding-bottom: 10vh;
 }
 
 .margin_top {
@@ -338,4 +332,3 @@
   border: 15px solid transparent;
   border-top: 15px solid #e0edff;
 }
-
