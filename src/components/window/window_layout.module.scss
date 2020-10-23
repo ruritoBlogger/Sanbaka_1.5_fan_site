@@ -7,6 +7,25 @@
   margin-top: 8%;
 }
 
+.flex_row,
+.flex_row_reverse,
+.flex_column,
+.flex_column_reverse{
+  display: flex;
+}
+
+.flex_row_reverse {
+  flex-direction: row-reverse;
+}
+
+.flex_column {
+  flex-direction: column;
+}
+
+.flex_column_reverse {
+  flex-direction: column-reverse;
+}
+
 .centerComponent {
   position: relative;
   display: flex;
@@ -49,6 +68,7 @@
 
 .bl_topWindow,
 .bl_memberWindow,
+.bl_historyWindow,
 {
   width: 80%;
   height: 80%;
@@ -62,8 +82,10 @@
 
 .bl_topWindow_title,
 .bl_memberWindow_title,
+.bl_historyWindow_title,
 .bl_topWindow_content,
-.bl_memberWindow_content {
+.bl_memberWindow_content,
+.bl_historyWindow_content {
   text-align: center;
 }
 
@@ -71,32 +93,7 @@
   text-align: center;
 }
 
-.flex {
-  display: flex;
-}
-
-.dynamic_flex {
-  display: flex;
-}
-
-.dynamic_flex_reverse {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.flex_column {
-	position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.flex_row {
-	position: relative;
-  display: flex;
-  flex-direction: row;
-}
-
-.flex_img {
+.bl_window_flexFrame {
   position: relative;
   padding: 10px;
 }
@@ -150,15 +147,17 @@
   }
 
   .bl_topWindow_title,
-  .bl_memberWindow_title {
+  .bl_memberWindow_title,
+  .bl_historyWindow_title {
     font-size: 8vw;
     letter-spacing: 5px;
     margin-bottom: 70px;
   }
 
   .bl_topWindow_content,
-  .bl_memberWindow_content {
-  font-size: 4vw;
+  .bl_memberWindow_content,
+  .bl_historyWindow_content {
+    font-size: 4vw;
   }
 
   .scroll {
@@ -169,8 +168,8 @@
     flex-direction: column;
   }
 
-  .dynamic_flex_reverse {
-    flex-direction: column;
+  .flex_only_smartphone_column_reverse {
+    flex-direction: column-reverse;
   }
 
   .bl_memberWindow_frame {
@@ -182,13 +181,13 @@
     object-fit: cover;
   }
 
-  .img_small {
+  .bl_historyWindow_smallImg {
     height: 11vh;
     width: 20vw;
     object-fit: cover;
   }
 
-  .img_large {
+  .bl_historyWindow_largeImg {
     height: 12vh;
     width: 25vw;
     object-fit: cover;
@@ -203,20 +202,23 @@
 // for pc
 @media screen and (min-width: 768px) {
   .bl_topWindow,
-  .bl_memberWindow {
+  .bl_memberWindow,
+  .bl_historyWindow {
     height: 50vh;
   }
 
 
   .bl_topWindow_title,
-  .bl_memberWindow_title {
+  .bl_memberWindow_title,
+  .bl_historyWindow_title {
     font-size: 40px;
     letter-spacing: 10px;
     margin-bottom: 25px;
   }
 
   .bl_topWindow_content,
-  .bl_memberWindow_content {
+  .bl_memberWindow_content,
+  .bl_historyWindow_content {
     font-size: 27px;
   }
 
@@ -226,13 +228,13 @@
     object-fit: cover;
   }
 
-  .img_small {
+  .bl_historyWindow_smallImg {
     height: 13vh;
     width: 12vw;
     object-fit: cover;
   }
 
-  .img_large {
+  .bl_historyWindow_largeImg {
     height: 16vh;
     width: 15vw;
     object-fit: cover;
@@ -307,7 +309,6 @@
   padding-right: 8%;
 }
 
-
 .bottom_padding {
   padding-bottom: 10vh;
 }
@@ -320,19 +321,13 @@
   margin-top: 80px;
 }
 
-
-
 .right {
   text-align: right;
 }
 
-
-
 .right_component {
   justify-content: flex-end;
 }
-
-
 
 .balloon1 {
   position: relative;
