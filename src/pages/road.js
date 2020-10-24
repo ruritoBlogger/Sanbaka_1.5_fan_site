@@ -1,5 +1,5 @@
 import React, { useEffect, useRef }  from 'react';
-import HistoryWindow from '../components/window/history/history_window';
+import HistoryWindow from '../components/ecosystem/history/history_window';
 import Archive from '../components/parts/archive';
 import Header from '../components/header'
 import { gsap } from 'gsap';

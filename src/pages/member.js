@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import MemberWindow from '../components/window/member/member_window';
-import AngeWindow from '../components/window/member/ange_window';
-import LizeWindow from '../components/window/member/lize_window';
-import InuiWindow from '../components/window/member/inui_window';
+import MemberWindow from '../components/ecosystem/member/member_window';
+import AngeWindow from '../components/ecosystem/member/ange_window';
+import LizeWindow from '../components/ecosystem/member/lize_window';
+import InuiWindow from '../components/ecosystem/member/inui_window';
 import Header from '../components/header'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
