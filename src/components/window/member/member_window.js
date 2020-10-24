@@ -17,19 +17,19 @@ const MemberWindow = (props) => {
           if( props.isRight ) {
             return (
               <div className={styles.ly_center} >
-                <div className={styles.bl_memberWindow} >
+                <div className={`${styles.bl_window} ${styles.bl_memberWindow}`} >
                   <div className={styles.bl_memberWindow_frame}>
                     <img className={styles.bl_memberWindow_img} src={`${window.location.origin}/image/sanbaka.png`} />
                   </div>
-                  <div className={styles.left_padding}>
+                  <div className={styles.paddingLeft}>
                     <div>
-                      <h2 className={styles.bl_memberWindow_title}>さんばかとは</h2>
-                      <p className={styles.bl_memberWindow_content}>サンバカーニバルの略であり,<br/> 以下の３人によって結成されたユニット.</p>
-                      <p className={`${styles.bl_memberWindow_content} ${styles.font_ange}`}><br/>アンジュ・カトリーナ</p>
-                      <p className={`${styles.bl_memberWindow_content} ${styles.font_lize}`}>リゼ・ヘルエスタ</p>
-                      <p className={`${styles.bl_memberWindow_content} ${styles.font_inui}`}>戌亥とこ</p>
+                      <h2 className={styles.bl_window_title}>さんばかとは</h2>
+                      <p className={styles.bl_window_content}>サンバカーニバルの略であり,<br/> 以下の３人によって結成されたユニット.</p>
+                      <p className={`${styles.bl_window_content} ${styles.font_ange}`}><br/>アンジュ・カトリーナ</p>
+                      <p className={`${styles.bl_window_content} ${styles.font_lize}`}>リゼ・ヘルエスタ</p>
+                      <p className={`${styles.bl_window_content} ${styles.font_inui}`}>戌亥とこ</p>
                     </div>
-                    <div className={`${styles.centerComponent} ${styles.top_margin}`}>
+                    <div className={`${styles.centerComponent} ${styles.marginTop}`}>
                       <Button handleClick={ () => MoveMemberPage()} msg="もっと詳しく" />
                     </div>
                   </div>
@@ -39,14 +39,14 @@ const MemberWindow = (props) => {
           } else {
             return (
               <div className={styles.ly_center} >
-                <div className={styles.bl_memberWindow} >
-                  <div className={styles.right_padding}>
-                    <h2 className={styles.bl_memberWindow_title}>さんばかとは</h2>
-                    <p className={styles.bl_memberWindow_content}>サンバカーニバルの略であり,<br/> 以下の３人によって結成されたユニット.</p>
-                    <p className={`${styles.bl_memberWindow_content} ${styles.font_ange}`}><br/>アンジュ・カトリーナ</p>
-                    <p className={`${styles.bl_memberWindow_content} ${styles.font_lize}`}>リゼ・ヘルエスタ</p>
-                    <p className={`${styles.bl_memberWindow_content} ${styles.font_inui}`}>戌亥とこ</p>
-                    <p className={styles.bl_memberWindow_content}><br/>３人のバカという意味ではないとのこと.</p>
+                <div className={`${styles.bl_window} ${styles.bl_memberWindow}`} >
+                  <div className={styles.paddingRight}>
+                    <h2 className={styles.bl_window_title}>さんばかとは</h2>
+                    <p className={styles.bl_window_content}>サンバカーニバルの略であり,<br/> 以下の３人によって結成されたユニット.</p>
+                    <p className={`${styles.bl_window_content} ${styles.font_ange}`}><br/>アンジュ・カトリーナ</p>
+                    <p className={`${styles.bl_window_content} ${styles.font_lize}`}>リゼ・ヘルエスタ</p>
+                    <p className={`${styles.bl_window_content} ${styles.font_inui}`}>戌亥とこ</p>
+                    <p className={styles.bl_window_content}><br/>３人のバカという意味ではないとのこと.</p>
                   </div>
                   <div>
                     <div className={styles.bl_memberWindow_frame}>

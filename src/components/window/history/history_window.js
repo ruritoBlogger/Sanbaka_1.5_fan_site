@@ -13,7 +13,7 @@ const HistoryWindow = (props) => {
   return (
     <>
       <div className={`${styles.ly_center} ${styles.flex_column}`}>
-        <div className={`${styles.bl_historyWindow} ${styles.flex_row_reverse} ${styles.flex_only_smartphone_column_reverse}`} >
+        <div className={`${styles.bl_window} ${styles.flex_row_reverse} ${styles.flex_only_smartphone_column_reverse}`} >
           <div className={styles.flex_column}>
             <div className={styles.flex_row}>
               <div className={styles.bl_window_flexFrame}>
@@ -38,9 +38,9 @@ const HistoryWindow = (props) => {
               </div>
             </div>
           </div>
-          <div className={styles.right_padding}>
-            <h2 className={`${styles.title} ${styles.center}`}>1.5周年までの道のり</h2>
-            <p className={`${styles.content} ${styles.center}`}>
+          <div className={styles.paddingRight}>
+            <h2 className={styles.bl_window_title}>1.5周年までの道のり</h2>
+            <p className={styles.bl_window_content}>
               さんばかが歩んできた道のりを<br/>
               アーカイブと一緒に振り返ってみるページ.<br />
               初コラボからいくつかアーカイブを<br/>
@@ -49,14 +49,14 @@ const HistoryWindow = (props) => {
             {(() => {
               if( props.isTop ) {
                 return (
-                  <div className={`${styles.center_component} ${styles.bottom_padding}`}>
+                  <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
                     <Button handleClick={ () => MoveHistoryPage()} msg="もっと詳しく" />
                   </div>
                 )
               } else {
                 return (
                   <div>
-                    <p className={`${styles.content} ${styles.center}`}>
+                    <p className={styles.bl_window_content}>
                       マイクラコラボが中心となってます.
                     </p>
                   </div>
@@ -69,7 +69,7 @@ const HistoryWindow = (props) => {
       {(() => {
         if( !props.isTop ) {
           return (
-            <div className={styles.center}>
+            <div className={styles.ly_center}>
               <a className={styles.scroll} href="#">Scroll</a>
             </div>
           )

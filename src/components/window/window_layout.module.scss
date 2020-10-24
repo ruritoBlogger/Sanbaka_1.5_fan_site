@@ -1,9 +1,17 @@
 /* utils */
-.left_padding {
+.paddingLeft {
   padding-left: 8%;
 }
 
-.top_margin {
+.paddingRight {
+  padding-right: 8%;
+}
+
+.paddingBottom {
+  padding-bottom: 8%;
+}
+
+.marginTop {
   margin-top: 8%;
 }
 
@@ -66,10 +74,7 @@
 
 /* block */
 
-.bl_topWindow,
-.bl_memberWindow,
-.bl_historyWindow,
-{
+.bl_window {
   width: 80%;
   height: 80%;
   margin-left: 10%;
@@ -80,12 +85,8 @@
   display: flex;
 }
 
-.bl_topWindow_title,
-.bl_memberWindow_title,
-.bl_historyWindow_title,
-.bl_topWindow_content,
-.bl_memberWindow_content,
-.bl_historyWindow_content {
+.bl_window_title,
+.bl_window_content {
   text-align: center;
 }
 
@@ -146,17 +147,13 @@
     flex-direction: column;
   }
 
-  .bl_topWindow_title,
-  .bl_memberWindow_title,
-  .bl_historyWindow_title {
+  .bl_window_title {
     font-size: 8vw;
     letter-spacing: 5px;
     margin-bottom: 70px;
   }
 
-  .bl_topWindow_content,
-  .bl_memberWindow_content,
-  .bl_historyWindow_content {
+  .bl_window_content {
     font-size: 4vw;
   }
 
@@ -201,24 +198,17 @@
 
 // for pc
 @media screen and (min-width: 768px) {
-  .bl_topWindow,
-  .bl_memberWindow,
-  .bl_historyWindow {
+  .bl_window {
     height: 50vh;
   }
 
-
-  .bl_topWindow_title,
-  .bl_memberWindow_title,
-  .bl_historyWindow_title {
+  .bl_window_title {
     font-size: 40px;
     letter-spacing: 10px;
     margin-bottom: 25px;
   }
 
-  .bl_topWindow_content,
-  .bl_memberWindow_content,
-  .bl_historyWindow_content {
+  .bl_window_content {
     font-size: 27px;
   }
 
@@ -303,18 +293,6 @@
   font-size: 35px;
   letter-spacing: 7px;
   margin-bottom: 17px;
-}
-
-.right_padding {
-  padding-right: 8%;
-}
-
-.bottom_padding {
-  padding-bottom: 10vh;
-}
-
-.margin_top {
-  margin-top: 30px;
 }
 
 .margin_top_twice {
