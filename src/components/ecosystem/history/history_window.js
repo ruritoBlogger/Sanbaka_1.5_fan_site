@@ -34,6 +34,7 @@ const HistoryWindow = (props) => {
             </div>
           </div>
           <div className={styles.paddingRight_pcOnly}>
+            {/* FIXME: 解像度によっては変な部分で改行される */}
             <h2 className={styles.bl_window_title}>1.5周年までの道のり</h2>
             <p className={styles.bl_window_content}>
               さんばかが歩んできた道のりを<br/>
