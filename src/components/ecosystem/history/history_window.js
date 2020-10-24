@@ -41,19 +41,23 @@ const HistoryWindow = (props) => {
               初コラボからいくつかアーカイブを<br/>
               ピックアップしています.
             </p>
-            <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
-              {(() => {
-                if( props.isTop ) {
-                  return <AnimationButton handleClick={ () => MoveHistoryPage()} msg="もっと詳しく" />
-                } else {
-                  return (
+            {(() => {
+              if( props.isTop ) {
+                return(
+                  <div className={`${styles.centerComponent} ${styles.paddingBottom} ${styles.marginTop}`}>
+                    <AnimationButton handleClick={ () => MoveHistoryPage()} msg="もっと詳しく" />
+                  </div>
+                )
+              } else {
+                return (
+                  <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
                     <p className={styles.bl_window_content}>
                       マイクラコラボが中心となってます.
                     </p>
-                  )
-                }
-              })()}
-            </div>
+                  </div>
+                )
+              }
+            })()}
           </div>
         </div>
       </div>
