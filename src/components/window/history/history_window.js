@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import styles from '../window_layout.module.scss';
 import Button from '../../parts/button';
 import ScrollNavigator from '../../atoms/scrollNavigator';
+import LargeThumbnail from '../../atoms/largeThumbnail';
 
 const HistoryWindow = (props) => {
   const history = useHistory();
@@ -20,23 +21,17 @@ const HistoryWindow = (props) => {
               <div className={styles.bl_window_flexFrame}>
                 <img className={styles.bl_historyWindow_smallImg} src="https://i.ytimg.com/vi/pOXjuyKjD98/hqdefault.jpg" />
               </div>
-              <div className={styles.bl_window_flexFrame}>
-                <img className={styles.bl_historyWindow_largeImg} src="https://i.ytimg.com/vi/PcXH2IAXI_w/hqdefault.jpg" />
-              </div>
+              <LargeThumbnail youtubeID="PcXH2IAXI_w" />
               <div className={styles.bl_window_flexFrame}>
                 <img className={styles.bl_historyWindow_smallImg} src="https://i.ytimg.com/vi/66Sj7l3sLcM/hqdefault.jpg" />
               </div>
             </div>
             <div className={styles.flex_row}>
-              <div className={styles.bl_window_flexFrame}>
-                <img className={styles.bl_historyWindow_largeImg} src="https://i.ytimg.com/vi/lPW5D3uHFvI/hqdefault.jpg" />
-              </div>
+              <LargeThumbnail youtubeID="lPW5D3uHFvI" />
               <div className={styles.bl_window_flexFrame}>
                 <img className={styles.bl_historyWindow_smallImg} src="https://i.ytimg.com/vi/HWcemG6YO_U/hqdefault.jpg" />
               </div>
-              <div className={styles.bl_window_flexFrame}>
-                <img className={styles.bl_historyWindow_largeImg} src="https://i.ytimg.com/vi/S7f5htYwawA/hqdefault.jpg" />
-              </div>
+              <LargeThumbnail youtubeID="S7f5htYwawA" />
             </div>
           </div>
           <div className={styles.paddingRight}>
