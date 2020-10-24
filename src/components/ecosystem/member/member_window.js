@@ -8,7 +8,7 @@ import styles from '../window_layout.module.scss';
 
 const MemberWindow = (props) => {
   const history = useHistory();
-  const [ padding, setPadding ] = useState(props.isRight ? styles.paddingLeft : styles.paddingRight);
+  const [ padding, setPadding ] = useState(props.isRight ? styles.paddingLeft_pcOnly : styles.paddingRight_pcOnly);
   const [ bl_window, setBl_window ] = useState(props.isRight ? `${styles.bl_window} ${styles.bl_memberWindow}` : `${styles.bl_window} ${styles.bl_memberWindow} ${styles.flex_row_reverse}`)
 
   const MoveMemberPage = () => {
@@ -30,9 +30,15 @@ const MemberWindow = (props) => {
               <p className={`${styles.bl_window_content} ${styles.font_lize}`}>リゼ・ヘルエスタ</p>
               <p className={`${styles.bl_window_content} ${styles.font_inui}`}>戌亥とこ</p>
             </div>
-            <div className={`${styles.centerComponent} ${styles.marginTop}`}>
-              <AnimationButton handleClick={ () => MoveMemberPage()} msg="もっと詳しく" />
-            </div>
+            {(() => {
+              if( props.isRight) {
+                return (
+                  <div className={`${styles.centerComponent} ${styles.marginTop}`}>
+                    <AnimationButton handleClick={ () => MoveMemberPage()} msg="もっと詳しく" />
+                  </div>
+                )
+              }
+            })()}
           </div>
         </div>
         {/* HACK: 呼び出し元の引数名を改良する */}

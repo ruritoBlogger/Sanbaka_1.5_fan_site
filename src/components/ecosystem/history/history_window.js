@@ -20,7 +20,7 @@ const HistoryWindow = (props) => {
   return (
     <>
       <div className={`${styles.ly_center} ${styles.flex_column}`}>
-        <div className={`${styles.bl_window} ${styles.flex_row_reverse} ${styles.flex_only_smartphone_column}`} >
+        <div className={`${styles.bl_window} ${styles.flex_row_reverse} ${styles.flex_column_onlySmartphone}`} >
           <div className={styles.flex_column}>
             <div className={styles.flex_row}>
               <SmallThumbnail youtubeID="pOXjuyKjD98" />
@@ -33,7 +33,7 @@ const HistoryWindow = (props) => {
               <LargeThumbnail youtubeID="S7f5htYwawA" />
             </div>
           </div>
-          <div className={styles.paddingRight}>
+          <div className={styles.paddingRight_pcOnly}>
             <h2 className={styles.bl_window_title}>1.5周年までの道のり</h2>
             <p className={styles.bl_window_content}>
               さんばかが歩んできた道のりを<br/>
