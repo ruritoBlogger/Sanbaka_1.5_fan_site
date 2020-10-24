@@ -2,6 +2,9 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import styles from '../window_layout.module.scss';
 
+// HACK: atomsからのimportを簡略化する
+// ex: import ~ from '@/atoms/animationButtton
+
 import AnimationButton from '../../atoms/animationButton';
 import ScrollNavigator from '../../atoms/scrollNavigator';
 import LargeThumbnail from '../../atoms/largeThumbnail';
@@ -38,23 +41,19 @@ const HistoryWindow = (props) => {
               初コラボからいくつかアーカイブを<br/>
               ピックアップしています.
             </p>
-            {(() => {
-              if( props.isTop ) {
-                return (
-                  <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
-                    <AnimationButton handleClick={ () => MoveHistoryPage()} msg="もっと詳しく" />
-                  </div>
-                )
-              } else {
-                return (
-                  <div>
+            <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
+              {(() => {
+                if( props.isTop ) {
+                  return <AnimationButton handleClick={ () => MoveHistoryPage()} msg="もっと詳しく" />
+                } else {
+                  return (
                     <p className={styles.bl_window_content}>
                       マイクラコラボが中心となってます.
                     </p>
-                  </div>
-                )
-              }
-            })()}
+                  )
+                }
+              })()}
+            </div>
           </div>
         </div>
       </div>

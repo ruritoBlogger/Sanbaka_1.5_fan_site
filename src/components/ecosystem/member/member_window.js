@@ -24,6 +24,7 @@ const MemberWindow = (props) => {
           <div className={padding}>
             <div>
               <h2 className={styles.bl_window_title}>さんばかとは</h2>
+              {/* HACK: CSSの部分でカラーコードを共通化する */}
               <p className={styles.bl_window_content}>サンバカーニバルの略であり,<br/> 以下の３人によって結成されたユニット.</p>
               <p className={`${styles.bl_window_content} ${styles.font_ange}`}><br/>アンジュ・カトリーナ</p>
               <p className={`${styles.bl_window_content} ${styles.font_lize}`}>リゼ・ヘルエスタ</p>
@@ -34,6 +35,7 @@ const MemberWindow = (props) => {
             </div>
           </div>
         </div>
+        {/* HACK: 呼び出し元の引数名を改良する */}
         {(() => {
           if( !props.isRight ) {
             return (

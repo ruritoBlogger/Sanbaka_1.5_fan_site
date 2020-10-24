@@ -6,6 +6,8 @@ import styles from './largeThumbnail.module.scss';
  * @param {string} props.youtubeID 表示したい画像のyoutubeID
  */
 
+// FIXME: スマホによってはUIが崩れる
+
 const LargeThumbnail = (props) => {
   return (
     <div className={styles.frame} >
