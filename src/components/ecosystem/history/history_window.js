@@ -17,7 +17,7 @@ const HistoryWindow = (props) => {
   return (
     <>
       <div className={`${styles.ly_center} ${styles.flex_column}`}>
-        <div className={`${styles.bl_window} ${styles.flex_row_reverse} ${styles.flex_only_smartphone_column_reverse}`} >
+        <div className={`${styles.bl_window} ${styles.flex_row_reverse} ${styles.flex_only_smartphone_column}`} >
           <div className={styles.flex_column}>
             <div className={styles.flex_row}>
               <SmallThumbnail youtubeID="pOXjuyKjD98" />
@@ -56,7 +56,7 @@ const HistoryWindow = (props) => {
               }
             })()}
           </div>
-                  </div>
+        </div>
       </div>
       {(() => {
         if( !props.isTop ) {

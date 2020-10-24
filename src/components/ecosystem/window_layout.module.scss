@@ -18,7 +18,11 @@
 .flex_row,
 .flex_row_reverse,
 .flex_column,
-.flex_column_reverse{
+.flex_column_reverse,
+.flex_only_smartphone_row,
+.flex_only_smartphone_row_reverse,
+.flex_only_smartphone_column,
+.flex_only_smartphone_column_reverse {
   display: flex;
 }
 
@@ -142,8 +146,16 @@
     flex-direction: column;
   }
 
+  .flex_only_smartphone_column {
+    flex-direction: column;
+  }
+
   .flex_only_smartphone_column_reverse {
     flex-direction: column-reverse;
+  }
+
+  .flex_only_smartphone_row {
+    flex-direction: row;
   }
 
   .flex_only_smartphone_row_reverse {
