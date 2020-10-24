@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import Button from '../../parts/button';
+
+import AnimationButton from '../../atoms/animationButton';
 import ScrollNavigator from '../../atoms/scrollNavigator';
 import MainImage from '../../atoms/mainImage';
 import styles from '../window_layout.module.scss';
@@ -30,7 +31,7 @@ const MemberWindow = (props) => {
                       <p className={`${styles.bl_window_content} ${styles.font_inui}`}>戌亥とこ</p>
                     </div>
                     <div className={`${styles.centerComponent} ${styles.marginTop}`}>
-                      <Button handleClick={ () => MoveMemberPage()} msg="もっと詳しく" />
+                      <AnimationButton handleClick={ () => MoveMemberPage()} msg="もっと詳しく" />
                     </div>
                   </div>
                 </div>

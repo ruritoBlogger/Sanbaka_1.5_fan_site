@@ -1,7 +1,8 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import styles from '../window_layout.module.scss';
-import Button from '../../parts/button';
+
+import AnimationButton from '../../atoms/animationButton';
 import ScrollNavigator from '../../atoms/scrollNavigator';
 import LargeThumbnail from '../../atoms/largeThumbnail';
 import SmallThumbnail from '../../atoms/smallThumbnail';
@@ -41,7 +42,7 @@ const HistoryWindow = (props) => {
               if( props.isTop ) {
                 return (
                   <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
-                    <Button handleClick={ () => MoveHistoryPage()} msg="もっと詳しく" />
+                    <AnimationButton handleClick={ () => MoveHistoryPage()} msg="もっと詳しく" />
                   </div>
                 )
               } else {
