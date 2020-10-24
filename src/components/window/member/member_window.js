@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import Button from '../../parts/button';
+import ScrollNavigator from '../../atoms/scrollNavigator';
 import styles from '../window_layout.module.scss';
 
 const MemberWindow = (props) => {
@@ -55,7 +56,7 @@ const MemberWindow = (props) => {
                   </div>
                 </div>
                 <div className={styles.ly_center}>
-                  <a className={styles.scroll} href="#">Scroll</a>
+                  <ScrollNavigator msg="Scroll" />
                 </div>
               </div>
             )

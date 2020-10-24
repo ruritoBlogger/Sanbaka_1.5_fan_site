@@ -2,6 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import styles from '../window_layout.module.scss';
 import Button from '../../parts/button';
+import ScrollNavigator from '../../atoms/scrollNavigator';
 
 const HistoryWindow = (props) => {
   const history = useHistory();
@@ -70,7 +71,7 @@ const HistoryWindow = (props) => {
         if( !props.isTop ) {
           return (
             <div className={styles.ly_center}>
-              <a className={styles.scroll} href="#">Scroll</a>
+              <ScrollNavigator msg={"Scroll"} />
             </div>
           )
         }

@@ -7,8 +7,10 @@ import styles from './scrollNavigator.module.scss';
  * @param {string} props.msg スクロールを促すメッセージ
  */
 
-const scrollNavigator = (props) => {
+const ScrollNavigator = (props) => {
   return (
     <a className={styles.scroll} href="#">{props.msg}</a>
   )
 }
+
+export default ScrollNavigator;
