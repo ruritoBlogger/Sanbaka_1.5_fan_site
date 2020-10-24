@@ -1,7 +1,7 @@
 import React, { useEffect, useRef }  from 'react';
-import TopWindow from '../components/window/top/top_window';
-import MemberWindow from '../components/window/member/member_window';
-import HistoryWindow from '../components/window/history/history_window';
+import TopWindow from '../components/ecosystem/top/top_window';
+import MemberWindow from '../components/ecosystem/member/member_window';
+import HistoryWindow from '../components/ecosystem/history/history_window';
 import Header from '../components/header'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';

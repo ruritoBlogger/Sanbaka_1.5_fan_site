@@ -1,0 +1,18 @@
+.frame {
+  position: relative;
+  padding: 10px;
+}
+
+.image {
+  height: 11vh;
+  width: 20vw;
+  object-fit: cover;
+}
+
+// for pc
+@media screen and (min-width: 768px) {
+  .image {
+    height: 13vh;
+    width: 12vw;
+  }
+}

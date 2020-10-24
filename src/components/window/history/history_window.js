@@ -4,6 +4,7 @@ import styles from '../window_layout.module.scss';
 import Button from '../../parts/button';
 import ScrollNavigator from '../../atoms/scrollNavigator';
 import LargeThumbnail from '../../atoms/largeThumbnail';
+import SmallThumbnail from '../../atoms/smallThumbnail';
 
 const HistoryWindow = (props) => {
   const history = useHistory();
@@ -18,19 +19,13 @@ const HistoryWindow = (props) => {
         <div className={`${styles.bl_window} ${styles.flex_row_reverse} ${styles.flex_only_smartphone_column_reverse}`} >
           <div className={styles.flex_column}>
             <div className={styles.flex_row}>
-              <div className={styles.bl_window_flexFrame}>
-                <img className={styles.bl_historyWindow_smallImg} src="https://i.ytimg.com/vi/pOXjuyKjD98/hqdefault.jpg" />
-              </div>
+              <SmallThumbnail youtubeID="pOXjuyKjD98" />
               <LargeThumbnail youtubeID="PcXH2IAXI_w" />
-              <div className={styles.bl_window_flexFrame}>
-                <img className={styles.bl_historyWindow_smallImg} src="https://i.ytimg.com/vi/66Sj7l3sLcM/hqdefault.jpg" />
-              </div>
+              <SmallThumbnail youtubeID="66Sj7l3sLcM" />
             </div>
             <div className={styles.flex_row}>
               <LargeThumbnail youtubeID="lPW5D3uHFvI" />
-              <div className={styles.bl_window_flexFrame}>
-                <img className={styles.bl_historyWindow_smallImg} src="https://i.ytimg.com/vi/HWcemG6YO_U/hqdefault.jpg" />
-              </div>
+              <SmallThumbnail youtubeID="HWcemG6YO_U" />
               <LargeThumbnail youtubeID="S7f5htYwawA" />
             </div>
           </div>
