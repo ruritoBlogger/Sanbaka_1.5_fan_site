@@ -12,14 +12,13 @@
   object-fit: cover;
 }
 
-// for pc
-@media screen and (min-width: 768px) {
+// for smartphone
+@media screen and (max-width: 768px) {
   .frame {
     margin-bottom: 15px;
   }
 
   .image {
-    height: 45vh;
-    width: 30vw;
+    width: 80vw;
   }
 }

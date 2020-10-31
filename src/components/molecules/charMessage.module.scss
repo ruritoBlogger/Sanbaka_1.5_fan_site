@@ -6,3 +6,11 @@
   text-align: center;
   position: relative;
 }
+
+// for smartphone
+@media screen and (max-width: 768px) {
+  .bl_charMessage {
+    width: 100%;
+    height: 100%;
+  }
+}

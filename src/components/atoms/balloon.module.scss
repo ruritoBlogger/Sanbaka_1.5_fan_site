@@ -30,3 +30,10 @@
   margin: 0;
   padding: 0;
 }
+
+// for smartphone
+@media screen and (max-width: 768px) {
+  .char_msg {
+    font-size: 8vw;
+  }
+}
