@@ -15,6 +15,10 @@
   margin-top: 8%;
 }
 
+.marginTopTwice {
+  margin-top: 16%;
+}
+
 .flex_row,
 .flex_row_reverse,
 .flex_column,
@@ -90,8 +94,15 @@
 }
 
 .bl_window_title,
-.bl_window_content {
+.bl_window_content
+.bl_window_subtitle {
   text-align: center;
+}
+
+.bl_window_subtitle {
+  font-size: 2.1vw;
+  letter-spacing: 7px;
+  margin-bottom: 17px;
 }
 
 .bl_scroll {
@@ -138,12 +149,10 @@
     margin-bottom: 70px;
   }
 
+
+
   .bl_window_content {
     font-size: 4vw;
-  }
-
-  .dynamic_flex {
-    flex-direction: column;
   }
 
   .flex_column_onlySmartphone {
@@ -255,7 +264,7 @@
   text-align: right;
 }
 
-.right_component {
+.rightComponent {
   justify-content: flex-end;
 }
 
