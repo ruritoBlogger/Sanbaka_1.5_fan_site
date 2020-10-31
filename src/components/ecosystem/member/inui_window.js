@@ -1,5 +1,6 @@
 import React from 'react';
-import IconButton from '../../parts/icon_button';
+import IconButton from '../../atoms/icon_button';
+import CharMessage from '../../molecules/charMessage';
 import styles from '../window_layout.module.scss';
 
 const InuiWindow = () => {
@@ -13,25 +14,20 @@ const InuiWindow = () => {
 
   return (
     <>
-      <div className={`${styles.root} ${styles.color_inui}`}>
-        <div className={`${styles.main} ${styles.flex}`} >
-          <div className={styles.char_frame}>
-            <div className={styles.balloon1}>
-              <p className={styles.char_msg}>アハーー↑↑↑</p>
-            </div>
-            <img className={styles.char_img} src={`${window.location.origin}/image/inui.png`} />
-          </div>
-          <div className={`${styles.left_padding} ${styles.margin_top_twice}`}>
-            <h3 className={`${styles.subtitle} ${styles.right}`}>公式つよつよケルベロス</h3>
-            <h2 className={`${styles.title} ${styles.right}`}>戌亥とこ</h2>
-            <p className={`${styles.content} ${styles.right}`}>
+      <div className={`${styles.ly_center} ${styles.color_inui}`}>
+        <div className={`${styles.bl_window} ${styles.flex_column_onlySmartphone}`} >
+          <CharMessage msg={'アハーーー↑↑↑'} path={'/image/inui.png'} />
+          <div className={`${styles.paddingLeft_pcOnly} ${styles.marginTop}`}>
+            <h3 className={`${styles.bl_window_subtitle}`}>公式つよつよケルベロス</h3>
+            <h2 className={`${styles.bl_window_title}`}>戌亥とこ</h2>
+            <p className={`${styles.bl_window_content}`}>
               寂れた和風喫茶で働く女の子. <br/>
               店長の趣味でメイド服を着せられている.<br/>
               足下に見え隠れする尻尾が本物かどうかは<br/>
               触れた人のみぞ知る.<br/>
               満月の夜は何か不思議な事が起きるらしい？
             </p>
-            <div className={`${styles.flex_row} ${styles.right_component} ${styles.margin_top}`}>
+            <div className={`${styles.flex_row} ${styles.centerComponent} ${styles.marginTop}`}>
               <IconButton handleClick={() => MoveToYoutube()} link={`${window.location.origin}/image/youtube.png`} />
               <IconButton handleClick={() => MoveToTwitter()} link={`${window.location.origin}/image/twitter.png`} />
             </div>

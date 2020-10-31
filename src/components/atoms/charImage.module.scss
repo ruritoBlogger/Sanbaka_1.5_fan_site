@@ -1,0 +1,24 @@
+.frame {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	height: 50vh;
+	width: 35vw;
+}
+
+.image {
+  height: 45vh;
+  width: 30vw;
+  object-fit: cover;
+}
+
+// for smartphone
+@media screen and (max-width: 768px) {
+  .frame {
+    margin-bottom: 15px;
+  }
+
+  .image {
+    width: 80vw;
+  }
+}

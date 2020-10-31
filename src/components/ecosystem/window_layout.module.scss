@@ -15,6 +15,16 @@
   margin-top: 8%;
 }
 
+.marginTopTwice {
+  margin-top: 16%;
+}
+
+.right,
+.right_pcOnly {
+  text-align: right;
+}
+
+
 .flex_row,
 .flex_row_reverse,
 .flex_column,
@@ -38,9 +48,24 @@
   flex-direction: column-reverse;
 }
 
-.centerComponent {
+.leftComponent,
+.leftComponent_pcOnly {
+  justify-self: start;
+}
+
+.rightComponent,
+.rightComponent_pcOnly {
+  justify-content: flex-end;
+}
+
+.centerComponent,
+.centerComponent_spaceAlound {
   position: relative;
   display: flex;
+  justify-content: center;
+}
+
+.centerComponent_spaceAlound {
   justify-content: space-around;
 }
 
@@ -90,8 +115,15 @@
 }
 
 .bl_window_title,
-.bl_window_content {
+.bl_window_content,
+.bl_window_subtitle {
   text-align: center;
+}
+
+.bl_window_subtitle {
+  font-size: 2.1vw;
+  letter-spacing: 7px;
+  margin-bottom: 17px;
 }
 
 .bl_scroll {
@@ -138,12 +170,12 @@
     margin-bottom: 70px;
   }
 
-  .bl_window_content {
-    font-size: 4vw;
+  .bl_window_subtitle {
+    font-size: 6.5vw;
   }
 
-  .dynamic_flex {
-    flex-direction: column;
+  .bl_window_content {
+    font-size: 4vw;
   }
 
   .flex_column_onlySmartphone {
@@ -162,22 +194,20 @@
     flex-direction: row-reverse;
   }
 
-  .bl_historyWindow_smallImg {
-    height: 11vh;
-    width: 20vw;
-    object-fit: cover;
-  }
-
-  .bl_historyWindow_largeImg {
-    height: 12vh;
-    width: 25vw;
-    object-fit: cover;
-  }
-
   .font_ange, .font_lize, .font_inui {
     font-size: 6vw;
     font-weight: 500;
   }
+
+  .right_pcOnly {
+    text-align: center;
+  }
+
+  .leftComponent_pcOnly,
+  .rightComponent_pcOnly {
+    justify-content: center;
+  }
+
 }
 
 // for pc
@@ -239,47 +269,4 @@
       transform-origin: 0 100%;
     }
   }
-}
-
-.subtitle {
-  font-size: 35px;
-  letter-spacing: 7px;
-  margin-bottom: 17px;
-}
-
-.margin_top_twice {
-  margin-top: 80px;
-}
-
-.right {
-  text-align: right;
-}
-
-.right_component {
-  justify-content: flex-end;
-}
-
-.balloon1 {
-  position: relative;
-  display: inline-block;
-  margin: 1.5em 0;
-  padding: 7px 10px;
-  margin-bottom: 50px;
-  min-width: 120px;
-  max-width: 100%;
-  color: #555;
-  font-size: 16px;
-  background: #e0edff;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
-}
-
-.balloon1:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -15px;
-  border: 15px solid transparent;
-  border-top: 15px solid #e0edff;
 }

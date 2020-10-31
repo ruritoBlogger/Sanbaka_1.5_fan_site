@@ -1,0 +1,39 @@
+.balloon {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  margin-bottom: 50px;
+  min-width: 120px;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+
+.balloon:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+}
+
+.char_msg {
+  font-size: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+// for smartphone
+@media screen and (max-width: 768px) {
+  .char_msg {
+    font-size: 8vw;
+  }
+}
