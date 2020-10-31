@@ -18,9 +18,9 @@ const InuiWindow = () => {
         <div className={`${styles.bl_window} ${styles.flex_column_onlySmartphone}`} >
           <CharMessage msg={'アハーーー↑↑↑'} path={'/image/inui.png'} />
           <div className={`${styles.paddingLeft_pcOnly} ${styles.marginTop}`}>
-            <h3 className={`${styles.bl_window_subtitle} ${styles.right}`}>公式つよつよケルベロス</h3>
-            <h2 className={`${styles.bl_window_title} ${styles.right}`}>戌亥とこ</h2>
-            <p className={`${styles.bl_window_content} ${styles.right}`}>
+            <h3 className={`${styles.bl_window_subtitle}`}>公式つよつよケルベロス</h3>
+            <h2 className={`${styles.bl_window_title}`}>戌亥とこ</h2>
+            <p className={`${styles.bl_window_content}`}>
               寂れた和風喫茶で働く女の子. <br/>
               店長の趣味でメイド服を着せられている.<br/>
               足下に見え隠れする尻尾が本物かどうかは<br/>

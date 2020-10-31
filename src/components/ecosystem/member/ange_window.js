@@ -18,9 +18,9 @@ const AngeWindow = () => {
         <div className={`${styles.bl_window} ${styles.flex_column_onlySmartphone}`} >
           <CharMessage msg={'おまたせ、待った？'} path={'/image/ange.png'} />
           <div className={`${styles.paddingLeft_pcOnly} ${styles.marginTop}`}>
-            <h3 className={`${styles.bl_window_subtitle} ${styles.right_pcOnly}`}>公式美少女錬金術師ライバー</h3>
-            <h2 className={`${styles.bl_window_title} ${styles.right_pcOnly}`}>アンジュ・カトリーナ</h2>
-            <p className={`${styles.bl_window_content} ${styles.right_pcOnly}`}>
+            <h3 className={`${styles.bl_window_subtitle}`}>公式美少女錬金術師ライバー</h3>
+            <h2 className={`${styles.bl_window_title}`}>アンジュ・カトリーナ</h2>
+            <p className={`${styles.bl_window_content}`}>
               ボロボロの小屋で時間を忘れて<br/>錬金術の研究に明け暮れている.<br/>
               大人っぽい女性的な体に憧れており<br/>実はその研究をしているとかしていないとか.
             </p>
