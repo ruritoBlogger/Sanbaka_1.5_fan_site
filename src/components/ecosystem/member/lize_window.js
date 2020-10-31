@@ -1,5 +1,6 @@
 import React from 'react';
 import IconButton from '../../atoms/icon_button';
+import CharMessage from '../../molecules/charMessage';
 import styles from '../window_layout.module.scss';
 
 const LizeWindow = () => {
@@ -12,29 +13,24 @@ const LizeWindow = () => {
   }
   return (
     <>
-      <div className={`${styles.root} ${styles.color_lize}`}>
-        <div className={`${styles.main} ${styles.flex}`} >
-          <div className={`${styles.right_padding} ${styles.margin_top_twice}`}>
-            <h3 className={styles.subtitle}>文武両道人望ゲキアツプリンセス</h3>
-            <h2 className={styles.title}>リゼ・ヘルエスタ</h2>
-            <p className={styles.content}>
+      <div className={`${styles.ly_center} ${styles.color_lize}`}>
+        <div className={`${styles.bl_window} ${styles.flex_column_onlySmartphone}`} >
+          <div className={`${styles.paddingRight_pcOnly} ${styles.marginTop}`}>
+            <h3 className={styles.bl_window_subtitle}>文武両道人望ゲキアツプリンセス</h3>
+            <h2 className={styles.bl_window_title}>リゼ・ヘルエスタ</h2>
+            <p className={styles.bl_window_content}>
               ヘルエスタ王国の第二皇女.<br/>
               文武両道学園主席<br/>
               真面目で誰にでも優しくかなりの人望がある.<br/>
               王位継承の資格者として<br/>
               日々鍛錬や人とのコミュニケーションを大事にしている.
             </p>
-            <div className={`${styles.flex_row} ${styles.margin_top}`}>
+            <div className={`${styles.flex_row} ${styles.marginTop}`}>
               <IconButton handleClick={() => MoveToYoutube()} link={`${window.location.origin}/image/youtube.png`} />
               <IconButton handleClick={() => MoveToTwitter()} link={`${window.location.origin}/image/twitter.png`} />
             </div>
           </div>
-          <div className={styles.char_frame}>
-            <div className={styles.balloon1}>
-              <p className={styles.char_msg}>あんでだよぉーー！！</p>
-            </div>
-            <img className={styles.char_img} src={`${window.location.origin}/image/lize.png`} />
-          </div>
+          <CharMessage msg={'あんでだよぉーー！！'} path={'/image/lize.png'} />
         </div>
       </div>
     </>
