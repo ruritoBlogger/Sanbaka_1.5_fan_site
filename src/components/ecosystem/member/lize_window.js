@@ -14,7 +14,9 @@ const LizeWindow = () => {
   return (
     <>
       <div className={`${styles.ly_center} ${styles.color_lize}`}>
-        <div className={`${styles.bl_window} ${styles.flex_column_onlySmartphone}`} >
+        {/* FIXME: こんなCSSの重ねがけ...あんまりだよ... */}
+        <div className={`${styles.bl_window} ${styles.flex_row_reverse} ${styles.flex_column_onlySmartphone}`} >
+          <CharMessage msg={'あんでだよぉーー！！'} path={'/image/lize.png'} />
           <div className={`${styles.paddingRight_pcOnly} ${styles.marginTop}`}>
             <h3 className={styles.bl_window_subtitle}>文武両道人望ゲキアツプリンセス</h3>
             <h2 className={styles.bl_window_title}>リゼ・ヘルエスタ</h2>
@@ -25,12 +27,11 @@ const LizeWindow = () => {
               王位継承の資格者として<br/>
               日々鍛錬や人とのコミュニケーションを大事にしている.
             </p>
-            <div className={`${styles.flex_row} ${styles.marginTop}`}>
+            <div className={`${styles.flex_row} ${styles.marginTop} ${styles.leftComponent_pcOnly}`}>
               <IconButton handleClick={() => MoveToYoutube()} link={`${window.location.origin}/image/youtube.png`} />
               <IconButton handleClick={() => MoveToTwitter()} link={`${window.location.origin}/image/twitter.png`} />
             </div>
           </div>
-          <CharMessage msg={'あんでだよぉーー！！'} path={'/image/lize.png'} />
         </div>
       </div>
     </>
