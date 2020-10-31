@@ -1,4 +1,8 @@
-.flex_column {
+.bl_charMessage {
   display: flex;
+  height: 50vh;
+  width: 35vw;
   flex-direction: column;
+  text-align: center;
+  position: relative;
 }

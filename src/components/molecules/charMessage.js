@@ -14,7 +14,7 @@ const CharMessage = (props) => {
 
   return (
     <>
-      <div className={styles.flex_column}>
+      <div className={styles.bl_charMessage}>
         <Balloon msg={props.msg} />
         <CharImage path={props.path} />
       </div>
