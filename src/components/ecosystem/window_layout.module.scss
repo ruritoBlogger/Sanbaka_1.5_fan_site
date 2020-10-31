@@ -58,9 +58,14 @@
   justify-content: flex-end;
 }
 
-.centerComponent {
+.centerComponent,
+.centerComponent_spaceAlound {
   position: relative;
   display: flex;
+  justify-content: center;
+}
+
+.centerComponent_spaceAlound {
   justify-content: space-around;
 }
 

@@ -27,7 +27,7 @@ const LizeWindow = () => {
               王位継承の資格者として<br/>
               日々鍛錬や人とのコミュニケーションを大事にしている.
             </p>
-            <div className={`${styles.flex_row} ${styles.marginTop} ${styles.leftComponent_pcOnly}`}>
+            <div className={`${styles.flex_row} ${styles.centerComponent} ${styles.marginTop}`}>
               <IconButton handleClick={() => MoveToYoutube()} link={`${window.location.origin}/image/youtube.png`} />
               <IconButton handleClick={() => MoveToTwitter()} link={`${window.location.origin}/image/twitter.png`} />
             </div>

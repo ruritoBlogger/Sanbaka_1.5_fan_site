@@ -27,7 +27,7 @@ const InuiWindow = () => {
               触れた人のみぞ知る.<br/>
               満月の夜は何か不思議な事が起きるらしい？
             </p>
-            <div className={`${styles.flex_row} ${styles.rightComponent_pcOnly} ${styles.marginTop}`}>
+            <div className={`${styles.flex_row} ${styles.centerComponent} ${styles.marginTop}`}>
               <IconButton handleClick={() => MoveToYoutube()} link={`${window.location.origin}/image/youtube.png`} />
               <IconButton handleClick={() => MoveToTwitter()} link={`${window.location.origin}/image/twitter.png`} />
             </div>
