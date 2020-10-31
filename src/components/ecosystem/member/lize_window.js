@@ -1,5 +1,5 @@
 import React from 'react';
-import IconButton from '../../parts/icon_button';
+import IconButton from '../../atoms/icon_button';
 import styles from '../window_layout.module.scss';
 
 const LizeWindow = () => {
