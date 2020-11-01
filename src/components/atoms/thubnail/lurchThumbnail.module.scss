@@ -14,3 +14,16 @@
   width: 29vw;
   object-fit: cover;
 }
+
+// for smartphone
+@media screen and (max-width: 768px) {
+  .frame,
+  .frame_right {
+    transform: none;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
