@@ -8,6 +8,10 @@
   justify-content: center;
 }
 
+.archive_reverse{
+  flex-direction: row-reverse;
+}
+
 .frame {
   margin-top: 2vh;
   display: inline-block;
@@ -66,6 +70,10 @@
   justify-content: space-around;
 }
 
-.margin_bottom {
+.marginBottom {
   margin-bottom: 10px;
+}
+
+.marginTop {
+  margin-top: 35px;
 }

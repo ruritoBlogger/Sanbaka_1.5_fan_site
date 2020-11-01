@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './archive.module.scss';
 
 import CharAnimationButton from '../atoms/button/charAnimationButton';
@@ -20,49 +20,25 @@ const Archive = (props) => {
     window.open(`https://youtu.be/${data.key}?autoplay=0&t=${data.time}`, "_blank")
   }
 
+  const [flexStyle, setFlexStyle] = useState(props.right ? `${styles.archive} ${styles.archive_reverse}`: styles.archive );
+
   return (
     <>
-      {(() => {
-        if( props.right ) {
-          return (
-            <div className={styles.archive}>
-              <LurchThumbnail youtubeID={props.id} isSlantRight={false} />
-              <div className={styles.content_box}>
-                <div className={styles.content}>
-                  <h2 className={styles.title}>{props.title}</h2>
-                  <p className={`${styles.text} ${styles.margin_bottom}`}>{props.day}</p>
-                  <p className={styles.text}>{props.text}</p>
-                  <div className={`${styles.buttons} ${styles.flex_row}`} >
-                    <CharAnimationButton handleClick={() => MovePage(props.data[0])} msg="アンジュ視点" theme='ange' className={`${styles.text}`} />
-                    <CharAnimationButton handleClick={() => MovePage(props.data[1])} msg="リゼ視点" theme='lize' className={`${styles.text}`} />
-                    <CharAnimationButton handleClick={() => MovePage(props.data[2])} msg="戌亥視点" theme='inui' className={`${styles.text}`} />
-                  </div>
-                </div>
-              </div>
+      <div className={flexStyle}>
+        <LurchThumbnail youtubeID={props.id} isSlantRight={props.right} />
+        <div className={styles.content_box}>
+          <div className={styles.content}>
+            <h2 className={styles.title}>{props.title}</h2>
+            <p className={`${styles.text} ${styles.marginBottom}`}>{props.day}</p>
+            <p className={styles.text}>{props.text}</p>
+            <div className={`${styles.buttons} ${styles.flex_row} ${styles.marginTop}`} >
+              <CharAnimationButton handleClick={() => MovePage(props.data[0])} msg="アンジュ視点" theme='ange' className={`${styles.text}`} />
+              <CharAnimationButton handleClick={() => MovePage(props.data[1])} msg="リゼ視点" theme='lize' className={`${styles.text}`} />
+              <CharAnimationButton handleClick={() => MovePage(props.data[2])} msg="戌亥視点" theme='inui' className={`${styles.text}`} />
             </div>
-          )
-        } else {
-          return (
-            <div className={styles.archive}>
-              <div className={styles.content_box}>
-                <div className={styles.content}>
-                  <h2 className={styles.title}>{props.title}</h2>
-                  <p className={`${styles.text} ${styles.margin_bottom}`}>{props.day}</p>
-                  <p className={styles.text}>{props.text}</p>
-                  <div className={`${styles.buttons} ${styles.flex_row}`} >
-                    <CharAnimationButton handleClick={() => MovePage(props.data[0])} msg="アンジュ視点" theme='ange' className={`${styles.text}`} />
-                    <CharAnimationButton handleClick={() => MovePage(props.data[1])} msg="リゼ視点" theme='lize' className={`${styles.text}`} />
-                    <CharAnimationButton handleClick={() => MovePage(props.data[2])} msg="戌亥視点" theme='inui' className={`${styles.text}`} />
-                  </div>
-                </div>
-              </div>
-              <div className={styles.frame_right}>
-                <img className={styles.img} src={`https://i.ytimg.com/vi/${props.id}/hqdefault.jpg`} />
-              </div>
-            </div>
-          )
-        }
-      })()}
+          </div>
+        </div>
+      </div>
     </>
   )
 };
