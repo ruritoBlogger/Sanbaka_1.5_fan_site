@@ -45,7 +45,7 @@ const MemberWindow = (props) => {
         {(() => {
           if( !props.isRight ) {
             return (
-              <ScrollNavigator msg="Scroll" />
+              <ScrollNavigator msg="Scroll" isOnlyPC={false} />
             )
           }
         })()}

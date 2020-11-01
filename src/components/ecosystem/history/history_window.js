@@ -66,7 +66,7 @@ const HistoryWindow = (props) => {
         if( !props.isTop ) {
           return (
             <div className={styles.ly_center}>
-              <ScrollNavigator msg={"Scroll"} />
+              <ScrollNavigator msg={"Scroll"} isOnlyPC={true} />
             </div>
           )
         }

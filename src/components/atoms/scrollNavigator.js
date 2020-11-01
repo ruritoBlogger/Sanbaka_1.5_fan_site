@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './scrollNavigator.module.scss';
 
 /**
  * スクロールを促すUIのコンポーネント
- * pc版でのみ表示させる
  * @param {string} props.msg スクロールを促すメッセージ
+ * @param {bool} props.isOnlyPC pcのみで表示させるかどうか
  */
 
 const ScrollNavigator = (props) => {
+  const [style, setStyle] = useState(props.isOnlyPC ? styles.scroll_pcOnly : styles.scroll)
   return (
-    <a className={styles.scroll} href="#">{props.msg}</a>
+    <a className={style} href="#">{props.msg}</a>
   )
 }
 
