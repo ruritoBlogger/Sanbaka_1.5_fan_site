@@ -33,3 +33,15 @@
 .right {
   text-align: right;
 }
+
+// for smartphone
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 7vw;
+  }
+
+  .content,
+  .link {
+    font-size: 4.5vw;
+  }
+}
