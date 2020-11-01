@@ -1,15 +1,9 @@
 import React from 'react';
 import styles from './archive.module.scss';
 
-const Button = (props) => {
-  return (
-    <>
-      <button className={`${props.button}`} onClick={props.handleClick}>
-        <p>{props.msg}</p>
-      </button>
-    </>
-  )
-}
+import charAnimationButton from '../atoms/button/charAnimationButton';
+import CharAnimationButton from '../atoms/button/charAnimationButton';
+
 
 /**
  * アーカイブコンポーネント
@@ -41,9 +35,9 @@ const Archive = (props) => {
                   <p className={`${styles.text} ${styles.margin_bottom}`}>{props.day}</p>
                   <p className={styles.text}>{props.text}</p>
                   <div className={`${styles.buttons} ${styles.flex_row}`} >
-                    <Button handleClick={() => MovePage(props.data[0])} msg="アンジュ視点" button={styles.button_ange} className={`${styles.text}`} />
-                    <Button handleClick={() => MovePage(props.data[1])} msg="リゼ視点" button={styles.button_lize} className={`${styles.text}`} />
-                    <Button handleClick={() => MovePage(props.data[2])} msg="戌亥視点" button={styles.button_inui} className={`${styles.text}`} />
+                    <CharAnimationButton handleClick={() => MovePage(props.data[0])} msg="アンジュ視点" theme='ange' className={`${styles.text}`} />
+                    <CharAnimationButton handleClick={() => MovePage(props.data[1])} msg="リゼ視点" theme='lize' className={`${styles.text}`} />
+                    <CharAnimationButton handleClick={() => MovePage(props.data[2])} msg="戌亥視点" theme='inui' className={`${styles.text}`} />
                   </div>
                 </div>
               </div>
@@ -58,9 +52,9 @@ const Archive = (props) => {
                   <p className={`${styles.text} ${styles.margin_bottom}`}>{props.day}</p>
                   <p className={styles.text}>{props.text}</p>
                   <div className={`${styles.buttons} ${styles.flex_row}`} >
-                    <Button handleClick={() => MovePage(props.data[0])} msg="アンジュ視点" button={styles.button_ange} className={`${styles.text}`} />
-                    <Button handleClick={() => MovePage(props.data[1])} msg="リゼ視点" button={styles.button_lize} className={`${styles.text}`} />
-                    <Button handleClick={() => MovePage(props.data[2])} msg="戌亥視点" button={styles.button_inui} className={`${styles.text}`} />
+                    <CharAnimationButton handleClick={() => MovePage(props.data[0])} msg="アンジュ視点" theme='ange' className={`${styles.text}`} />
+                    <CharAnimationButton handleClick={() => MovePage(props.data[1])} msg="リゼ視点" theme='lize' className={`${styles.text}`} />
+                    <CharAnimationButton handleClick={() => MovePage(props.data[2])} msg="戌亥視点" theme='inui' className={`${styles.text}`} />
                   </div>
                 </div>
               </div>
