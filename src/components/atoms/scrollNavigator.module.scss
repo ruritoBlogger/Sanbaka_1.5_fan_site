@@ -1,4 +1,5 @@
-.scroll {
+.scroll,
+.scroll_pcOnly {
   pointer-events: none;
   display: inline-block;
   position: absolute;
@@ -17,7 +18,8 @@
   writing-mode: vertical-lr;
 }
 
-.scroll::after {
+.scroll::after,
+.scroll_pcOnly::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -49,7 +51,7 @@
 
 // for smartphone
 @media screen and (max-width: 768px) {
-  .scroll .scroll_pcOnly {
+  .scroll_pcOnly {
     display: none;
   }
 }

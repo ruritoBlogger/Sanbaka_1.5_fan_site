@@ -15,7 +15,7 @@ const TopWindow = () => {
         </div>
       </div>
       <div className={styles.bl_scroll}>
-        <ScrollNavigator msg={"Scroll"} />
+        <ScrollNavigator msg={"Scroll"} isOnlyPC={true} />
       </div>
     </>
   );
