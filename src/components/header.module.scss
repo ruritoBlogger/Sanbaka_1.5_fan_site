@@ -9,8 +9,22 @@
   z-index: 10;
   display: flex;
   justify-content: center;
+}
 
-  @media screen and (min-width: 768px) {
+// for pc
+@media screen and (min-width: 768px) {
+  .content {
     background-color: rgba($color: #9D3757, $alpha: 1);
+  }
+
+  .smartphoneOnly {
+    display: none;
+  }
+}
+
+// for smartphone
+@media screen and (max-width: 767px) {
+  .pcOnly {
+    display: none;
   }
 }

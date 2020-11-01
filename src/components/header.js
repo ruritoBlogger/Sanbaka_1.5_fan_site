@@ -4,7 +4,6 @@ import HeaderButton from './parts/header_button';
 import MoveButton from './parts/move_button';
 import Headroom from 'react-headroom';
 import styles from './header.module.scss';
-import { isMobile } from 'react-device-detect';
 import Dialog from './dialog';
 
 const Header = () => {
@@ -38,24 +37,15 @@ const Header = () => {
     <>
       <div className={styles.root} id="scroll" >
         <Headroom>
-          {(() => {
-            if( !isMobile ) {
-              return (
-                <div className={styles.content}>
-                  <HeaderButton handleClick={ () => MoveHomePage()} msg="トップページ" />
-                  <HeaderButton handleClick={ () => MoveMemberPage()} msg="さんばかとは" />
-                  <HeaderButton handleClick={ () => MoveRoadPage()} msg="1.5周年までの道のり" />
-                  <HeaderButton handleClick={() => MoveSitePage()} msg="このサイトについて" />
-                </div>
-              )
-            } else {
-              return (
-                <div className={styles.content}>
-                  <Dialog />
-                </div>
-              )
-            }
-          })()}
+          <div className={`${styles.content} ${styles.pcOnly}`}>
+            <HeaderButton handleClick={ () => MoveHomePage()} msg="トップページ" />
+            <HeaderButton handleClick={ () => MoveMemberPage()} msg="さんばかとは" />
+            <HeaderButton handleClick={ () => MoveRoadPage()} msg="1.5周年までの道のり" />
+            <HeaderButton handleClick={() => MoveSitePage()} msg="このサイトについて" />
+          </div>
+          <div className={`${styles.content} ${styles.smartphoneOnly}`}>
+            <Dialog />
+          </div>
         </Headroom>
       </div>
     </>

@@ -1,5 +1,7 @@
 .frame,
 .frame_right {
+  width: 35vw;
+  height: 35vh;
   margin-top: 2vh;
   display: inline-block;
   transform: rotate(5deg);
@@ -10,15 +12,19 @@
 }
 
 .image {
-  height: 32vh;
-  width: 29vw;
+  width: 90%;
+  height: auto;
   object-fit: cover;
 }
 
 // for smartphone
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .frame,
   .frame_right {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     transform: none;
   }
 

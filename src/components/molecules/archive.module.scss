@@ -1,9 +1,10 @@
 .archive {
-  height: 36vh;
-  width: 70vw;
+  height: auto;
+  width: 90vw;
   margin-top: 2vh;
   margin-bottom: 4vh;
-  margin-left: 15vw;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: center;
 }
@@ -12,22 +13,13 @@
   flex-direction: row-reverse;
 }
 
-.frame {
-  margin-top: 2vh;
-  display: inline-block;
-  transform: rotate(5deg);
-}
-
-.frame_right {
-  margin-top: 2vh;
-  display: inline-block;
-  transform: rotate(-5deg);
-}
-
 .content_box {
-  height: 30vh;
-  width: 29vw;
-  margin: 2% 3%;
+  height: 94%;
+  width: 35vw;
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-bottom: 4%;
   background: #fff;
   box-shadow: 0 0 8px gray;
   border-radius: 15px;
@@ -72,12 +64,12 @@
 }
 
 // for smartphone
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .archive,
   .archive_reverse {
     flex-direction: column;
     width: 90%;
-    height: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
