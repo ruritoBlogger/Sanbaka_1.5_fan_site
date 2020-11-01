@@ -24,13 +24,6 @@
   transform: rotate(-5deg);
 }
 
-
-.img {
-  height: 32vh;
-  width: 29vw;
-  object-fit: cover;
-}
-
 .content_box {
   height: 30vh;
   width: 29vw;
@@ -76,4 +69,36 @@
 
 .marginTop {
   margin-top: 35px;
+}
+
+// for smartphone
+@media screen and (max-width: 768px) {
+  .archive,
+  .archive_reverse {
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content_box {
+    width: 90vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    font-size: 5vw;
+  }
+
+  .text {
+    font-size: 4vw;
+  }
+
+  .marginTop {
+    margin-top: 1.3vh;
+    margin-bottom: 1.3vh;
+  }
 }
