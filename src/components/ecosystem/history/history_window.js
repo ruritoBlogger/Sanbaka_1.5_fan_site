@@ -61,16 +61,16 @@ const HistoryWindow = (props) => {
             })()}
           </div>
         </div>
+        {(() => {
+          if( !props.isTop ) {
+            return (
+              <div className={styles.bl_scroll}>
+                <ScrollNavigator msg={"Scroll"} isOnlyPC={true} />
+              </div>
+            )
+          }
+        })()}
       </div>
-      {(() => {
-        if( !props.isTop ) {
-          return (
-            <div className={styles.ly_center}>
-              <ScrollNavigator msg={"Scroll"} isOnlyPC={true} />
-            </div>
-          )
-        }
-      })()}
     </>
   );
 };
