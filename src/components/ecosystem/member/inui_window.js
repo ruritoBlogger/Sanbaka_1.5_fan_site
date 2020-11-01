@@ -15,7 +15,7 @@ const InuiWindow = () => {
   return (
     <>
       <div className={`${styles.ly_center} ${styles.color_inui}`}>
-        <div className={`${styles.bl_window} ${styles.flex_column_onlySmartphone}`} >
+        <div className={`${styles.bl_window_small} ${styles.flex_column_onlySmartphone}`} >
           <CharMessage msg={'アハーーー↑↑↑'} path={'/image/inui.png'} />
           <div className={`${styles.paddingLeft_pcOnly} ${styles.marginTop}`}>
             <h3 className={`${styles.bl_window_subtitle}`}>公式つよつよケルベロス</h3>
