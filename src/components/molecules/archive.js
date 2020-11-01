@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './archive.module.scss';
 
-import charAnimationButton from '../atoms/button/charAnimationButton';
 import CharAnimationButton from '../atoms/button/charAnimationButton';
+import LurchThumbnail from '../atoms/thubnail/lurchThumbnail';
 
 
 /**
@@ -26,9 +26,7 @@ const Archive = (props) => {
         if( props.right ) {
           return (
             <div className={styles.archive}>
-              <div className={styles.frame}>
-                <img className={styles.img} src={`https://i.ytimg.com/vi/${props.id}/hqdefault.jpg`} />
-              </div>
+              <LurchThumbnail youtubeID={props.id} isSlantRight={false} />
               <div className={styles.content_box}>
                 <div className={styles.content}>
                   <h2 className={styles.title}>{props.title}</h2>
