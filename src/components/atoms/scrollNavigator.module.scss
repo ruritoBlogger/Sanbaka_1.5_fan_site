@@ -1,55 +1,55 @@
 .scroll {
-  display: none;
+  pointer-events: none;
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  z-index: 2;
+  padding: 10px 10px 110px;
+  overflow: hidden;
+  color: black;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  writing-mode: vertical-lr;
 }
 
-// for pc
-@media screen and (min-width: 768px) {
-  .scroll {
-    pointer-events: none;
-    display: inline-block;
-    position: absolute;
-    right: 40px;
-    bottom: 0;
-    z-index: 2;
-    padding: 10px 10px 110px;
-    overflow: hidden;
-    color: black;
-    font-size: 14px;
-    font-family: 'Josefin Sans', sans-serif;
-    line-height: 1;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    writing-mode: vertical-lr;
-  }
+.scroll::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  height: 100px;
+  background:black;
+  animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+}
 
-  .scroll::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 1px;
-    height: 100px;
-    background:black;
-    animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+@keyframes sdl {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0;
   }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
+}
 
-  @keyframes sdl {
-    0% {
-      transform: scale(1, 0);
-      transform-origin: 0 0;
-    }
-    50% {
-      transform: scale(1, 1);
-      transform-origin: 0 0;
-    }
-    50.1% {
-      transform: scale(1, 1);
-      transform-origin: 0 100%;
-    }
-    100% {
-      transform: scale(1, 0);
-      transform-origin: 0 100%;
-    }
+// for smartphone
+@media screen and (max-width: 768px) {
+  .scroll .scroll_pcOnly {
+    display: none;
   }
 }
