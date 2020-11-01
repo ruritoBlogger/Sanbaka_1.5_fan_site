@@ -8,6 +8,11 @@
   color: white;
 }
 
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
 .default_color {
   color: rgba($color: #9D3757, $alpha: 1);
 }
