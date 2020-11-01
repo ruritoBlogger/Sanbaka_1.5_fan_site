@@ -1,0 +1,29 @@
+.frame,
+.frame_right {
+  margin-top: 2vh;
+  display: inline-block;
+  transform: rotate(5deg);
+}
+
+.frame_right {
+  transform: rotate(-5deg);
+}
+
+.image {
+  height: 32vh;
+  width: 29vw;
+  object-fit: cover;
+}
+
+// for smartphone
+@media screen and (max-width: 768px) {
+  .frame,
+  .frame_right {
+    transform: none;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}

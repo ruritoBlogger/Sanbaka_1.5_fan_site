@@ -1,0 +1,85 @@
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.button::before,
+.button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+
+.button{
+  cursor: pointer;
+  display: inline-block;
+  width: 120px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:hover::after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.button::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+}
+
+.color_ange {
+  border: 2px solid rgba($color: #C83C35, $alpha: 0.9);
+  color: rgba($color: #C83C35, $alpha: 0.9);
+}
+
+.color_ange:hover::after {
+  background: rgba($color: #C83C35, $alpha: 0.9);
+}
+
+.color_lize {
+  border: 2px solid rgba($color: #42FFFF, $alpha: 0.9);
+  color: rgba($color: #42FFFF, $alpha: 0.9);
+}
+
+.color_lize:hover::after {
+  background: rgba($color: #42FFFF, $alpha: 0.9);
+}
+
+.color_inui {
+  border: 2px solid rgba($color: #9D3757, $alpha: 0.9);
+  color: rgba($color: #9D3757, $alpha: 0.9);
+}
+
+.color_inui:hover::after {
+  background: rgba($color: #9D3757, $alpha: 0.9);
+}
+
+// for smartphone
+@media screen and (max-width: 768px) {
+  .button {
+    width: 23vw;
+    font-size: 4vw;
+  }
+}
