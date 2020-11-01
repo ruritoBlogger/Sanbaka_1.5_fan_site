@@ -5,10 +5,10 @@ import styles from '../window_layout.module.scss';
 // HACK: atomsからのimportを簡略化する
 // ex: import ~ from '@/atoms/animationButtton
 
-import AnimationButton from '../../atoms/animationButton';
+import AnimationButton from '../../atoms/button/animationButton';
 import ScrollNavigator from '../../atoms/scrollNavigator';
-import LargeThumbnail from '../../atoms/largeThumbnail';
-import SmallThumbnail from '../../atoms/smallThumbnail';
+import LargeThumbnail from '../../atoms/thubnail/largeThumbnail';
+import SmallThumbnail from '../../atoms/thubnail/smallThumbnail';
 
 const HistoryWindow = (props) => {
   const history = useHistory();

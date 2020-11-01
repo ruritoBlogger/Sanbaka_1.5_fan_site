@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import AnimationButton from '../../atoms/animationButton';
+import AnimationButton from '../../atoms/button/animationButton';
 import ScrollNavigator from '../../atoms/scrollNavigator';
-import MainImage from '../../atoms/mainImage';
+import MainImage from '../../atoms/image/mainImage';
 import styles from '../window_layout.module.scss';
 
 const MemberWindow = (props) => {
