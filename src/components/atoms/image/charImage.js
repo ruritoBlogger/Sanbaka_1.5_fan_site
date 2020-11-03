@@ -10,8 +10,10 @@ import styles from './charImage.module.scss';
 
 const CharImage = (props) => {
   return (
-    <div className={styles.frame} >
-      <img className={styles.image} src={`${window.location.origin}` + props.path} />
+    <div className={styles.wrapper} >
+      <div className={styles.frame} >
+        <img className={styles.image} src={`${window.location.origin}` + props.path} />
+      </div>
     </div>
   )
 }
