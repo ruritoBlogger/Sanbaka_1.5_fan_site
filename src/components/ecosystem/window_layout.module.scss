@@ -123,6 +123,11 @@
   display: flex;
 }
 
+.bl_window_smallBlock {
+  width: 45vw;
+  height: 45vh;
+}
+
 .bl_window_title,
 .bl_window_content,
 .bl_window_subtitle {
@@ -171,6 +176,10 @@
 
   .bl_memberWindow{
     flex-direction: column;
+  }
+
+  .bl_window_smallBlock {
+    width: 100%;
   }
 
   .bl_window_title {
