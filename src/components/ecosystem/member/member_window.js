@@ -8,7 +8,7 @@ import styles from '../window_layout.module.scss';
 
 const MemberWindow = (props) => {
   const history = useHistory();
-  const [ padding, setPadding ] = useState(props.isRight ? styles.paddingLeft_pcOnly : styles.paddingRight_pcOnly);
+  const [ padding, setPadding ] = useState(props.isRight ? `${styles.bl_window_smallBlock} ${styles.paddingLeft_pcOnly}` : `${styles.bl_window_smallBlock} ${styles.paddingRight_pcOnly}`);
   const [ bl_window, setBl_window ] = useState(props.isRight ? `${styles.bl_window} ${styles.bl_memberWindow}` : `${styles.bl_window} ${styles.bl_memberWindow} ${styles.flex_row_reverse}`)
 
   const MoveMemberPage = () => {

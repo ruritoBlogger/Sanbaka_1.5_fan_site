@@ -1,14 +1,21 @@
+.wrapper {
+	width: 100%;
+	max-width: 800px;
+}
+
 .frame {
 	display: inline-block;
 	position: relative;
 	text-align: center;
-	height: 50vh;
-	width: 35vw;
+	height: 100%;
+	width: 100%;
 }
 
 .image {
-  height: 45vh;
-  width: 30vw;
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   object-fit: cover;
 }
 
@@ -16,9 +23,5 @@
 @media screen and (max-width: 767px) {
   .frame {
     margin-bottom: 15px;
-  }
-
-  .image {
-    width: 80vw;
   }
 }

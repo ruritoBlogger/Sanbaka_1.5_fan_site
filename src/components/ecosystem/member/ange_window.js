@@ -15,7 +15,7 @@ const AngeWindow = () => {
   return (
     <>
       <div className={`${styles.ly_center} ${styles.color_ange}`}>
-        <div className={`${styles.bl_window} ${styles.flex_column_onlySmartphone}`} >
+        <div className={`${styles.bl_window_small} ${styles.flex_column_onlySmartphone}`} >
           <CharMessage msg={'おまたせ、待った？'} path={'/image/ange.png'} />
           <div className={`${styles.paddingLeft_pcOnly} ${styles.marginTop}`}>
             <h3 className={`${styles.bl_window_subtitle}`}>公式美少女錬金術師ライバー</h3>

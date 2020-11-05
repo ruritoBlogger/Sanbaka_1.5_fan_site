@@ -102,15 +102,30 @@
 
 /* block */
 
-.bl_window {
+.bl_window,
+.bl_window_small {
   width: 80%;
-  height: 80%;
-  margin-left: 10%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bl_window {
   padding-top: 18%;
+}
+
+.bl_window_small {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .bl_memberWindow{
   display: flex;
+}
+
+.bl_window_smallBlock {
+  width: 45vw;
+  height: 45vh;
 }
 
 .bl_window_title,
@@ -161,6 +176,10 @@
 
   .bl_memberWindow{
     flex-direction: column;
+  }
+
+  .bl_window_smallBlock {
+    width: 100%;
   }
 
   .bl_window_title {
