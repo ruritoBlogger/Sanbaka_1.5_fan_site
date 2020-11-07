@@ -12,6 +12,7 @@
 }
 
 .marginTop {
+  height: auto;
   margin-top: 8%;
 }
 
@@ -95,7 +96,7 @@
 /* layout */
 
 .ly_center {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: grid;
 }
@@ -116,7 +117,7 @@
 
 .bl_window_small {
   padding-top: 10%;
-  padding-bottom: 10%;
+  height: auto;
 }
 
 .bl_memberWindow{
@@ -296,4 +297,9 @@
   .paddingRight_pcOnly {
     padding-left: 8%;
   }
+}
+
+// for tablet
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+
 }

@@ -1,8 +1,8 @@
 .archive {
   height: auto;
   width: 90vw;
-  margin-top: 4vh;
-  margin-bottom: 7vh;
+  padding-top: 4vh;
+  padding-bottom: 8vh;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -13,10 +13,14 @@
   flex-direction: row-reverse;
 }
 
+.image_box {
+  width: 45vw;
+}
+
 .content_box {
-  height: 94%;
-  width: 35vw;
-  margin-top: 6%;
+  height: 92%;
+  width: 42vw;
+  margin-top: 8%;
   margin-left: 3%;
   margin-right: 3%;
   padding-bottom: 4%;
@@ -74,7 +78,8 @@
     margin-right: auto;
   }
 
-  .content_box {
+  .content_box,
+  .image_box {
     width: 90vw;
     height: auto;
     margin-left: auto;

@@ -16,7 +16,9 @@ const LizeWindow = () => {
       <div className={`${styles.ly_center} ${styles.color_lize}`}>
         {/* FIXME: こんなCSSの重ねがけ...あんまりだよ... */}
         <div className={`${styles.bl_window_small} ${styles.flex_row_reverse} ${styles.flex_column_onlySmartphone}`} >
-          <CharMessage msg={'あんでだよぉーー！！'} path={'/image/lize.png'} />
+          <div className={styles.marginTop} >
+            <CharMessage msg={'あんでだよぉーー！！'} path={'/image/lize.png'} />
+          </div>
           <div className={`${styles.paddingRight_pcOnly} ${styles.marginTop}`}>
             <h3 className={styles.bl_window_subtitle}>文武両道人望ゲキアツプリンセス</h3>
             <h2 className={styles.bl_window_title}>リゼ・ヘルエスタ</h2>

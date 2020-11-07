@@ -25,7 +25,9 @@ const Archive = (props) => {
   return (
     <>
       <div className={flexStyle}>
-        <LurchThumbnail youtubeID={props.id} isSlantRight={props.right} />
+        <div className={styles.image_box} >
+          <LurchThumbnail youtubeID={props.id} isSlantRight={props.right} />
+        </div>
         <div className={styles.content_box}>
           <div className={styles.content}>
             <h2 className={styles.title}>{props.title}</h2>
