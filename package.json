@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "firebase": "^7.21.0",
+    "firebase-tools": "^8.15.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router": "^5.2.0",
