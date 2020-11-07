@@ -23,12 +23,12 @@ const MemberWindow = (props) => {
           <MainImage path={'/image/sanbaka.png'} />
           <div className={padding}>
             <div>
-              <h2 className={styles.bl_window_title}>さんばかとは</h2>
+              <h2 className={styles.bl_memberWindow_title}>さんばかとは</h2>
               {/* HACK: CSSの部分でカラーコードを共通化する */}
-              <p className={styles.bl_window_content}>サンバカーニバルの略であり,<br/> 以下の３人によって結成されたユニット.</p>
-              <p className={`${styles.bl_window_content} ${styles.font_ange}`}><br/>アンジュ・カトリーナ</p>
-              <p className={`${styles.bl_window_content} ${styles.font_lize}`}>リゼ・ヘルエスタ</p>
-              <p className={`${styles.bl_window_content} ${styles.font_inui}`}>戌亥とこ</p>
+              <p className={styles.bl_memberWindow_content}>サンバカーニバルの略であり,<br/> 以下の３人によって結成されたユニット.</p>
+              <p className={`${styles.bl_memberWindow_content} ${styles.font_ange}`}><br/>アンジュ・カトリーナ</p>
+              <p className={`${styles.bl_memberWindow_content} ${styles.font_lize}`}>リゼ・ヘルエスタ</p>
+              <p className={`${styles.bl_memberWindow_content} ${styles.font_inui}`}>戌亥とこ</p>
             </div>
             {(() => {
               if( props.isRight) {

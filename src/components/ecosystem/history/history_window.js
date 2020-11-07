@@ -35,8 +35,8 @@ const HistoryWindow = (props) => {
           </div>
           <div className={styles.paddingRight_pcOnly}>
             {/* FIXME: 解像度によっては変な部分で改行される */}
-            <h2 className={styles.bl_window_title}>1.5周年までの道のり</h2>
-            <p className={styles.bl_window_content}>
+            <h2 className={styles.bl_historyWindow_title}>1.5周年までの道のり</h2>
+            <p className={styles.bl_historyWindow_content}>
               さんばかが歩んできた道のりを<br/>
               アーカイブと一緒に振り返ってみるページ.<br />
               初コラボからいくつかアーカイブを<br/>

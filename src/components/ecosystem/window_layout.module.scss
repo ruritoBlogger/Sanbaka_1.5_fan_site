@@ -123,6 +123,31 @@
   display: flex;
 }
 
+.bl_memberWindow_title,
+.bl_memberWindow_content,
+.bl_historyWindow_title,
+.bl_historyWindow_content {
+  text-align: center;
+}
+
+.bl_memberWindow_title {
+  font-size: min(3.5vw, 45px);
+  margin-bottom: 15px;
+}
+
+.bl_memberWindow_content {
+  font-size: min(2.0vw, 27px);
+}
+
+.bl_historyWindow_title {
+  font-size: min(3.5vw, 45px);
+  margin-bottom: 15px;
+}
+
+.bl_historyWindow_content {
+  font-size: min(1.8vw, 27px);
+}
+
 .bl_window_smallBlock {
   width: 45vw;
   height: 45vh;
@@ -182,7 +207,9 @@
     width: 100%;
   }
 
-  .bl_window_title {
+  .bl_window_title,
+  .bl_memberWindow_title,
+  .bl_historyWindow_title {
     font-size: 8vw;
     letter-spacing: 5px;
     margin-bottom: 70px;
@@ -192,7 +219,9 @@
     font-size: 6.5vw;
   }
 
-  .bl_window_content {
+  .bl_window_content,
+  .bl_memberWindow_content,
+  .bl_historyWindow_content {
     font-size: 4vw;
   }
 
@@ -213,7 +242,6 @@
   }
 
   .font_ange, .font_lize, .font_inui {
-    font-size: 6vw;
     font-weight: 500;
   }
 
@@ -235,13 +263,13 @@
   }
 
   .bl_window_title {
-    font-size: 40px;
+    font-size: min(4.5vw, 60px);
     letter-spacing: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 80px;
   }
 
   .bl_window_content {
-    font-size: 27px;
+    font-size: min(2.5vw, 35px);
   }
 
   .bl_historyWindow_smallImg {
@@ -257,7 +285,7 @@
   }
 
   .font_ange, .font_lize, .font_inui {
-    font-size: 30px;
+    font-size: min(2.2vw, 32px);
     font-weight: 600;
   }
 
