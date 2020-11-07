@@ -1,8 +1,8 @@
 .archive {
   height: auto;
   width: 90vw;
-  margin-top: 2vh;
-  margin-bottom: 4vh;
+  margin-top: 4vh;
+  margin-bottom: 7vh;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -16,7 +16,7 @@
 .content_box {
   height: 94%;
   width: 35vw;
-  margin-top: 2%;
+  margin-top: 6%;
   margin-left: 3%;
   margin-right: 3%;
   padding-bottom: 4%;
@@ -33,13 +33,13 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: min(2.3vw, 30px);
   letter-spacing: 5px;
   margin-bottom: 20px;
 }
 
 .text {
-  font-size: 18px;
+  font-size: min(1.3vw, 18px);
 }
 
 .flex_column {
