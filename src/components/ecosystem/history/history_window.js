@@ -52,7 +52,7 @@ const HistoryWindow = (props) => {
               } else {
                 return (
                   <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
-                    <p className={styles.bl_window_content}>
+                    <p className={styles.bl_historyWindow_content}>
                       マイクラコラボが中心となってます.
                     </p>
                   </div>
