@@ -1,6 +1,5 @@
 import React from 'react';
 import ScrollNavigator from '../../atoms/scrollNavigator';
-import scrollNavigator from '../../atoms/scrollNavigator';
 import styles from '../window_layout.module.scss';
 
 const TopWindow = () => (
