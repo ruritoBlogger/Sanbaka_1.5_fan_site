@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styles from './lurchThumbnail.module.scss';
 
 /**
@@ -11,10 +11,10 @@ import styles from './lurchThumbnail.module.scss';
 const LurchThumbnail = (props) => {
   const [frame, setFrame] = useState(props.isSlantRight ? styles.frame_right : styles.frame);
   return (
-      <div className={frame} >
-        <img className={styles.image} src={"https://i.ytimg.com/vi/" + props.youtubeID + "/hqdefault.jpg"} />
-      </div>
-  )
-}
+    <div className={frame}>
+      <img className={styles.image} src={`https://i.ytimg.com/vi/${props.youtubeID}/hqdefault.jpg`} />
+    </div>
+  );
+};
 
 export default LurchThumbnail;

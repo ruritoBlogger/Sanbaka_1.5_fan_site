@@ -8,14 +8,12 @@ import styles from './charImage.module.scss';
  * ex: '/image/sanbaka.png'
  */
 
-const CharImage = (props) => {
-  return (
-    <div className={styles.wrapper} >
-      <div className={styles.frame} >
-        <img className={styles.image} src={`${window.location.origin}` + props.path} />
-      </div>
+const CharImage = (props) => (
+  <div className={styles.wrapper}>
+    <div className={styles.frame}>
+      <img className={styles.image} src={`${window.location.origin}${props.path}`} />
     </div>
-  )
-}
+  </div>
+);
 
 export default CharImage;

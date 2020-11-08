@@ -10,16 +10,13 @@ import Balloon from '../atoms/balloon';
  * @param {string} props.msg 吹き出しに挿入するメッセージ
  */
 
-const CharMessage = (props) => {
-
-  return (
-    <>
-      <div className={styles.bl_charMessage}>
-        <Balloon msg={props.msg} />
-        <CharImage path={props.path} />
-      </div>
-    </>
-  );
-}
+const CharMessage = (props) => (
+  <>
+    <div className={styles.bl_charMessage}>
+      <Balloon msg={props.msg} />
+      <CharImage path={props.path} />
+    </div>
+  </>
+);
 
 export default CharMessage;

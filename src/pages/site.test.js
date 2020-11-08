@@ -9,4 +9,3 @@ describe('Site', () => {
     expect(screen.getByText('Site', { exact: false })).toBeInTheDocument;
   });
 });
-

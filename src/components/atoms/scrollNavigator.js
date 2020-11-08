@@ -8,10 +8,10 @@ import styles from './scrollNavigator.module.scss';
  */
 
 const ScrollNavigator = (props) => {
-  const [style, setStyle] = useState(props.isOnlyPC ? styles.scroll_pcOnly : styles.scroll)
+  const [style, setStyle] = useState(props.isOnlyPC ? styles.scroll_pcOnly : styles.scroll);
   return (
     <a className={style} href="#">{props.msg}</a>
-  )
-}
+  );
+};
 
 export default ScrollNavigator;

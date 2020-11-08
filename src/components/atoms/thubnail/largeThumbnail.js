@@ -8,12 +8,10 @@ import styles from './largeThumbnail.module.scss';
 
 // FIXME: スマホによってはUIが崩れる
 
-const LargeThumbnail = (props) => {
-  return (
-    <div className={styles.frame} >
-      <img className={styles.image} src={"https://i.ytimg.com/vi/" + props.youtubeID + "/hqdefault.jpg"} />
-    </div>
-  )
-}
+const LargeThumbnail = (props) => (
+  <div className={styles.frame}>
+    <img className={styles.image} src={`https://i.ytimg.com/vi/${props.youtubeID}/hqdefault.jpg`} />
+  </div>
+);
 
 export default LargeThumbnail;
