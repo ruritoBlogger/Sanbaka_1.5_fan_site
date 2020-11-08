@@ -2,7 +2,7 @@ import React, { useRef, useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
 import Menu from '@material-ui/icons/Menu';
 import styles from './dialog.module.scss';
-import HeaderButton from './parts/header_button';
+import HeaderButton from './parts/headerButton';
 
 const Dialog = () => {
   const ref = useRef(null);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 
-import HistoryWindow from './history_window';
+import HistoryWindow from './historyWindow';
 
 describe('HistoryWindow Component', () => {
   test('check HistoryWindow behavior', () => {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import Headroom from 'react-headroom';
-import HeaderButton from './parts/header_button';
-import MoveButton from './parts/move_button';
+import HeaderButton from './parts/headerButton';
+import MoveButton from './parts/moveButton';
 import styles from './header.module.scss';
 import Dialog from './dialog';
 

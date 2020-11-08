@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './move_button.module.scss';
+import styles from './moveButton.module.scss';
 
 const MoveButton = (props) => (
   <>

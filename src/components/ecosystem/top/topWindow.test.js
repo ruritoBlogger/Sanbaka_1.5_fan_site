@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 
-import TopWindow from './top_window';
+import TopWindow from './topWindow';
 
 describe('TopWindow Component', () => {
   test('check TopWindow behavior', () => {

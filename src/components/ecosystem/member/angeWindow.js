@@ -1,5 +1,5 @@
 import React from 'react';
-import IconButton from '../../atoms/button/icon_button';
+import IconButton from '../../atoms/button/iconButton';
 import CharMessage from '../../molecules/charMessage';
 import styles from '../window_layout.module.scss';
 
