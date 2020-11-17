@@ -38,7 +38,8 @@ const Dialog = () => {
 
   const showModal = useCallback(() => {
     if (ref.current) {
-      ref.current.showModal();
+      console.log(ref)
+      ref.current.className = styles.root;
       document.addEventListener('mousewheel', scrollControl, { passive: false });
       document.addEventListener('touchmove', scrollControl, { passive: false });
     }
@@ -46,7 +47,7 @@ const Dialog = () => {
 
   const closeModal = useCallback(() => {
     if (ref.current) {
-      ref.current.close();
+      ref.current.className = ""
       document.removeEventListener('mousewheel', scrollControl, { passive: false });
       document.removeEventListener('touchmove', scrollControl, { passive: false });
     }
@@ -64,7 +65,7 @@ const Dialog = () => {
         </button>
       </div>
 
-      <dialog ref={ref} className={styles.root}>
+      <div ref={ref}>
         <div className={styles.header}>
           <button type="button" className={`${styles.icon_button} ${styles.white}`} onClick={closeModal}>
             <Menu />
@@ -77,7 +78,7 @@ const Dialog = () => {
           <HeaderButton handleClick={() => MoveRoadPage()} msg="1.5周年までの道のり" />
           <HeaderButton handleClick={() => MoveSitePage()} msg="このサイトについて" />
         </div>
-      </dialog>
+      </div>
     </>
   );
 };
