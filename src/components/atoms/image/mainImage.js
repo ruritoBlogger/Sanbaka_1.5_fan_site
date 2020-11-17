@@ -8,14 +8,12 @@ import styles from './mainImage.module.scss';
  * ex: '/image/sanbaka.png'
  */
 
-const MainImage = (props) => {
-  return (
-    <div className={styles.wrapper} >
-      <div className={styles.frame} >
-        <img className={styles.image} src={`${window.location.origin}` + props.path} />
-      </div>
+const MainImage = (props) => (
+  <div className={styles.wrapper}>
+    <div className={styles.frame}>
+      <img className={styles.image} src={`${window.location.origin}${props.path}`} />
     </div>
-  )
-}
+  </div>
+);
 
 export default MainImage;

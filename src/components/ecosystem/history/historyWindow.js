@@ -14,13 +14,13 @@ const HistoryWindow = (props) => {
   const history = useHistory();
 
   const MoveHistoryPage = () => {
-    window.scrollTo({top: 0});
-    history.push("/road");
-  }
+    window.scrollTo({ top: 0 });
+    history.push('/road');
+  };
   return (
     <>
       <div className={`${styles.ly_center} ${styles.flex_column}`}>
-        <div className={`${styles.bl_window} ${styles.flex_row_reverse} ${styles.flex_column_onlySmartphone}`} >
+        <div className={`${styles.bl_window} ${styles.flex_row_reverse} ${styles.flex_column_onlySmartphone}`}>
           <div className={styles.flex_column}>
             <div className={styles.flex_row}>
               <SmallThumbnail youtubeID="pOXjuyKjD98" />
@@ -37,37 +37,39 @@ const HistoryWindow = (props) => {
             {/* FIXME: 解像度によっては変な部分で改行される */}
             <h2 className={styles.bl_historyWindow_title}>1.5周年までの道のり</h2>
             <p className={styles.bl_historyWindow_content}>
-              さんばかが歩んできた道のりを<br/>
-              アーカイブと一緒に振り返ってみるページ.<br />
-              初コラボからいくつかアーカイブを<br/>
+              さんばかが歩んできた道のりを
+              <br />
+              アーカイブと一緒に振り返ってみるページ.
+              <br />
+              初コラボからいくつかアーカイブを
+              <br />
               ピックアップしています.
             </p>
             {(() => {
-              if( props.isTop ) {
-                return(
-                  <div className={`${styles.centerComponent} ${styles.paddingBottom} ${styles.marginTop}`}>
-                    <AnimationButton handleClick={ () => MoveHistoryPage()} msg="もっと詳しく" />
-                  </div>
-                )
-              } else {
+              if (props.isTop) {
                 return (
-                  <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
-                    <p className={styles.bl_historyWindow_content}>
-                      マイクラコラボが中心となってます.
-                    </p>
+                  <div className={`${styles.centerComponent} ${styles.paddingBottom} ${styles.marginTop}`}>
+                    <AnimationButton handleClick={() => MoveHistoryPage()} msg="もっと詳しく" />
                   </div>
-                )
+                );
               }
+              return (
+                <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
+                  <p className={styles.bl_historyWindow_content}>
+                    マイクラコラボが中心となってます.
+                  </p>
+                </div>
+              );
             })()}
           </div>
         </div>
         {(() => {
-          if( !props.isTop ) {
+          if (!props.isTop) {
             return (
               <div className={styles.bl_scroll}>
-                <ScrollNavigator msg={"Scroll"} isOnlyPC={false} />
+                <ScrollNavigator msg="Scroll" isOnlyPC={false} />
               </div>
-            )
+            );
           }
         })()}
       </div>

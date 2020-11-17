@@ -9,13 +9,10 @@ import styles from './animationButton.module.scss';
 
 // TODO: スマホ版でのボタンのサイズなどを調整する
 
-const AnimationButton = (props) => {
-  return (
-    <button className={styles.button} onClick={props.handleClick}>
-      {props.msg}
-    </button>
-  )
-};
+const AnimationButton = (props) => (
+  <button type="button" className={styles.button} onClick={props.handleClick}>
+    {props.msg}
+  </button>
+);
 
 export default AnimationButton;
-

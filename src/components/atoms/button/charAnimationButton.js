@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './charAnimationButton.module.scss';
 
 /**
@@ -22,15 +22,15 @@ const CharAnimationButton = (props) => {
     } else {
       setStyle(`${styles.color_inui} ${styles.button}`);
     }
-  },[])
+  }, []);
 
   return (
     <>
-      <button className={style} onClick={props.handleClick}>
+      <button type="button" className={style} onClick={props.handleClick}>
         <p>{props.msg}</p>
       </button>
     </>
-  )
-}
+  );
+};
 
 export default CharAnimationButton;

@@ -6,14 +6,12 @@ import styles from './smallThumbnail.module.scss';
  * @param {string} props.youtubeID 表示したい画像のyoutubeID
  */
 
- // FIXME: スマホによってはUIが崩れる
+// FIXME: スマホによってはUIが崩れる
 
-const SmallThumbnail = (props) => {
-  return (
-    <div className={styles.frame} >
-      <img className={styles.image} src={"https://i.ytimg.com/vi/" + props.youtubeID + "/hqdefault.jpg"} />
-    </div>
-  )
-}
+const SmallThumbnail = (props) => (
+  <div className={styles.frame}>
+    <img className={styles.image} src={`https://i.ytimg.com/vi/${props.youtubeID}/hqdefault.jpg`} />
+  </div>
+);
 
 export default SmallThumbnail;

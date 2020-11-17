@@ -1,17 +1,18 @@
-import path from 'path'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const Dotenv = require('dotenv-webpack');
-const src  = path.resolve(__dirname, 'src')
-const pub  = path.resolve(__dirname, 'public')
+
+const src = path.resolve(__dirname, 'src');
+const pub = path.resolve(__dirname, 'public');
 
 export default {
   mode: 'development',
-  entry: src + '/index.js',
+  entry: `${src}/index.js`,
 
   output: {
     path: pub,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
 
   module: {
@@ -19,22 +20,20 @@ export default {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: ['babel-loader']
+        loader: ['babel-loader'],
       },
       {
         test: /\.scss/,
         use: [
-          "style-loader",
+          'style-loader',
           {
-            loader: "css-loader",
-            options: { url: false }
+            loader: 'css-loader',
+            options: { url: false },
           },
-          {
-            loader: 'sass-loader',
-          }
-        ]
-      }
-    ]
+          'sass-loader',
+        ],
+      },
+    ],
   },
 
   devServer: {
@@ -45,14 +44,14 @@ export default {
   },
 
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: pub + '/index.html',
-      filename: 'index.html'
+      template: `${pub}/index.html`,
+      filename: 'index.html',
     }),
-    new Dotenv()
-  ]
-}
+    new Dotenv(),
+  ],
+};
