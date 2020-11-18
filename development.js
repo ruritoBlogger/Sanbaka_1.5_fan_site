@@ -8,7 +8,7 @@ const pub = path.resolve(__dirname, 'public');
 
 export default {
   mode: 'development',
-  entry: `${src}/index.js`,
+  entry: `${src}/index.tsx`,
 
   output: {
     path: pub,
