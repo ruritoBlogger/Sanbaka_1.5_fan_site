@@ -49,7 +49,7 @@ export default {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: `${pub}/index.html`,
+      template: `${pub}/index.base.html`,
       filename: 'index.html',
     }),
     new Dotenv(),
