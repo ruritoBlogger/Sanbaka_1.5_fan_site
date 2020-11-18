@@ -41,6 +41,7 @@
     "@testing-library/react": "^11.0.4",
     "@testing-library/react-hooks": "^3.4.1",
     "@types/react": "^16.9.56",
+    "@types/react-router-dom": "^5.1.6",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.3.0",
     "dotenv-webpack": "^3.0.0",
