@@ -8,7 +8,7 @@ const pub = path.resolve(__dirname, 'public');
 
 export default {
   mode: 'development',
-  entry: `${src}/index.js`,
+  entry: `${src}/index.tsx`,
 
   output: {
     path: pub,
@@ -18,7 +18,7 @@ export default {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|ts)x?$/,
         exclude: /node_modules/,
         loader: ['babel-loader'],
       },
@@ -44,7 +44,7 @@ export default {
   },
 
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
 
   plugins: [
