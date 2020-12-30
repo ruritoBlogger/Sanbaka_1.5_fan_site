@@ -18,9 +18,11 @@ const MemberWindow = (props) => {
 
   return (
     <>
-      <div className={styles.ly_center_top}>
+      <div className={styles.ly_center}>
         <div className={bl_window}>
-          <MainImage path="/image/sanbaka.png" />
+          <div className={styles.bl_window_smallBlock} >
+            <MainImage path="/image/sanbaka.png" />
+          </div>
           <div className={padding}>
             <div>
               <h2 className={styles.bl_memberWindow_title}>さんばかとは</h2>

@@ -35,13 +35,13 @@
 }
 
 // for smartphone
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .subtitle {
-    font-size: 7vw;
+    font-size: 5vw;
   }
 
   .content,
   .link {
-    font-size: 4.5vw;
+    font-size: 3vw;
   }
 }

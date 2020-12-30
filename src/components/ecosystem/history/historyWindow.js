@@ -19,7 +19,7 @@ const HistoryWindow = (props) => {
   };
   return (
     <>
-      <div className={`${styles.ly_center_top} ${styles.flex_column}`}>
+      <div className={`${styles.ly_center} ${styles.flex_column}`}>
         <div className={`${styles.bl_window} ${styles.flex_row_reverse} ${styles.flex_column_onlySmartphone}`}>
           <div className={styles.flex_column}>
             <div className={styles.flex_row}>

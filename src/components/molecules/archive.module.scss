@@ -68,7 +68,8 @@
 }
 
 // for smartphone
-@media screen and (max-width: 767px) {
+// @media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .archive,
   .archive_reverse {
     flex-direction: column;

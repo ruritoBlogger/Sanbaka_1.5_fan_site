@@ -13,8 +13,9 @@
 }
 
 // for smartphone
-@media screen and (max-width: 767px) {
+// @media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .text {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }

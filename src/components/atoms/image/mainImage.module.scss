@@ -5,7 +5,10 @@
 
 .frame {
 	display: inline-block;
-	position: relative;
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 50px;
 }
 
@@ -29,8 +32,10 @@
 }
 
 // for pc
-@media screen and (min-width: 768px) {
+// @media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .frame {
     margin-bottom: 15px;
   }
 }
+
