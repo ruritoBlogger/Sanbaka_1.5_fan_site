@@ -18,7 +18,7 @@ const MemberWindow = (props) => {
 
   return (
     <>
-      <div className={styles.ly_center}>
+      <div className={styles.ly_center_top}>
         <div className={bl_window}>
           <MainImage path="/image/sanbaka.png" />
           <div className={padding}>

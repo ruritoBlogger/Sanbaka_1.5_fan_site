@@ -17,7 +17,7 @@ const InuiWindow = () => {
       <div className={`${styles.ly_center} ${styles.color_inui}`}>
         <div className={`${styles.bl_window_small} ${styles.flex_column_onlySmartphone}`}>
           <CharMessage msg="アハーーー↑↑↑" path="/image/inui.png" />
-          <div className={`${styles.paddingLeft_pcOnly} ${styles.marginTop}`}>
+          <div className={styles.paddingLeft_pcOnly}>
             <h3 className={`${styles.bl_window_subtitle}`}>公式つよつよケルベロス</h3>
             <h2 className={`${styles.bl_window_title}`}>戌亥とこ</h2>
             <p className={`${styles.bl_window_content}`}>
@@ -32,7 +32,7 @@ const InuiWindow = () => {
               <br />
               満月の夜は何か不思議な事が起きるらしい？
             </p>
-            <div className={`${styles.flex_row} ${styles.centerComponent} ${styles.marginTop}`}>
+            <div className={`${styles.flex_row} ${styles.centerComponent}`}>
               <IconButton handleClick={() => MoveToYoutube()} link={`${window.location.origin}/image/youtube.png`} />
               <IconButton handleClick={() => MoveToTwitter()} link={`${window.location.origin}/image/twitter.png`} />
             </div>

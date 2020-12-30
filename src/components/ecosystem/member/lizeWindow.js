@@ -17,7 +17,7 @@ const LizeWindow = () => {
         {/* FIXME: こんなCSSの重ねがけ...あんまりだよ... */}
         <div className={`${styles.bl_window_small} ${styles.flex_row_reverse} ${styles.flex_column_onlySmartphone}`}>
           <CharMessage msg="あんでだよぉーー！！" path="/image/lize.png" />
-          <div className={`${styles.paddingRight_pcOnly} ${styles.marginTop}`}>
+          <div className={styles.paddingRight_pcOnly}>
             <h3 className={styles.bl_window_subtitle}>文武両道人望ゲキアツプリンセス</h3>
             <h2 className={styles.bl_window_title}>リゼ・ヘルエスタ</h2>
             <p className={styles.bl_window_content}>
@@ -31,7 +31,7 @@ const LizeWindow = () => {
               <br />
               日々鍛錬や人とのコミュニケーションを大事にしている.
             </p>
-            <div className={`${styles.flex_row} ${styles.centerComponent} ${styles.marginTop}`}>
+            <div className={`${styles.flex_row} ${styles.centerComponent}`}>
               <IconButton handleClick={() => MoveToYoutube()} link={`${window.location.origin}/image/youtube.png`} />
               <IconButton handleClick={() => MoveToTwitter()} link={`${window.location.origin}/image/twitter.png`} />
             </div>

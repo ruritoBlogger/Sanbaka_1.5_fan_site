@@ -12,7 +12,6 @@
 }
 
 .marginTop {
-  height: auto;
   margin-top: 8%;
 }
 
@@ -95,10 +94,15 @@
 
 /* layout */
 
-.ly_center {
-  height: 100%;
-  width: 100%;
+.ly_center,
+.ly_center_top {
+  height: 100vh;
+  width: 100vw;
   display: grid;
+}
+
+.ly_center_top {
+  height: 93.5vh;
 }
 
 /* block */
@@ -112,7 +116,7 @@
 }
 
 .bl_window {
-  padding-top: 18%;
+  padding-top: 9%;
 }
 
 .bl_window_small {
@@ -259,9 +263,6 @@
 
 // for pc
 @media screen and (min-width: 768px) {
-  .bl_window {
-    height: 50vh;
-  }
 
   .bl_window_title {
     font-size: min(4.5vw, 60px);
@@ -295,7 +296,7 @@
   }
 
   .paddingRight_pcOnly {
-    padding-left: 8%;
+    padding-right: 8%;
   }
 }
 

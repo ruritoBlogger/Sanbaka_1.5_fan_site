@@ -4,7 +4,7 @@ import styles from '../window_layout.module.scss';
 
 const TopWindow = () => (
   <>
-    <div className={styles.ly_center}>
+    <div className={styles.ly_center_top}>
       <div className={styles.bl_window}>
         {/* FIXME: 解像度によっては変な部分で改行される */}
         <h2 className={styles.bl_window_title}>
