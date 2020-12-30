@@ -16,7 +16,7 @@ import LurchThumbnail from '../atoms/thubnail/lurchThumbnail';
  */
 const Archive = (props) => {
   const MovePage = (data) => {
-    window.open(`https://youtu.be/${data.key}?autoplay=0&t=${data.time}`, '_blank');
+    window.open(`https://youtu.be/${data.key}?autoplay=0`, '_blank');
   };
 
   const [flexStyle, setFlexStyle] = useState(props.right ? `${styles.archive} ${styles.archive_reverse}` : styles.archive);
