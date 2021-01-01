@@ -1,0 +1,30 @@
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  padding: 0px 30px;
+}
+
+.button {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  font-size: 25px;
+  background: transparent;
+  padding-bottom: 10px;
+  color: #fff;
+  &:hover {
+    background-color: #fff;
+    color: rgba($color: #9D3757, $alpha: 1);
+  }
+  &:focus {
+    outline: none;
+  }
+}
