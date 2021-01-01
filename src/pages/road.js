@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import HistoryWindow from '../components/ecosystem/history/historyWindow';
-import Archive from '../components/molecules/archive';
-import Header from '../components/header';
+import HistoryWindow from '../ecosystem/history/historyWindow';
+import Archive from '../molecules/archive';
+import Header from '../organisms/header';
 
 gsap.registerPlugin(ScrollTrigger);
 

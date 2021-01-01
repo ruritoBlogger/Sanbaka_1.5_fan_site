@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { isMobile } from 'react-device-detect';
-import TopWindow from '../components/ecosystem/top/topWindow';
-import MemberWindow from '../components/ecosystem/member/memberWindow';
-import HistoryWindow from '../components/ecosystem/history/historyWindow';
-import Header from '../components/header';
+import TopWindow from '../ecosystem/top/topWindow';
+import MemberWindow from '../ecosystem/member/memberWindow';
+import HistoryWindow from '../ecosystem/history/historyWindow';
+import Header from '../organisms/header';
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import MemberWindow from '../components/ecosystem/member/memberWindow';
-import AngeWindow from '../components/ecosystem/member/angeWindow';
-import LizeWindow from '../components/ecosystem/member/lizeWindow';
-import InuiWindow from '../components/ecosystem/member/inuiWindow';
-import Header from '../components/header';
+import MemberWindow from '../ecosystem/member/memberWindow';
+import AngeWindow from '../ecosystem/member/angeWindow';
+import LizeWindow from '../ecosystem/member/lizeWindow';
+import InuiWindow from '../ecosystem/member/inuiWindow';
+import Header from '../organisms/header';
 
 gsap.registerPlugin(ScrollTrigger);
 
