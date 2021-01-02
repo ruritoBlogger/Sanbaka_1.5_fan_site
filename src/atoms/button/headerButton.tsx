@@ -8,6 +8,9 @@ interface Props {
   handleClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
+/**
+ * headerに表示するボタン
+ */
 const HeaderButton: React.VFC<Props> = ({msg, handleClick}) => (
   <button type="button" className={styles.button} onClick={handleClick}>
     {msg}

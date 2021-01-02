@@ -10,6 +10,9 @@ interface Props {
   handleClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
+/**
+ * icon(Twitterなど)を表示するボタン
+ */
 const IconButton: React.VFC<Props> = ({msg, link, handleClick}) => (
   <button type="button" className={styles.button} onClick={handleClick}>
     <img className={styles.circle} src={link} alt="Avatar" />
