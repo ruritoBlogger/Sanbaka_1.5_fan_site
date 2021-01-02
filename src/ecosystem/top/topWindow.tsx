@@ -2,7 +2,10 @@ import React from 'react';
 import ScrollNavigator from '../../atoms/scrollNavigator';
 import styles from '../window_layout.module.scss';
 
-const TopWindow = () => (
+/**
+ * トップページの一番上に表示する要素
+ */
+const TopWindow: React.VFC = () => (
   <>
     <div className={styles.ly_center}>
       <div className={styles.bl_window}>
