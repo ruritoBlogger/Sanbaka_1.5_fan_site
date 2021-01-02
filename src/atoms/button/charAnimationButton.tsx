@@ -1,23 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import styles from './charAnimationButton.module.scss';
 
+interface Props {
+  // どのテーマ色を用いるのか(['ange', 'lize', 'inui'])
+  theme: string;
+  // ボタンがクリックされた時に呼び出す関数
+  handleClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  // ボタンのメッセージ
+  msg: string;
+}
+
 /**
  * キャラのテーマ色を組み合わせたボタン
- * @param {string} props.theme どのテーマ色を用いるのか(['ange', 'lize', 'inui'])
- * @param {function} props.handleClick クリックされた時に発火させる関数
- * @param {string} props.msg ボタンのメッセージ
  */
-
-const CharAnimationButton = (props) => {
-  const [style, setStyle] = useState();
+const CharAnimationButton: React.VFC<Props> = ({theme, handleClick, msg}) => {
+  const [style, setStyle] = useState('');
 
   /**
    * コンポーネントが描画されるタイミングでテーマ色を決定する
    */
   useEffect(() => {
-    if (props.theme == 'ange') {
+    if (theme == 'ange') {
       setStyle(`${styles.color_ange} ${styles.button}`);
-    } else if (props.theme == 'lize') {
+    } else if (theme == 'lize') {
       setStyle(`${styles.color_lize} ${styles.button}`);
     } else {
       setStyle(`${styles.color_inui} ${styles.button}`);
@@ -26,8 +31,8 @@ const CharAnimationButton = (props) => {
 
   return (
     <>
-      <button type="button" className={style} onClick={props.handleClick}>
-        <p>{props.msg}</p>
+      <button type="button" className={style} onClick={handleClick}>
+        <p>{msg}</p>
       </button>
     </>
   );

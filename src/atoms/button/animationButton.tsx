@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './animationButton.module.scss';
 
-// TODO: スマホ版でのボタンのサイズなどを調整する
-
 interface Props {
   /** ボタンの文字 */
   msg: string;
