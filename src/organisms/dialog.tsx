@@ -4,48 +4,70 @@ import Menu from '@material-ui/icons/Menu';
 import styles from './dialog.module.scss';
 import HeaderButton from '../atoms/button/headerButton';
 
-const Dialog = () => {
+const Dialog: React.VFC = () => {
   const ref = useRef(null);
   const history = useHistory();
   const [dialogState, setDialogState] = useState(`${styles.root} ${styles.hide}`)
 
-  const MoveTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
+  /**
+   * メンバー紹介ページに遷移する
+   * 遷移する前にダイアログを閉じておく
+   * また画面上に遷移しておく
+   */
   const MoveMemberPage = () => {
     window.scrollTo({ top: 0 });
     closeModal();
     history.push('/member');
   };
 
+  /**
+   * 1.5周年までの道のりページに遷移する
+   * 遷移する前にダイアログを閉じておく
+   * また画面上に遷移しておく
+   */
   const MoveRoadPage = () => {
     window.scrollTo({ top: 0 });
     closeModal();
     history.push('/road');
   };
 
+  /**
+   * このサイトの紹介に遷移する
+   * 遷移する前にダイアログを閉じておく
+   * また画面上に遷移しておく
+   */
   const MoveSitePage = () => {
     window.scrollTo({ top: 0 });
     closeModal();
     history.push('/site');
   };
 
+  /**
+   * トップページに遷移する
+   * 遷移する前にダイアログを閉じておく
+   * また画面上に遷移しておく
+   */
   const MoveHomePage = () => {
     window.scrollTo({ top: 0 });
     closeModal();
     history.push('/');
   };
 
+  /**
+   * ダイアログを表示する
+   * ダイアログを表示している間はスクロールを制限する
+   */
   const showModal = useCallback(() => {
     if (ref.current) {
-      console.log(ref.current)
       setDialogState(styles.root)
       document.addEventListener('mousewheel', scrollControl, { passive: false });
       document.addEventListener('touchmove', scrollControl, { passive: false });
     }
   }, []);
 
+  /**
+   * ダイアログを閉じる
+   */
   const closeModal = useCallback(() => {
     if (ref.current) {
       setDialogState(`${styles.root} ${styles.hide}`)
