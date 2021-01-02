@@ -3,11 +3,18 @@ import IconButton from '../../atoms/button/iconButton';
 import CharMessage from '../../molecules/charMessage';
 import styles from '../window_layout.module.scss';
 
-const AngeWindow = () => {
+const AngeWindow: React.VFC = () => {
+
+  /**
+   * アンジュのyoutubeチャンネルに遷移する
+   */
   const MoveToYoutube = () => {
     window.open('https://www.youtube.com/channel/UCHVXbQzkl3rDfsXWo8xi2qw', '_blank');
   };
 
+  /**
+   * アンジュのTwitterページに遷移する
+   */
   const MoveToTwitter = () => {
     window.open('https://twitter.com/ange_katrina_', '_blank');
   };
