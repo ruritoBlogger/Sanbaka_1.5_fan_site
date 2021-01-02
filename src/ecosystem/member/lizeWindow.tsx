@@ -3,6 +3,9 @@ import IconButton from '../../atoms/button/iconButton';
 import CharMessage from '../../molecules/charMessage';
 import styles from '../window_layout.module.scss';
 
+/**
+ * リゼの紹介ページ
+ */
 const LizeWindow: React.VFC = () => {
 
   /**
