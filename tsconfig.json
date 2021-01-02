@@ -9,7 +9,7 @@
     // "lib": [],                              /* コンパイルに含めるライブラリ ファイルを指定します。 */
     "allowJs": true,                           /* javascript ファイルのコンパイルを許可します。 */
     "checkJs": true,                           /* .js ファイルのエラーを報告します。 */
-    "jsx": "react",                            /* JSX コード生成を指定します: 'preserve'、'react-native'、'react'。 */
+    "jsx": "react-jsxdev",                     /* JSX コード生成を指定します: 'preserve'、'react-native'、'react'。 */
     // "declaration": true,                    /* 対応する '.d.ts' ファイルを生成します。 */
     // "declarationMap": true,                 /* 対応する各 '.d.ts' ファイルにソースマップを生成します。 */
     // "sourceMap": true,                      /* 対応する '.map' ファイルを生成します。 */
