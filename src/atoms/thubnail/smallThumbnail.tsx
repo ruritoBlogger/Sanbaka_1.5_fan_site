@@ -1,5 +1,3 @@
-import { YouTube } from '@material-ui/icons';
-import React from 'react';
 import styles from './smallThumbnail.module.scss';
 
 interface Props {

@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './animationButton.module.scss';
 
 interface Props {

@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './charMessage.module.scss';
 
 import CharImage from '../atoms/image/charImage';

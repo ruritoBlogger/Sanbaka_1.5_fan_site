@@ -1,4 +1,3 @@
-import React from 'react';
 import { useHistory } from 'react-router-dom';
 import Headroom from 'react-headroom';
 import HeaderButton from '../atoms/button/headerButton';

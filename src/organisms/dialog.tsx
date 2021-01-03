@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useState } from 'react';
+import { useRef, useCallback, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Menu from '@material-ui/icons/Menu';
 import styles from './dialog.module.scss';

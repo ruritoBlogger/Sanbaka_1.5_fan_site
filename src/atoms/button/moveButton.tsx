@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './moveButton.module.scss';
 
 interface Props {

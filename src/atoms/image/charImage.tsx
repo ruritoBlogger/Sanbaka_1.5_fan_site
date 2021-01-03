@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './charImage.module.scss';
 
 interface Props {

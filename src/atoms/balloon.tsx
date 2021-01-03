@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './balloon.module.scss';
 
 interface Props {
