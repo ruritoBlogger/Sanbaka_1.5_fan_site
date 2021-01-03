@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import HistoryWindow from '../ecosystem/history/historyWindow';
@@ -7,7 +7,7 @@ import Header from '../organisms/header';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Road = () => {
+const Road: React.VFC = () => {
   const headerRef = useRef(null);
   const revealRefs = useRef([]);
 
