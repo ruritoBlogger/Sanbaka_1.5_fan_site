@@ -1,5 +1,6 @@
 module.exports = {
   extends: 'airbnb',
+  ignorePatterns: ['public'],
   plugins: [
     'react',
     'jsx-a11y',
