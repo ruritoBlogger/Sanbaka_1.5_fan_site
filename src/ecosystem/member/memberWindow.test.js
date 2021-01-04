@@ -5,7 +5,7 @@ import MemberWindow from './memberWindow';
 
 describe('MemberWindow Component', () => {
   test('check MemberWindow behavior', () => {
-    render(<MemberWindow />);
+    render(<MemberWindow isRight={true} />);
     expect(screen.getByText('メンバー', { exact: false })).toBeInTheDocument;
   });
 });

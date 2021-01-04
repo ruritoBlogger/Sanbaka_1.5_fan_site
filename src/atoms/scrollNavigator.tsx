@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import styles from './scrollNavigator.module.scss';
 
 interface Props{
@@ -12,7 +11,8 @@ interface Props{
  * スクロールを促すUIのコンポーネント
  */
 const ScrollNavigator: React.VFC<Props> = ({msg, isOnlyPC}) => {
-  const [style, setStyle] = useState(isOnlyPC ? styles.scroll_pcOnly : styles.scroll);
+  const style: string = isOnlyPC ? styles.scroll_pcOnly : styles.scroll;
+
   return (
     <a className={style} href="#">{msg}</a>
   );

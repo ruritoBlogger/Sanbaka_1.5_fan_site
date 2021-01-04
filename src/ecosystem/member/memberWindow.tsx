@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import AnimationButton from '../../atoms/button/animationButton';
@@ -17,8 +16,8 @@ interface Props {
  */
 const MemberWindow: React.VFC<Props> = ({isRight}) => {
   const history = useHistory();
-  const [padding, setPadding] = useState(isRight ? `${styles.bl_window_smallBlock} ${styles.paddingLeft_pcOnly}` : `${styles.bl_window_smallBlock} ${styles.paddingRight_pcOnly}`);
-  const [bl_window, setBl_window] = useState(isRight ? `${styles.bl_window} ${styles.bl_memberWindow}` : `${styles.bl_window} ${styles.bl_memberWindow} ${styles.flex_row_reverse}`);
+  const padding: string = isRight ? `${styles.bl_window_smallBlock} ${styles.paddingLeft_pcOnly}` : `${styles.bl_window_smallBlock} ${styles.paddingRight_pcOnly}`;
+  const bl_window: string = isRight ? `${styles.bl_window} ${styles.bl_memberWindow}` : `${styles.bl_window} ${styles.bl_memberWindow} ${styles.flex_row_reverse}`;
 
   const MoveMemberPage = () => {
     window.scrollTo({ top: 0 });
@@ -56,7 +55,7 @@ const MemberWindow: React.VFC<Props> = ({isRight}) => {
                     <AnimationButton handleClick={() => MoveMemberPage()} msg="もっと詳しく" />
                   </div>
                 );
-              }
+              } else return null;
             })()}
           </div>
         </div>
@@ -66,7 +65,7 @@ const MemberWindow: React.VFC<Props> = ({isRight}) => {
             return (
               <ScrollNavigator msg="Scroll" isOnlyPC={false} />
             );
-          }
+          } else return null;
         })()}
       </div>
     </>

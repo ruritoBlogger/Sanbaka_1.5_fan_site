@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import styles from './lurchThumbnail.module.scss';
 
 interface Props {
@@ -13,7 +12,7 @@ interface Props {
  * スマホ版で表示する際は傾けない
  */
 const LurchThumbnail: React.VFC<Props> = ({youtubeID, isSlantRight}) => {
-  const [frame, setFrame] = useState(isSlantRight ? styles.frame_right : styles.frame);
+  const frame = isSlantRight ? styles.frame_right : styles.frame;
 
   return (
     <div className={frame}>

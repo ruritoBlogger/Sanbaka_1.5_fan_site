@@ -14,7 +14,7 @@ interface Props {
  * キャラのテーマ色を組み合わせたボタン
  */
 const CharAnimationButton: React.VFC<Props> = ({theme, handleClick, msg}) => {
-  const [style, setStyle] = useState('');
+  const [style, setStyle] = useState<string>('');
 
   /**
    * コンポーネントが描画されるタイミングでテーマ色を決定する
@@ -30,11 +30,9 @@ const CharAnimationButton: React.VFC<Props> = ({theme, handleClick, msg}) => {
   }, []);
 
   return (
-    <>
-      <button type="button" className={style} onClick={handleClick}>
-        <p>{msg}</p>
-      </button>
-    </>
+    <button type="button" className={style} onClick={handleClick}>
+      <p>{msg}</p>
+    </button>
   );
 };
 

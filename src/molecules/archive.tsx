@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import styles from './archive.module.scss';
 
 import CharAnimationButton from '../atoms/button/charAnimationButton';
@@ -30,7 +29,7 @@ interface Props {
  * アーカイブコンポーネント
  */
 const Archive: React.VFC<Props> = ({right, id, title, text, day, youtube_data}) => {
-  const [flexStyle, setFlexStyle] = useState(right ? `${styles.archive} ${styles.archive_reverse}` : styles.archive);
+  const flexStyle: string = right ? `${styles.archive} ${styles.archive_reverse}` : styles.archive;
 
   /**
    * 指定されたyoutubeの動画に遷移する

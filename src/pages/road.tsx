@@ -14,7 +14,7 @@ const Road: React.VFC = () => {
   const windows = [
     {
       key: 'history',
-      content: <HistoryWindow />,
+      content: <HistoryWindow isTop={true} />,
     },
     {
       key: '1',

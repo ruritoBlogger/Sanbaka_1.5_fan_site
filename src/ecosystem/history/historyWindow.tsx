@@ -65,14 +65,15 @@ const HistoryWindow: React.VFC<Props> = ({isTop}) => {
                   <AnimationButton handleClick={() => MoveHistoryPage()} msg="もっと詳しく" />
                 </div>
               );
+            } else {
+              return (
+                <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
+                  <p className={styles.bl_historyWindow_content}>
+                    マイクラコラボが中心となってます.
+                  </p>
+                </div>
+              );
             }
-            return (
-              <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
-                <p className={styles.bl_historyWindow_content}>
-                  マイクラコラボが中心となってます.
-                </p>
-              </div>
-            );
           })()}
         </div>
       </div>
@@ -83,7 +84,7 @@ const HistoryWindow: React.VFC<Props> = ({isTop}) => {
               <ScrollNavigator msg="Scroll" isOnlyPC={false} />
             </div>
           );
-        }
+        } else return null
       })()}
     </div>
   );

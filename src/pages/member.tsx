@@ -16,7 +16,7 @@ const Member: React.VFC = () => {
   const windows = [
     {
       key: 'member',
-      content: <MemberWindow />,
+      content: <MemberWindow isRight={false} />,
     },
     {
       key: 'ange',
