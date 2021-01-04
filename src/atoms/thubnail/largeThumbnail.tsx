@@ -10,7 +10,7 @@ interface Props {
 /**
  * youtubeのサムネイルを大きく表示するコンポーネント
  */
-const LargeThumbnail: React.VFC<Props> = youtubeID => (
+const LargeThumbnail: React.VFC<Props> = ({youtubeID}) => (
   <div className={styles.frame}>
     <img className={styles.image} src={`https://i.ytimg.com/vi/${youtubeID}/hqdefault.jpg`} />
   </div>

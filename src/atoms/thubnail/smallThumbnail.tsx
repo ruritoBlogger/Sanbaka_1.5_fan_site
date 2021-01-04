@@ -10,7 +10,7 @@ interface Props {
 /**
  * youtubeのサムネイルを小さく表示するコンポーネント
  */
-const SmallThumbnail: React.VFC<Props> = youtubeID => (
+const SmallThumbnail: React.VFC<Props> = ({youtubeID}) => (
   <div className={styles.frame}>
     <img className={styles.image} src={`https://i.ytimg.com/vi/${youtubeID}/hqdefault.jpg`} />
   </div>

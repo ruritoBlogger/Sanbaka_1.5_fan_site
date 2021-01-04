@@ -15,7 +15,7 @@ interface Props {
  * メンバー紹介ページ
  * 画像を右側に表示するか否かで内容が多少変動する
  */
-const MemberWindow: React.VFC<Props> = isRight => {
+const MemberWindow: React.VFC<Props> = ({isRight}) => {
   const history = useHistory();
   const [padding, setPadding] = useState(isRight ? `${styles.bl_window_smallBlock} ${styles.paddingLeft_pcOnly}` : `${styles.bl_window_smallBlock} ${styles.paddingRight_pcOnly}`);
   const [bl_window, setBl_window] = useState(isRight ? `${styles.bl_window} ${styles.bl_memberWindow}` : `${styles.bl_window} ${styles.bl_memberWindow} ${styles.flex_row_reverse}`);

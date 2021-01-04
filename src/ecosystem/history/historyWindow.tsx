@@ -19,7 +19,7 @@ interface Props {
  * ページの一番上に表示する場合はスクロールを促すコンポーネントを表示する
  * そうで無い場合は1.5周年までの道のりページへの遷移ボタンを表示する
  */
-const HistoryWindow: React.VFC<Props> = isTop => {
+const HistoryWindow: React.VFC<Props> = ({isTop}) => {
   const history = useHistory();
 
   /**
