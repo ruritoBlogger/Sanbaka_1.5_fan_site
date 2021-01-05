@@ -10,8 +10,8 @@ import Header from '../organisms/header';
 gsap.registerPlugin(ScrollTrigger);
 
 const Member: React.VFC = () => {
-  const headerRef = useRef(null);
-  const revealRefs = useRef([]);
+  const headerRef = useRef<HTMLDivElement>(null);
+  const revealRefs = useRef<HTMLDivElement[]>([]);
 
   const windows = [
     {
@@ -56,7 +56,7 @@ const Member: React.VFC = () => {
     });
   }, []);
 
-  const addToRefs = (el) => {
+  const addToRefs = (el: HTMLDivElement) => {
     if (el && !revealRefs.current.includes(el)) {
       revealRefs.current.push(el);
     }
