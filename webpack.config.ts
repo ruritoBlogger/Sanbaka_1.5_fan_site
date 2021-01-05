@@ -1,12 +1,13 @@
-import path from 'path';
+import * as path from 'path'
+import * as webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-const Dotenv = require('dotenv-webpack');
+import { devBabelConfig } from './babel.config';
 
 const src = path.resolve(__dirname, 'src');
 const pub = path.resolve(__dirname, 'public');
 
-export default {
+const config: webpack.Configuration = {
   mode: 'development',
   entry: `${src}/index.tsx`,
 
@@ -21,6 +22,7 @@ export default {
         test: /\.(js|ts)x?$/,
         exclude: /node_modules/,
         loader: ['babel-loader'],
+        options: devBabelConfig,
       },
       {
         test: /\.scss/,
@@ -52,6 +54,7 @@ export default {
       template: `${pub}/index.base.html`,
       filename: 'index.html',
     }),
-    new Dotenv(),
   ],
 };
+
+export default config;
