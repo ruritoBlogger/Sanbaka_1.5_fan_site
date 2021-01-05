@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import styles from './charAnimationButton.module.scss';
 
 interface Props {
-  // どのテーマ色を用いるのか(['ange', 'lize', 'inui'])
-  theme: string;
-  // ボタンがクリックされた時に呼び出す関数
-  handleClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
   // ボタンのメッセージ
   msg: string;
+  // ボタンがクリックされた時に呼び出す関数
+  handleClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  // どのテーマ色を用いるのか(['ange', 'lize', 'inui'])
+  theme: string;
 }
 
 /**

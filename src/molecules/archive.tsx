@@ -50,9 +50,9 @@ const Archive: React.VFC<Props> = ({right, id, title, text, day, youtube_data}) 
           <p className={`${styles.text} ${styles.marginBottom}`}>{day}</p>
           <p className={styles.text}>{text}</p>
           <div className={`${styles.buttons} ${styles.flex_row} ${styles.marginTop}`}>
-            <CharAnimationButton handleClick={() => MovePage(youtube_data[0])} msg="アンジュ視点" theme="ange" className={styles.text} />
-            <CharAnimationButton handleClick={() => MovePage(youtube_data[1])} msg="リゼ視点" theme="lize" className={styles.text} />
-            <CharAnimationButton handleClick={() => MovePage(youtube_data[2])} msg="戌亥視点" theme="inui" className={styles.text} />
+            <CharAnimationButton handleClick={() => MovePage(youtube_data[0])} msg="アンジュ視点" theme="ange" />
+            <CharAnimationButton handleClick={() => MovePage(youtube_data[1])} msg="リゼ視点" theme="lize" />
+            <CharAnimationButton handleClick={() => MovePage(youtube_data[2])} msg="戌亥視点" theme="inui" />
           </div>
         </div>
       </div>
