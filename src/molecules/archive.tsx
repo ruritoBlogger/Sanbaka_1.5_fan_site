@@ -3,12 +3,6 @@ import styles from './archive.module.scss';
 import CharAnimationButton from '../atoms/button/charAnimationButton';
 import LurchThumbnail from '../atoms/thubnail/lurchThumbnail';
 
-interface YoutubeData {
-  // どの部分から再生するか
-  time: number;
-  // youtubeのID
-  key: string;
-}
 
 interface Props {
   // 右側に説明文を置くかどうか
@@ -22,7 +16,7 @@ interface Props {
   // 投稿時間
   day: string;
   // 動画情報(youtubeのurlなど)[アンジュ・リゼ・戌亥]
-  youtube_data: YoutubeData[];
+  youtube_data: {time: number, key: string}[];
 }
 
 /**
@@ -34,7 +28,7 @@ const Archive: React.VFC<Props> = ({right, id, title, text, day, youtube_data}) 
   /**
    * 指定されたyoutubeの動画に遷移する
    */
-  const MovePage = (data: YoutubeData) => {
+  const MovePage = (data: {time: number, key: string}) => {
     window.open(`https://youtu.be/${data.key}?autoplay=0`, '_blank');
   };
 
