@@ -12,8 +12,8 @@
     "start": "webpack-dev-server --hot --inline",
     "start:prod": "webpack-dev-server --hot --inline --mode=production",
     "test": "jest",
-    "lint": "eslint ./ --ext .js",
-    "format": "eslint ./ --ext .js --fix",
+    "lint": "eslint ./src",
+    "format": "eslint ./src --fix",
     "lint:circleCI": "eslint ./src --format junit --output-file /tmp/test-reports/eslint/results.xml"
   },
   "dependencies": {
