@@ -6,6 +6,6 @@ import Road from './road';
 describe('Road', () => {
   test('check Road behavior', () => {
     render(<Road />);
-    expect(screen.getByText('Road', { exact: false })).toBeInTheDocument;
+    expect(screen.getByText('歩んできた道のり', { exact: false })).toBeInTheDocument;
   });
 });
