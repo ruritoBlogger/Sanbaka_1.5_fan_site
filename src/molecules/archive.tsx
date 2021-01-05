@@ -23,7 +23,7 @@ interface Props {
  * アーカイブコンポーネント
  */
 const Archive: React.VFC<Props> = ({right, id, title, text, day, youtube_data}) => {
-  const flexStyle: string = right ? `${styles.archive} ${styles.archive_reverse}` : styles.archive;
+  const flexStyle = right ? `${styles.archive} ${styles.archive_reverse}` : styles.archive;
 
   /**
    * 指定されたyoutubeの動画に遷移する
