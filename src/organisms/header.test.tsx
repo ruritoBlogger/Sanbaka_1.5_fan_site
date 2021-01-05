@@ -6,6 +6,6 @@ import Header from './header';
 describe('Header', () => {
   test('check Header behavior', () => {
     render(<Header />);
-    expect(screen.getByText('さんばか', { exact: false })).toBeInTheDocument;
+    expect(screen.getAllByText('さんばか', { exact: false })).toBeInTheDocument;
   });
 });
