@@ -7,7 +7,7 @@ import styles from '../window_layout.module.scss';
 
 interface Props {
   // 画像を右側に表示するかどうか
-  isRight: Boolean;
+  isRight: boolean;
 }
 
 /**

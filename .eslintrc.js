@@ -14,7 +14,6 @@ module.exports = {
     'no-undef': 'off',
     'no-unused-expressions': 'off',
     'react/destructuring-assignment': 'off',
-    'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
   },
