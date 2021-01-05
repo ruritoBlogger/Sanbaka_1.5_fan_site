@@ -6,6 +6,6 @@ import Home from './home';
 describe('Home', () => {
   test('check Home behavior', () => {
     render(<Home />);
-    expect(screen.getByText('Home', { exact: false })).toBeInTheDocument;
+    expect(screen.getByText('おめでとうございます', { exact: false })).toBeInTheDocument;
   });
 });
