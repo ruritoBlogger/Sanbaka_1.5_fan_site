@@ -16,8 +16,8 @@ interface Props {
  */
 const MemberWindow: React.VFC<Props> = ({isRight}) => {
   const history = useHistory();
-  const padding: string = isRight ? `${styles.bl_window_smallBlock} ${styles.paddingLeft_pcOnly}` : `${styles.bl_window_smallBlock} ${styles.paddingRight_pcOnly}`;
-  const bl_window: string = isRight ? `${styles.bl_window} ${styles.bl_memberWindow}` : `${styles.bl_window} ${styles.bl_memberWindow} ${styles.flex_row_reverse}`;
+  const padding = isRight ? `${styles.bl_window_smallBlock} ${styles.paddingLeft_pcOnly}` : `${styles.bl_window_smallBlock} ${styles.paddingRight_pcOnly}`;
+  const bl_window = isRight ? `${styles.bl_window} ${styles.bl_memberWindow}` : `${styles.bl_window} ${styles.bl_memberWindow} ${styles.flex_row_reverse}`;
 
   const MoveMemberPage = () => {
     window.scrollTo({ top: 0 });
