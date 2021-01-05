@@ -21,7 +21,7 @@ const config: webpack.Configuration = {
       {
         test: /\.(js|ts)x?$/,
         exclude: /node_modules/,
-        loader: ['babel-loader'],
+        loader: 'babel-loader',
         options: devBabelConfig,
       },
       {
