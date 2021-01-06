@@ -14,7 +14,7 @@ interface Props {
  * メンバー紹介ページ
  * 画像を右側に表示するか否かで内容が多少変動する
  */
-const MemberWindow: React.VFC<Props> = ({isRight}) => {
+const MemberWindow: React.VFC<Props> = ({ isRight }) => {
   const history = useHistory();
   const padding = isRight ? `${styles.bl_window_smallBlock} ${styles.paddingLeft_pcOnly}` : `${styles.bl_window_smallBlock} ${styles.paddingRight_pcOnly}`;
   const bl_window = isRight ? `${styles.bl_window} ${styles.bl_memberWindow}` : `${styles.bl_window} ${styles.bl_memberWindow} ${styles.flex_row_reverse}`;
@@ -28,7 +28,7 @@ const MemberWindow: React.VFC<Props> = ({isRight}) => {
     <>
       <div className={styles.ly_center}>
         <div className={bl_window}>
-          <div className={styles.bl_window_smallBlock} >
+          <div className={styles.bl_window_smallBlock}>
             <MainImage path="/image/sanbaka.png" />
           </div>
           <div className={padding}>
@@ -55,7 +55,7 @@ const MemberWindow: React.VFC<Props> = ({isRight}) => {
                     <AnimationButton handleClick={() => MoveMemberPage()} msg="もっと詳しく" />
                   </div>
                 );
-              } else return null;
+              } return null;
             })()}
           </div>
         </div>
@@ -65,7 +65,7 @@ const MemberWindow: React.VFC<Props> = ({isRight}) => {
             return (
               <ScrollNavigator msg="Scroll" isOnlyPC={false} />
             );
-          } else return null;
+          } return null;
         })()}
       </div>
     </>

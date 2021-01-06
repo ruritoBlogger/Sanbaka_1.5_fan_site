@@ -3,7 +3,6 @@ import styles from './archive.module.scss';
 import CharAnimationButton from '../atoms/button/charAnimationButton';
 import LurchThumbnail from '../atoms/thubnail/lurchThumbnail';
 
-
 interface Props {
   // 右側に説明文を置くかどうか
   right: boolean;
@@ -22,7 +21,9 @@ interface Props {
 /**
  * アーカイブコンポーネント
  */
-const Archive: React.VFC<Props> = ({right, id, title, text, day, youtube_data}) => {
+const Archive: React.VFC<Props> = ({
+  right, id, title, text, day, youtube_data,
+}) => {
   const flexStyle = right ? `${styles.archive} ${styles.archive_reverse}` : styles.archive;
 
   /**
@@ -31,7 +32,6 @@ const Archive: React.VFC<Props> = ({right, id, title, text, day, youtube_data}) 
   const MovePage = (data: {time: number, key: string}) => {
     window.open(`https://youtu.be/${data.key}?autoplay=0`, '_blank');
   };
-
 
   return (
     <div className={flexStyle}>

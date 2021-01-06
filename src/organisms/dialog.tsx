@@ -7,7 +7,7 @@ import HeaderButton from '../atoms/button/headerButton';
 const Dialog: React.VFC = () => {
   const ref = useRef(null);
   const history = useHistory();
-  const [dialogState, setDialogState] = useState(`${styles.root} ${styles.hide}`)
+  const [dialogState, setDialogState] = useState(`${styles.root} ${styles.hide}`);
 
   /**
    * メンバー紹介ページに遷移する
@@ -59,7 +59,7 @@ const Dialog: React.VFC = () => {
    */
   const showModal = useCallback(() => {
     if (ref.current) {
-      setDialogState(styles.root)
+      setDialogState(styles.root);
       document.addEventListener('mousewheel', scrollControl, { passive: false });
       document.addEventListener('touchmove', scrollControl, { passive: false });
     }
@@ -70,7 +70,7 @@ const Dialog: React.VFC = () => {
    */
   const closeModal = useCallback(() => {
     if (ref.current) {
-      setDialogState(`${styles.root} ${styles.hide}`)
+      setDialogState(`${styles.root} ${styles.hide}`);
       document.removeEventListener('mousewheel', scrollControl);
       document.removeEventListener('touchmove', scrollControl);
     }
