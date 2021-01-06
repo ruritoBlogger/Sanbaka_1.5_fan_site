@@ -8,7 +8,7 @@ interface Props {
 /*
  * スクロールする画面の一番上に戻るボタン
  */
-const MoveButton: React.VFC<Props> = ({handleClick}) => (
+const MoveButton: React.VFC<Props> = ({ handleClick }) => (
   <button type="button" className={styles.button} onClick={handleClick}>
     top
   </button>

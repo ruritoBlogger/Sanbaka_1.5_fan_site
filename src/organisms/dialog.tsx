@@ -7,7 +7,34 @@ import HeaderButton from '../atoms/button/headerButton';
 const Dialog: React.VFC = () => {
   const ref = useRef(null);
   const history = useHistory();
-  const [dialogState, setDialogState] = useState(`${styles.root} ${styles.hide}`)
+  const [dialogState, setDialogState] = useState(`${styles.root} ${styles.hide}`);
+
+  const scrollControl = (e: Event) => {
+    e.preventDefault();
+  };
+
+  /**
+   * ダイアログを表示する
+   * ダイアログを表示している間はスクロールを制限する
+   */
+  const showModal = useCallback(() => {
+    if (ref.current) {
+      setDialogState(styles.root);
+      document.addEventListener('mousewheel', scrollControl, { passive: false });
+      document.addEventListener('touchmove', scrollControl, { passive: false });
+    }
+  }, []);
+
+  /**
+   * ダイアログを閉じる
+   */
+  const closeModal = useCallback(() => {
+    if (ref.current) {
+      setDialogState(`${styles.root} ${styles.hide}`);
+      document.removeEventListener('mousewheel', scrollControl);
+      document.removeEventListener('touchmove', scrollControl);
+    }
+  }, []);
 
   /**
    * メンバー紹介ページに遷移する
@@ -51,33 +78,6 @@ const Dialog: React.VFC = () => {
     window.scrollTo({ top: 0 });
     closeModal();
     history.push('/');
-  };
-
-  /**
-   * ダイアログを表示する
-   * ダイアログを表示している間はスクロールを制限する
-   */
-  const showModal = useCallback(() => {
-    if (ref.current) {
-      setDialogState(styles.root)
-      document.addEventListener('mousewheel', scrollControl, { passive: false });
-      document.addEventListener('touchmove', scrollControl, { passive: false });
-    }
-  }, []);
-
-  /**
-   * ダイアログを閉じる
-   */
-  const closeModal = useCallback(() => {
-    if (ref.current) {
-      setDialogState(`${styles.root} ${styles.hide}`)
-      document.removeEventListener('mousewheel', scrollControl);
-      document.removeEventListener('touchmove', scrollControl);
-    }
-  }, []);
-
-  const scrollControl = (e: Event) => {
-    e.preventDefault();
   };
 
   return (

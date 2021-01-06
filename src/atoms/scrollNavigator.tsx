@@ -10,11 +10,11 @@ interface Props{
 /**
  * スクロールを促すUIのコンポーネント
  */
-const ScrollNavigator: React.VFC<Props> = ({msg, isOnlyPC}) => {
+const ScrollNavigator: React.VFC<Props> = ({ msg, isOnlyPC }) => {
   const style = isOnlyPC ? styles.scroll_pcOnly : styles.scroll;
 
   return (
-    <a className={style} href="#">{msg}</a>
+    <p className={style}>{msg}</p>
   );
 };
 

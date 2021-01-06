@@ -13,7 +13,7 @@ interface Props{
 /**
  * 各キャラの画像と吹き出しを組み合わせたコンポーネント
  */
-const CharMessage: React.VFC<Props> = ({path, msg}) => (
+const CharMessage: React.VFC<Props> = ({ path, msg }) => (
   <div className={styles.bl_charMessage}>
     <Balloon msg={msg} />
     <CharImage path={path} />

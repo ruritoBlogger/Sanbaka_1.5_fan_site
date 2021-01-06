@@ -19,7 +19,7 @@ interface Props {
  * ページの一番上に表示する場合はスクロールを促すコンポーネントを表示する
  * そうで無い場合は1.5周年までの道のりページへの遷移ボタンを表示する
  */
-const HistoryWindow: React.VFC<Props> = ({isTop}) => {
+const HistoryWindow: React.VFC<Props> = ({ isTop }) => {
   const history = useHistory();
 
   /**
@@ -65,15 +65,14 @@ const HistoryWindow: React.VFC<Props> = ({isTop}) => {
                   <AnimationButton handleClick={() => MoveHistoryPage()} msg="もっと詳しく" />
                 </div>
               );
-            } else {
-              return (
-                <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
-                  <p className={styles.bl_historyWindow_content}>
-                    マイクラコラボが中心となってます.
-                  </p>
-                </div>
-              );
             }
+            return (
+              <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
+                <p className={styles.bl_historyWindow_content}>
+                  マイクラコラボが中心となってます.
+                </p>
+              </div>
+            );
           })()}
         </div>
       </div>
@@ -84,7 +83,7 @@ const HistoryWindow: React.VFC<Props> = ({isTop}) => {
               <ScrollNavigator msg="Scroll" isOnlyPC={false} />
             </div>
           );
-        } else return null
+        } return null;
       })()}
     </div>
   );

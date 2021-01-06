@@ -10,7 +10,7 @@ interface Props {
 /**
  * headerに表示するボタン
  */
-const HeaderButton: React.VFC<Props> = ({msg, handleClick}) => (
+const HeaderButton: React.VFC<Props> = ({ msg, handleClick }) => (
   <button type="button" className={styles.button} onClick={handleClick}>
     {msg}
   </button>

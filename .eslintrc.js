@@ -1,25 +1,39 @@
 module.exports = {
   extends: 'airbnb',
-  ignorePatterns: ['public'],
-  plugins: [
-    'react',
-    'jsx-a11y',
-    'import',
-  ],
-  rules: {
-    'no-undef': 'off',
-    'no-unused-expressions': 'off',
-    'react/destructuring-assignment': 'off',
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    'react/jsx-props-no-spreading': 'off',
-    'react/prop-types': 'off',
-  },
+  ignorePatterns: ['public', 'node_modules'],
   overrides: [
     {
-      files: ['development.js'],
-      rules: {
-        'import/no-extraneous-dependencies': 'off',
+      files: ['**/*.ts', '**/*.tsx'],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        sourceType: 'module',
+        tsconfigRootDir: __dirname,
+        project: './tsconfig.json'
       },
+      plugins: [
+        '@typescript-eslint',
+      ],
+      rules: {
+        'no-undef': 'off',
+        'no-unused-expressions': 'off',
+        '@typescript-eslint/unbound-method': 'off',
+        'import/extensions': 'off',
+        'react/destructuring-assignment': 'off',
+        'react/jsx-props-no-spreading': 'off',
+        'react/prop-types': 'off',
+        'react/react-in-jsx-scope': 'off',
+        'react/jsx-filename-extension': 'off',
+      },
+      extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:import/errors',
+        'plugin:import/warnings',
+        'plugin:import/typescript',
+        'plugin:jsx-a11y/recommended',
+        'plugin:react/recommended',
+      ],
     },
   ],
 };

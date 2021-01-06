@@ -15,7 +15,7 @@ const Road: React.VFC = () => {
   const windows = [
     {
       key: 'history',
-      content: <HistoryWindow isTop={true} />,
+      content: <HistoryWindow isTop />,
     },
     {
       key: '1',
@@ -35,7 +35,7 @@ const Road: React.VFC = () => {
     {
       key: '2',
       content: <Archive
-        right={true}
+        right
         id="PcXH2IAXI_w"
         title="さんばかサーバー第二回"
         text="さんばかサーバーでの二回目のコラボ. "
@@ -65,7 +65,7 @@ const Road: React.VFC = () => {
     {
       key: '4',
       content: <Archive
-        right={true}
+        right
         id="UYvM47QCxZg"
         title="にじさんじサーバー第二回"
         text="にじさんじ鯖の観光の続き. "
@@ -95,7 +95,7 @@ const Road: React.VFC = () => {
     {
       key: '6',
       content: <Archive
-        right={true}
+        right
         id="kAxyrXTANYQ"
         title="にじさんじサーバー第四回"
         text="風雲さんばか城完成に向けて "

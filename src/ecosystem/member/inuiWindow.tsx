@@ -6,7 +6,6 @@ import styles from '../window_layout.module.scss';
  * 戌亥の紹介ページ
  */
 const InuiWindow: React.VFC = () => {
-
   /**
    * 戌亥のyoutubeチャンネルに遷移する
    */

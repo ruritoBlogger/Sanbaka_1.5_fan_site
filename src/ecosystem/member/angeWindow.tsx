@@ -6,7 +6,6 @@ import styles from '../window_layout.module.scss';
  * アンジュの紹介ページ
  */
 const AngeWindow: React.VFC = () => {
-
   /**
    * アンジュのyoutubeチャンネルに遷移する
    */

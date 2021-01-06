@@ -8,7 +8,7 @@ interface Props {
 /**
  * 吹き出しを表示するコンポーネント
  */
-const Balloon: React.VFC<Props> = ({msg}) => (
+const Balloon: React.VFC<Props> = ({ msg }) => (
   <div className={styles.balloon}>
     <p className={styles.char_msg}>{msg}</p>
   </div>

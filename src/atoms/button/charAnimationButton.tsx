@@ -13,7 +13,7 @@ interface Props {
 /**
  * キャラのテーマ色を組み合わせたボタン
  */
-const CharAnimationButton: React.VFC<Props> = ({theme, handleClick, msg}) => {
+const CharAnimationButton: React.VFC<Props> = ({ theme, handleClick, msg }) => {
   const [style, setStyle] = useState<string>('');
 
   /**
