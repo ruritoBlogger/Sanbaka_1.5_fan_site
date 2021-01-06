@@ -1,6 +1,6 @@
 module.exports = {
   extends: 'airbnb',
-  ignorePatterns: ['public'],
+  ignorePatterns: ['public', 'node_modules'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
