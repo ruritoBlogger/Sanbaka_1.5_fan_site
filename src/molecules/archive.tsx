@@ -15,14 +15,14 @@ interface Props {
   // 投稿時間
   day: string;
   // 動画情報(youtubeのurlなど)[アンジュ・リゼ・戌亥]
-  youtube_data: {time: number, key: string}[];
+  youtubeData: {time: number, key: string}[];
 }
 
 /**
  * アーカイブコンポーネント
  */
 const Archive: React.VFC<Props> = ({
-  right, id, title, text, day, youtube_data,
+  right, id, title, text, day, youtubeData,
 }) => {
   const flexStyle = right ? `${styles.archive} ${styles.archive_reverse}` : styles.archive;
 
@@ -44,9 +44,9 @@ const Archive: React.VFC<Props> = ({
           <p className={`${styles.text} ${styles.marginBottom}`}>{day}</p>
           <p className={styles.text}>{text}</p>
           <div className={`${styles.buttons} ${styles.flex_row} ${styles.marginTop}`}>
-            <CharAnimationButton handleClick={() => MovePage(youtube_data[0])} msg="アンジュ視点" theme="ange" />
-            <CharAnimationButton handleClick={() => MovePage(youtube_data[1])} msg="リゼ視点" theme="lize" />
-            <CharAnimationButton handleClick={() => MovePage(youtube_data[2])} msg="戌亥視点" theme="inui" />
+            <CharAnimationButton handleClick={() => MovePage(youtubeData[0])} msg="アンジュ視点" theme="ange" />
+            <CharAnimationButton handleClick={() => MovePage(youtubeData[1])} msg="リゼ視点" theme="lize" />
+            <CharAnimationButton handleClick={() => MovePage(youtubeData[2])} msg="戌亥視点" theme="inui" />
           </div>
         </div>
       </div>

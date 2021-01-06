@@ -10,13 +10,13 @@ const TopWindow: React.VFC = () => (
       <div className={styles.bl_window}>
         {/* FIXME: 解像度によっては変な部分で改行される */}
         <h2 className={styles.bl_window_title}>
-          ⚖️👑🍹
+          <span role="img" aria-label="三人のファンマーク">⚖️👑🍹</span>
           <br />
           さんばか1.5周年
           <br />
           おめでとうございます
           <br />
-          🎉🎉🎉
+          <span role="img" aria-label="お祝いのクラッカー">🎉🎉🎉</span>
         </h2>
         <p className={styles.bl_window_content}>
           本サイトはさんばかが結成されてから

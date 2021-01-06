@@ -17,7 +17,7 @@ interface Props {
 const MemberWindow: React.VFC<Props> = ({ isRight }) => {
   const history = useHistory();
   const padding = isRight ? `${styles.bl_window_smallBlock} ${styles.paddingLeft_pcOnly}` : `${styles.bl_window_smallBlock} ${styles.paddingRight_pcOnly}`;
-  const bl_window = isRight ? `${styles.bl_window} ${styles.bl_memberWindow}` : `${styles.bl_window} ${styles.bl_memberWindow} ${styles.flex_row_reverse}`;
+  const blWindow = isRight ? `${styles.bl_window} ${styles.bl_memberWindow}` : `${styles.bl_window} ${styles.bl_memberWindow} ${styles.flex_row_reverse}`;
 
   const MoveMemberPage = () => {
     window.scrollTo({ top: 0 });
@@ -27,7 +27,7 @@ const MemberWindow: React.VFC<Props> = ({ isRight }) => {
   return (
     <>
       <div className={styles.ly_center}>
-        <div className={bl_window}>
+        <div className={blWindow}>
           <div className={styles.bl_window_smallBlock}>
             <MainImage path="/image/sanbaka.png" />
           </div>
