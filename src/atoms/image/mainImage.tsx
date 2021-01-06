@@ -10,10 +10,10 @@ interface Props {
  * 複数枚画像が重なっている用な表現をしている
  */
 
-const MainImage: React.VFC<Props> = ({path}) => (
+const MainImage: React.VFC<Props> = ({ path }) => (
   <div className={styles.wrapper}>
     <div className={styles.frame}>
-      <img className={styles.image} src={`${window.location.origin}${path}`} />
+      <img className={styles.image} src={`${window.location.origin}${path}`} alt="集合写真" />
     </div>
   </div>
 );

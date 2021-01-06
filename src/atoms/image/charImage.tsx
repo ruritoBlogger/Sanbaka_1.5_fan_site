@@ -9,10 +9,10 @@ interface Props {
  * 各キャラの画像のコンポーネント
  */
 
-const CharImage: React.VFC<Props> = ({path}) => (
+const CharImage: React.VFC<Props> = ({ path }) => (
   <div className={styles.wrapper}>
     <div className={styles.frame}>
-      <img className={styles.image} src={`${window.location.origin}${path}`} />
+      <img className={styles.image} src={`${window.location.origin}${path}`} alt="各キャラクターの画像" />
     </div>
   </div>
 );
