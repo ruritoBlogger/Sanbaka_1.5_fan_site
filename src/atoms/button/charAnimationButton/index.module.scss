@@ -30,10 +30,6 @@
   background-color: #fff;
   overflow: hidden;
 
-  &:hover {
-    color: #fff;
-  }
-
   &:hover::after {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -52,6 +48,10 @@
     border: 2px solid rgba($color: #c83c35, $alpha: 0.9);
     color: rgba($color: #c83c35, $alpha: 0.9);
 
+    &:hover {
+      color: #fff;
+    }
+
     &:hover::after {
       background: rgba($color: #c83c35, $alpha: 0.9);
     }
@@ -61,6 +61,10 @@
     border: 2px solid rgba($color: #42ffff, $alpha: 0.9);
     color: rgba($color: #42ffff, $alpha: 0.9);
 
+    &:hover {
+      color: #fff;
+    }
+
     &:hover::after {
       background: rgba($color: #42ffff, $alpha: 0.9);
     }
@@ -69,6 +73,10 @@
   &[data-kind="inui"] {
     border: 2px solid rgba($color: #9d3757, $alpha: 0.9);
     color: rgba($color: #9d3757, $alpha: 0.9);
+
+    &:hover {
+      color: #fff;
+    }
 
     &:hover::after {
       background: rgba($color: #9d3757, $alpha: 0.9);
