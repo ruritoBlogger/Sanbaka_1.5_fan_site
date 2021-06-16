@@ -7,12 +7,8 @@
   height: 12vh;
   width: 25vw;
   object-fit: cover;
-}
 
-// for pc
-// @media screen and (min-width: 768px) {
-@media screen and (min-width: 1025px) {
-  .image {
+  @media screen and (min-width: 1025px) {
     height: 16vh;
     width: 15vw;
   }
