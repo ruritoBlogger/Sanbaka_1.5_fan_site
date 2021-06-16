@@ -4,8 +4,8 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .button::before,
@@ -13,10 +13,10 @@
   position: absolute;
   z-index: -1;
   display: block;
-  content: '';
+  content: "";
 }
 
-.button{
+.button {
   cursor: pointer;
   display: inline-block;
   width: 120px;
@@ -29,57 +29,53 @@
   z-index: 0;
   background-color: #fff;
   overflow: hidden;
-}
 
-.button:hover {
-  color: #fff;
-}
+  &:hover {
+    color: #fff;
+  }
 
-.button:hover::after {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
+  &:hover::after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 
-.button::after {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: scale(.5);
-  transform: scale(.5);
-}
+  &::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
 
-.color_ange {
-  border: 2px solid rgba($color: #C83C35, $alpha: 0.9);
-  color: rgba($color: #C83C35, $alpha: 0.9);
-}
+  &[data-kind="ange"] {
+    border: 2px solid rgba($color: #c83c35, $alpha: 0.9);
+    color: rgba($color: #c83c35, $alpha: 0.9);
 
-.color_ange:hover::after {
-  background: rgba($color: #C83C35, $alpha: 0.9);
-}
+    &:hover::after {
+      background: rgba($color: #c83c35, $alpha: 0.9);
+    }
+  }
 
-.color_lize {
-  border: 2px solid rgba($color: #42FFFF, $alpha: 0.9);
-  color: rgba($color: #42FFFF, $alpha: 0.9);
-}
+  &[data-kind="lize"] {
+    border: 2px solid rgba($color: #42ffff, $alpha: 0.9);
+    color: rgba($color: #42ffff, $alpha: 0.9);
 
-.color_lize:hover::after {
-  background: rgba($color: #42FFFF, $alpha: 0.9);
-}
+    &:hover::after {
+      background: rgba($color: #42ffff, $alpha: 0.9);
+    }
+  }
 
-.color_inui {
-  border: 2px solid rgba($color: #9D3757, $alpha: 0.9);
-  color: rgba($color: #9D3757, $alpha: 0.9);
-}
+  &[data-kind="inui"] {
+    border: 2px solid rgba($color: #9d3757, $alpha: 0.9);
+    color: rgba($color: #9d3757, $alpha: 0.9);
 
-.color_inui:hover::after {
-  background: rgba($color: #9D3757, $alpha: 0.9);
-}
+    &:hover::after {
+      background: rgba($color: #9d3757, $alpha: 0.9);
+    }
+  }
 
-// for smartphone
-// @media screen and (max-width: 767px) {
-@media screen and (max-width: 1024px) {
-  .button {
+  @media screen and (max-width: 1024px) {
     width: 23vw;
     font-size: 3.5vw;
   }
