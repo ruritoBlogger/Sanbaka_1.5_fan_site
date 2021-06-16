@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { isMobile } from "react-device-detect";
 import TopWindow from "../ecosystem/top/topWindow";
 import MemberWindow from "../ecosystem/member/memberWindow";

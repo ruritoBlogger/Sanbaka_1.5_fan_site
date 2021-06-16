@@ -1,11 +1,10 @@
 import { useRef, useCallback, useState } from "react";
-import { useHistory } from "react-router-dom";
+import Router from "next/router";
 import styles from "./dialog.module.scss";
 import HeaderButton from "../atoms/button/headerButton";
 
 const Dialog: React.VFC = () => {
   const ref = useRef(null);
-  const history = useHistory();
   const [dialogState, setDialogState] = useState(
     `${styles.root} ${styles.hide}`
   );
@@ -47,7 +46,7 @@ const Dialog: React.VFC = () => {
   const MoveMemberPage = () => {
     window.scrollTo({ top: 0 });
     closeModal();
-    history.push("/member");
+    Router.push("/member");
   };
 
   /**
@@ -58,7 +57,7 @@ const Dialog: React.VFC = () => {
   const MoveRoadPage = () => {
     window.scrollTo({ top: 0 });
     closeModal();
-    history.push("/road");
+    Router.push("/road");
   };
 
   /**
@@ -69,7 +68,7 @@ const Dialog: React.VFC = () => {
   const MoveSitePage = () => {
     window.scrollTo({ top: 0 });
     closeModal();
-    history.push("/site");
+    Router.push("/site");
   };
 
   /**
@@ -80,7 +79,7 @@ const Dialog: React.VFC = () => {
   const MoveHomePage = () => {
     window.scrollTo({ top: 0 });
     closeModal();
-    history.push("/");
+    Router.push("/");
   };
 
   return (
