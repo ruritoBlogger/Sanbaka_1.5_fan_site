@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./animationButton.module.scss";
+import styles from "./index.module.scss";
 
 interface Props {
   msg: string;

@@ -1,4 +1,4 @@
-import styles from "./headerButton.module.scss";
+import styles from "./index.module.scss";
 
 interface Props {
   msg: string;

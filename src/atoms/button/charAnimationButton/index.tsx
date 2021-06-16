@@ -1,4 +1,4 @@
-import styles from "./charAnimationButton.module.scss";
+import styles from "./index.module.scss";
 
 export type Colors = "ange" | "lize" | "inui";
 interface Props {
