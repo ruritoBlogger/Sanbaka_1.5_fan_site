@@ -46,7 +46,7 @@ const Dialog: React.VFC = () => {
   const MoveMemberPage = () => {
     window.scrollTo({ top: 0 });
     closeModal();
-    Router.push("/member/", "/member");
+    Router.push("/member");
   };
 
   /**

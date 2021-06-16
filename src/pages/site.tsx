@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import styles from "./index.module.scss";
-import Header from "../../organisms/header";
-import Footer from "../../organisms/footer";
+import styles from "./site.module.scss";
+import Header from "../organisms/header";
+import Footer from "../organisms/footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
