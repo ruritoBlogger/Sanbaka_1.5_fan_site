@@ -1,0 +1,24 @@
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+}
+
+.frame {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 15px;
+  }
+}
+
+.image {
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
