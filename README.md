@@ -1,11 +1,12 @@
-# (非公式)さんばか1.5周年記念ファンサイト
+# (非公式)さんばか 1.5 周年記念ファンサイト
 
-https://sanbaka-fun-site.web.app/
+https://sanbaka-fansite.rurito0125.dev/
 
-Firebaseを用いてデプロイしています.
+Vercel を用いてデプロイしています.
 
 ## 概要
-にじさんじ所属のさんばかの皆さんの活動1.5周年をお祝いする非公式のファンサイト
+
+にじさんじ所属のさんばかの皆さんの活動 1.5 周年をお祝いする非公式のファンサイト
 
 ## 開発者とか連絡先
 
@@ -13,34 +14,10 @@ https://twitter.com/rurito8
 
 ## 用いる技術
 
-- front: React Hooks
-- hosting: Firebase hosting
+- front: Next.js(一部 SSR の大体 SSG)
+- hosting: Vercel
 
 ## 環境構築
 
-ローカルに開発環境を建てる場合は
-`
-yarn start
-`
-
-ローカルに本番環境を建てる場合は
-`
-yarn start:prod
-`
-
-開発環境をビルドする場合は
-`
-yarn build
-`
-
-本番環境をビルドする場合は
-`
-yarn build:prod
-`
-
-詳しくは
 `package.json`
 を確認してください.
-
-## 今後
-TypeScriptを経由してNext.jsに移行する予定です。
