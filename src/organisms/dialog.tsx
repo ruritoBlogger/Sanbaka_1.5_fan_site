@@ -90,7 +90,7 @@ const Dialog: React.VFC = () => {
           className={`${styles.icon_button} ${styles.default_color}`}
           onClick={showModal}
         >
-          <p>test</p>
+          <span className="material-icons">menu</span>
         </button>
       </div>
 
@@ -101,7 +101,7 @@ const Dialog: React.VFC = () => {
             className={`${styles.icon_button} ${styles.white}`}
             onClick={closeModal}
           >
-            <p>test</p>
+            <span className="material-icons">menu</span>
           </button>
         </div>
 
