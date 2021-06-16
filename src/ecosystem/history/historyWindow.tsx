@@ -1,13 +1,14 @@
-import { useHistory } from 'react-router-dom';
-import styles from '../window_layout.module.scss';
+import Router from "next/router";
+
+import styles from "../window_layout.module.scss";
 
 // HACK: atomsからのimportを簡略化する
 // ex: import ~ from '@/atoms/animationButtton
 
-import AnimationButton from '../../atoms/button/animationButton';
-import ScrollNavigator from '../../atoms/scrollNavigator';
-import LargeThumbnail from '../../atoms/thubnail/largeThumbnail';
-import SmallThumbnail from '../../atoms/thubnail/smallThumbnail';
+import AnimationButton from "../../atoms/button/animationButton";
+import ScrollNavigator from "../../atoms/scrollNavigator";
+import LargeThumbnail from "../../atoms/thubnail/largeThumbnail";
+import SmallThumbnail from "../../atoms/thubnail/smallThumbnail";
 
 interface Props {
   // ページの一番上に表示するかどうか
@@ -20,20 +21,20 @@ interface Props {
  * そうで無い場合は1.5周年までの道のりページへの遷移ボタンを表示する
  */
 const HistoryWindow: React.VFC<Props> = ({ isTop }) => {
-  const history = useHistory();
-
   /**
    * 1.5周年までの道のりページに遷移する
    * 遷移前には画面トップにスクロールしておく
    */
   const MoveHistoryPage = () => {
     window.scrollTo({ top: 0 });
-    history.push('/road');
+    Router.push("/road");
   };
 
   return (
     <div className={`${styles.ly_center} ${styles.flex_column}`}>
-      <div className={`${styles.bl_window} ${styles.flex_row_reverse} ${styles.flex_column_onlySmartphone}`}>
+      <div
+        className={`${styles.bl_window} ${styles.flex_row_reverse} ${styles.flex_column_onlySmartphone}`}
+      >
         <div className={styles.flex_column}>
           <div className={styles.flex_row}>
             <SmallThumbnail youtubeID="pOXjuyKjD98" />
@@ -61,13 +62,20 @@ const HistoryWindow: React.VFC<Props> = ({ isTop }) => {
           {(() => {
             if (isTop) {
               return (
-                <div className={`${styles.centerComponent} ${styles.paddingBottom} ${styles.marginTop}`}>
-                  <AnimationButton handleClick={() => MoveHistoryPage()} msg="もっと詳しく" />
+                <div
+                  className={`${styles.centerComponent} ${styles.paddingBottom} ${styles.marginTop}`}
+                >
+                  <AnimationButton
+                    handleClick={() => MoveHistoryPage()}
+                    msg="もっと詳しく"
+                  />
                 </div>
               );
             }
             return (
-              <div className={`${styles.centerComponent} ${styles.paddingBottom}`}>
+              <div
+                className={`${styles.centerComponent} ${styles.paddingBottom}`}
+              >
                 <p className={styles.bl_historyWindow_content}>
                   マイクラコラボが中心となってます.
                 </p>
@@ -83,7 +91,8 @@ const HistoryWindow: React.VFC<Props> = ({ isTop }) => {
               <ScrollNavigator msg="Scroll" isOnlyPC={false} />
             </div>
           );
-        } return null;
+        }
+        return null;
       })()}
     </div>
   );

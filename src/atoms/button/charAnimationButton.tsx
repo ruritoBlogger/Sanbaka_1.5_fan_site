@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import styles from './charAnimationButton.module.scss';
+import styles from "./charAnimationButton.module.scss";
 
 interface Props {
   // ボタンのメッセージ
@@ -7,27 +6,28 @@ interface Props {
   // ボタンがクリックされた時に呼び出す関数
   handleClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
   // どのテーマ色を用いるのか
-  theme: 'ange' | 'lize' | 'inui';
+  theme: "ange" | "lize" | "inui";
 }
 
 /**
  * キャラのテーマ色を組み合わせたボタン
  */
 const CharAnimationButton: React.VFC<Props> = ({ theme, handleClick, msg }) => {
-  const [style, setStyle] = useState<string>('');
+  let color;
 
-  /**
-   * コンポーネントが描画されるタイミングでテーマ色を決定する
-   */
-  useEffect(() => {
-    const themeClassName = ({
-      ange: styles.color_ange,
-      lize: styles.color_lize,
-      inui: styles.color_inui,
-    })[theme];
+  switch (theme) {
+    case "ange":
+      color = styles.color_ange;
+      break;
+    case "lize":
+      color = styles.color_lize;
+      break;
+    case "inui":
+      color = styles.color_inui;
+      break;
+  }
 
-    setStyle(`${themeClassName} ${styles.button}`);
-  }, []);
+  const style = `${color} ${styles.button}`;
 
   return (
     <button type="button" className={style} onClick={handleClick}>
