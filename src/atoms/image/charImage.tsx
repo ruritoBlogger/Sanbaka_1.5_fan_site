@@ -1,4 +1,4 @@
-import styles from "./charImage.module.scss";
+import styles from './charImage.module.scss';
 
 interface Props {
   // 表示したい画像のパス
@@ -12,7 +12,7 @@ interface Props {
 const CharImage: React.VFC<Props> = ({ path }) => (
   <div className={styles.wrapper}>
     <div className={styles.frame}>
-      <img className={styles.image} src={path} alt="各キャラクターの画像" />
+      <img className={styles.image} src={`${window.location.origin}${path}`} alt="各キャラクターの画像" />
     </div>
   </div>
 );

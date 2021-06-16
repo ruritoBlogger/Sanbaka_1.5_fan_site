@@ -1,38 +1,39 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { isMobile } from 'react-device-detect';
+import TopWindow from '../ecosystem/top/topWindow';
 import MemberWindow from '../ecosystem/member/memberWindow';
-import AngeWindow from '../ecosystem/member/angeWindow';
-import LizeWindow from '../ecosystem/member/lizeWindow';
-import InuiWindow from '../ecosystem/member/inuiWindow';
+import HistoryWindow from '../ecosystem/history/historyWindow';
 import Header from '../organisms/header';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Member: React.VFC = () => {
+const Home: React.VFC = () => {
   const headerRef = useRef<HTMLDivElement>(null);
   const revealRefs = useRef<HTMLDivElement[]>([]);
+  let scrollSize = 20;
 
   const windows = [
     {
+      key: 'top',
+      content: <TopWindow />,
+    },
+    {
       key: 'member',
-      content: <MemberWindow isRight={false} />,
+      content: <MemberWindow isRight />,
     },
     {
-      key: 'ange',
-      content: <AngeWindow />,
-    },
-    {
-      key: 'lize',
-      content: <LizeWindow />,
-    },
-    {
-      key: 'inui',
-      content: <InuiWindow />,
+      key: 'history',
+      content: <HistoryWindow isTop />,
     },
   ];
 
   useEffect(() => {
+    if (isMobile) {
+      scrollSize = 100;
+    }
+
     gsap.from(headerRef.current, {
       autoAlpha: 0,
       ease: 'none',
@@ -49,7 +50,7 @@ const Member: React.VFC = () => {
         scrollTrigger: {
           id: `section-${index + 1}`,
           trigger: el,
-          start: 'top center+=50',
+          start: `top center+=${scrollSize}`,
           toggleActions: 'play none none reverse',
         },
       });
@@ -61,6 +62,7 @@ const Member: React.VFC = () => {
       revealRefs.current.push(el);
     }
   };
+
   return (
     <>
       <Header />
@@ -75,4 +77,4 @@ const Member: React.VFC = () => {
   );
 };
 
-export default Member;
+export default Home;

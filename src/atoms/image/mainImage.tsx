@@ -1,4 +1,4 @@
-import styles from "./mainImage.module.scss";
+import styles from './mainImage.module.scss';
 
 interface Props {
   // 表示したい画像のパス
@@ -13,7 +13,7 @@ interface Props {
 const MainImage: React.VFC<Props> = ({ path }) => (
   <div className={styles.wrapper}>
     <div className={styles.frame}>
-      <img className={styles.image} src={path} alt="集合写真" />
+      <img className={styles.image} src={`${window.location.origin}${path}`} alt="集合写真" />
     </div>
   </div>
 );

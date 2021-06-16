@@ -1,21 +1,19 @@
-import styles from "./iconButton.module.scss";
+import styles from './iconButton.module.scss';
 
 interface Props {
-  imgLink: string;
-  url: string;
+  /** アイコンが保存されているパス */
+  link: string;
+  /** ボタンがクリックされた時に呼び出す関数 */
+  handleClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
 /**
  * icon(Twitterなど)を表示するボタン
- * クリックされるとurlに遷移する
- * @param {string} imgLink アイコンが保存されているパス
- * TODO: url用の型を用意しておく
- * @param {string} url クリックれた際に遷移する先
  */
-const IconButton: React.FC<Props> = ({ imgLink, url }) => (
-  <a type="button" className={styles.button} href={url}>
-    <img className={styles.circle} src={imgLink} alt="Avatar" />
-  </a>
+const IconButton: React.VFC<Props> = ({ link, handleClick }) => (
+  <button type="button" className={styles.button} onClick={handleClick}>
+    <img className={styles.circle} src={link} alt="Avatar" />
+  </button>
 );
 
 export default IconButton;
