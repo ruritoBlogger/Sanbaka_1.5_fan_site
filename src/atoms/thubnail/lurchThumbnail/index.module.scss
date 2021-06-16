@@ -4,6 +4,12 @@
   margin-top: 2vh;
   display: inline-block;
   transform: rotate(5deg);
+
+  @media screen and (max-width: 1024px) {
+    margin-left: auto;
+    margin-right: auto;
+    transform: none;
+  }
 }
 
 .frame_right {
@@ -14,19 +20,8 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-}
 
-// for smartphone
-// @media screen and (max-width: 767px) {
-@media screen and (max-width: 1024px) {
-  .frame,
-  .frame_right {
-    margin-left: auto;
-    margin-right: auto;
-    transform: none;
-  }
-
-  .image {
+  @media screen and (max-width: 1024px) {
     width: 100%;
     height: auto;
   }
