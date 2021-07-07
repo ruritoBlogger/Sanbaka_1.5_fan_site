@@ -10,23 +10,34 @@
   overflow: hidden;
   color: black;
   font-size: 14px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   line-height: 1;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
   writing-mode: vertical-lr;
 }
 
+@media screen and (max-width: 1024px) {
+  .scroll_pcOnly {
+    display: none;
+  }
+
+  .scroll {
+    right: 10px;
+    font-size: 10px;
+  }
+}
+
 .scroll::after,
 .scroll_pcOnly::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   width: 1px;
   height: 100px;
-  background:black;
+  background: black;
   animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
 }
 
@@ -46,18 +57,5 @@
   100% {
     transform: scale(1, 0);
     transform-origin: 0 100%;
-  }
-}
-
-// for smartphone
-// @media screen and (max-width: 767px) {
-@media screen and (max-width: 1024px) {
-  .scroll_pcOnly {
-    display: none;
-  }
-
-  .scroll {
-    right: 10px;
-    font-size: 10px;
   }
 }

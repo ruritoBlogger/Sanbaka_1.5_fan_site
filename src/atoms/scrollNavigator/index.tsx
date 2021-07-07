@@ -1,16 +1,16 @@
-import styles from './scrollNavigator.module.scss';
+import styles from './index.module.scss';
 
 interface Props{
-  // スクロールを促すメッセージ
   msg: string;
-  // pcのみで表示させるかどうか
   isOnlyPC: boolean;
 }
 
 /**
  * スクロールを促すUIのコンポーネント
+ * @param {string} msg: スクロールを促すメッセージ
+ * @param {boolean} isOnlyPC: pcのみで表示させるかどうか
  */
-const ScrollNavigator: React.VFC<Props> = ({ msg, isOnlyPC }) => {
+const ScrollNavigator: React.FC<Props> = ({ msg, isOnlyPC }) => {
   const style = isOnlyPC ? styles.scroll_pcOnly : styles.scroll;
 
   return (
