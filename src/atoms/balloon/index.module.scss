@@ -12,7 +12,7 @@
   font-size: 16px;
   background: #e0edff;
   border-radius: 15px;
-  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
 }
 
 .balloon:before {
@@ -29,12 +29,8 @@
   font-size: min(2.5vw, 45px);
   margin: 0;
   padding: 0;
-}
 
-// for smartphone
-// @media screen and (max-width: 767px) {
-@media screen and (max-width: 1024px) {
-  .char_msg {
+  @media screen and (max-width: 1024px) {
     font-size: 8vw;
   }
 }
