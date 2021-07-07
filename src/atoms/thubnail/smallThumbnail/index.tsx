@@ -1,7 +1,6 @@
-import styles from './smallThumbnail.module.scss';
+import styles from './index.module.scss';
 
 interface Props {
-  // 表示したい画像のyoutubeID
   youtubeID: string;
 }
 
@@ -9,8 +8,9 @@ interface Props {
 
 /**
  * youtubeのサムネイルを小さく表示するコンポーネント
+ * @param {string} youtubeID: 表示したい画像のyoutubeID
  */
-const SmallThumbnail: React.VFC<Props> = ({ youtubeID }) => (
+const SmallThumbnail: React.FC<Props> = ({ youtubeID }) => (
   <div className={styles.frame}>
     <img className={styles.image} src={`https://i.ytimg.com/vi/${youtubeID}/hqdefault.jpg`} alt="youtubeのサムネイル" />
   </div>
