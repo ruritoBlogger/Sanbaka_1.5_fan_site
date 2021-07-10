@@ -1,21 +1,13 @@
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
 import HistoryWindow from "../ecosystem/history/";
 import Archive from "../molecules/archive";
 import Header from "../organisms/header";
+import styles from "./road.module.scss";
 
-gsap.registerPlugin(ScrollTrigger);
-
-const Road: React.VFC = () => {
-  const headerRef = useRef<HTMLDivElement>(null);
-  const revealRefs = useRef<HTMLDivElement[]>([]);
-
+const Road: React.FC = () => {
   const windows = [
     {
       key: "history",
-      content: <HistoryWindow isTop />,
+      content: <HistoryWindow isTop={true} />,
     },
     {
       key: "1",
@@ -138,48 +130,16 @@ const Road: React.VFC = () => {
     },
   ];
 
-  useEffect(() => {
-    gsap.from(headerRef.current, {
-      autoAlpha: 0,
-      ease: "none",
-      delay: 1,
-    });
-
-    revealRefs.current.forEach((el, index) => {
-      gsap.fromTo(
-        el,
-        {
-          autoAlpha: 0,
-        },
-        {
-          duration: 1,
-          autoAlpha: 1,
-          ease: "none",
-          scrollTrigger: {
-            id: `section-${index + 1}`,
-            trigger: el,
-            start: "top center+=200",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
-    });
-  }, []);
-
-  const addToRefs = (el: HTMLDivElement) => {
-    if (el && !revealRefs.current.includes(el)) {
-      revealRefs.current.push(el);
-    }
-  };
-
   return (
     <>
       <Header />
-      {windows.map(({ key, content }) => (
-        <div key={key} ref={addToRefs}>
-          {content}
-        </div>
-      ))}
+      <div className={styles.inner}>
+        {windows.map(({ key, content }) => (
+          <div key={key} className={styles.content}>
+            {content}
+          </div>
+        ))}
+      </div>
     </>
   );
 };

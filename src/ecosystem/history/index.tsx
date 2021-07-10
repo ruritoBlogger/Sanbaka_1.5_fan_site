@@ -45,7 +45,7 @@ const HistoryWindow: React.FC<Props> = ({ isTop }) => {
           ピックアップしています.
         </p>
         {(() => {
-          if (isTop) {
+          if (!isTop) {
             return (
               <div className={styles.button_wrapper}>
                 <AnimationButton
@@ -56,13 +56,9 @@ const HistoryWindow: React.FC<Props> = ({ isTop }) => {
             );
           } else {
             return (
-              <div
-                className={`${styles.centerComponent} ${styles.paddingBottom}`}
-              >
-                <p className={styles.bl_historyWindow_content}>
-                  マイクラコラボが中心となってます.
-                </p>
-              </div>
+              <p className={styles.content}>
+                マイクラコラボが中心となってます.
+              </p>
             );
           }
         })()}

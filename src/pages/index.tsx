@@ -25,7 +25,9 @@ const Home: React.FC = () => {
       <Header />
       <div className={styles.inner}>
         {windows.map(({ key, content }) => (
-          <div key={key}>{content}</div>
+          <div key={key} className={styles.content}>
+            {content}
+          </div>
         ))}
       </div>
     </>
