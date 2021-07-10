@@ -1,4 +1,4 @@
-import TopWindow from "../ecosystem/top/topWindow";
+import TopWindow from "../ecosystem/top/";
 import MemberWindow from "../ecosystem/member/";
 import HistoryWindow from "../ecosystem/history/";
 import Header from "../organisms/header";
