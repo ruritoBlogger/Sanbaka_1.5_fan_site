@@ -8,10 +8,11 @@
   margin: auto;
 }
 
-.image_block {
-  height: 100%;
+.text_block {
+  height: 80%;
   width: 35%;
   margin-right: 5%;
+  margin: auto 5% auto 0;
 }
 
 .thumbnail_block {
@@ -23,8 +24,8 @@
 
 .title {
   text-align: center;
-  font-size: min(3.5vw, 45px);
-  margin-bottom: 15px;
+  font-size: min(2.8vw, 40px);
+  padding: 13% 0;
 
   @media screen and (max-width: 1024px) {
     font-size: 8vw;
@@ -35,7 +36,7 @@
 
 .content {
   text-align: center;
-  font-size: min(1.8vw, 27px);
+  font-size: min(1.5vw, 24px);
 
   @media screen and (max-width: 1024px) {
     font-size: 4vw;

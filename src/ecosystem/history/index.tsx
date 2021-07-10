@@ -32,7 +32,7 @@ const HistoryWindow: React.FC<Props> = ({ isTop }) => {
 
   return (
     <div className={styles.inner}>
-      <div className={styles.image_block}>
+      <div className={styles.text_block}>
         {/* HACK: 解像度によっては変な部分で改行される */}
         <h2 className={styles.title}>1.5周年までの道のり</h2>
         <p className={styles.content}>
