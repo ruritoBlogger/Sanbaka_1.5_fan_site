@@ -90,6 +90,17 @@ const HistoryWindow: React.FC<Props> = ({ isTop }) => {
             <LargeThumbnail youtubeID="S7f5htYwawA" />
           </div>
         </div>
+        <div className={styles.thumbnail_line}>
+          <div className={styles.small_thumbnail_wrapper}>
+            <SmallThumbnail youtubeID="pOXjuyKjD98" />
+          </div>
+          <div className={styles.large_thumbnail_wrapper}>
+            <LargeThumbnail youtubeID="PcXH2IAXI_w" />
+          </div>
+          <div className={styles.small_thumbnail_wrapper}>
+            <SmallThumbnail youtubeID="66Sj7l3sLcM" />
+          </div>
+        </div>
       </div>
       {(() => {
         if (isTop) {
