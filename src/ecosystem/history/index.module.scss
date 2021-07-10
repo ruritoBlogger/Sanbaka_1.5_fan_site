@@ -17,12 +17,12 @@
 .text_block {
   height: 80%;
   width: 35%;
-  margin-right: 5%;
   margin: auto 5% auto 0;
 
   // NOTE: タブレット or スマホ画面では横一杯で表示する
   @media screen and (max-width: 1024px) {
     width: 100%;
+    margin: auto;
   }
 }
 

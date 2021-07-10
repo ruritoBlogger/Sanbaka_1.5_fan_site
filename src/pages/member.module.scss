@@ -1,0 +1,12 @@
+.inner {
+  width: 80%;
+  margin: auto;
+
+  @media screen and (max-width: 1024px) {
+    width: 95%;
+  }
+}
+
+.content {
+  padding: 10% 0;
+}
