@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import HistoryWindow from "../ecosystem/history/historyWindow";
+import HistoryWindow from "../ecosystem/history/";
 import Archive from "../molecules/archive";
 import Header from "../organisms/header";
 

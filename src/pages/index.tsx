@@ -2,6 +2,7 @@ import TopWindow from "../ecosystem/top/topWindow";
 import MemberWindow from "../ecosystem/member/memberWindow";
 import HistoryWindow from "../ecosystem/history/";
 import Header from "../organisms/header";
+import styles from "./index.module.scss";
 
 const Home: React.FC = () => {
   const windows = [
@@ -22,9 +23,11 @@ const Home: React.FC = () => {
   return (
     <>
       <Header />
-      {windows.map(({ key, content }) => (
-        <div key={key}>{content}</div>
-      ))}
+      <div className={styles.inner}>
+        {windows.map(({ key, content }) => (
+          <div key={key}>{content}</div>
+        ))}
+      </div>
     </>
   );
 };
