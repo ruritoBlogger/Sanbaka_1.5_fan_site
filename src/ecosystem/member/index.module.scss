@@ -1,0 +1,122 @@
+@import "../../template.scss";
+
+.inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (min-width: 1025px) {
+    max-height: 500px;
+    max-width: 1200px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.text_block {
+  height: 80%;
+  width: 35%;
+  margin-right: 5%;
+  margin: auto 5% auto 0;
+
+  // NOTE: タブレット or スマホ画面では横一杯で表示する
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.image_block {
+  height: 100%;
+  width: 54%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  // NOTE: タブレット or スマホ画面では横一杯で表示する
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.button_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 8% auto;
+
+  @media screen and (min-width: 765px) and (max-width: 1024px) {
+    width: 25%;
+  }
+
+  @media screen and (max-width: 764px) {
+    width: 50%;
+  }
+}
+
+.char_content_wrapper {
+  margin: 7% 0;
+}
+
+.small_thumbnail_wrapper {
+  height: 50%;
+  width: 28%;
+  margin: auto 1%;
+}
+
+.large_thubmnail_wrapper {
+  height: 100%;
+  width: 38%;
+  margin: 0 1%;
+}
+
+.scroll_wrapper {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  font-size: min(2.8vw, 40px);
+  padding: 13% 0;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 8vw;
+    letter-spacing: 5px;
+  }
+}
+
+.content,
+.ange_content,
+.lize_content,
+.inui_content {
+  text-align: center;
+  font-size: min(1.4vw, 21px);
+
+  @media screen and (max-width: 1024px) {
+    font-size: 4vw;
+  }
+}
+
+.ange_content,
+.lize_content,
+.inui_content {
+  font-size: min(1.6vw, 25px);
+  font-weight: 600;
+  @media screen and (max-width: 1024px) {
+    font-size: 5vw;
+  }
+}
+
+.ange_content {
+  color: $ange_font_color;
+}
+
+.lize_content {
+  color: $lize_font_color;
+}
+
+.inui_content {
+  color: $inui_font_color;
+}

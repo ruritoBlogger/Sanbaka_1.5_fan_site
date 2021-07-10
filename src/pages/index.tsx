@@ -1,5 +1,5 @@
 import TopWindow from "../ecosystem/top/topWindow";
-import MemberWindow from "../ecosystem/member/memberWindow";
+import MemberWindow from "../ecosystem/member/";
 import HistoryWindow from "../ecosystem/history/";
 import Header from "../organisms/header";
 import styles from "./index.module.scss";
@@ -12,11 +12,11 @@ const Home: React.FC = () => {
     },
     {
       key: "member",
-      content: <MemberWindow isRight />,
+      content: <MemberWindow isTop={false} />,
     },
     {
       key: "history",
-      content: <HistoryWindow isTop />,
+      content: <HistoryWindow isTop={false} />,
     },
   ];
 
