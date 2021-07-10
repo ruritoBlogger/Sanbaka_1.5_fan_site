@@ -69,14 +69,26 @@ const HistoryWindow: React.FC<Props> = ({ isTop }) => {
       </div>
       <div className={styles.thumbnail_block}>
         <div className={styles.thumbnail_line}>
-          <SmallThumbnail youtubeID="pOXjuyKjD98" />
-          <LargeThumbnail youtubeID="PcXH2IAXI_w" />
-          <SmallThumbnail youtubeID="66Sj7l3sLcM" />
+          <div className={styles.small_thumbnail_wrapper}>
+            <SmallThumbnail youtubeID="pOXjuyKjD98" />
+          </div>
+          <div className={styles.large_thumbnail_wrapper}>
+            <LargeThumbnail youtubeID="PcXH2IAXI_w" />
+          </div>
+          <div className={styles.small_thumbnail_wrapper}>
+            <SmallThumbnail youtubeID="66Sj7l3sLcM" />
+          </div>
         </div>
         <div className={styles.thumbnail_line}>
-          <LargeThumbnail youtubeID="lPW5D3uHFvI" />
-          <SmallThumbnail youtubeID="HWcemG6YO_U" />
-          <LargeThumbnail youtubeID="S7f5htYwawA" />
+          <div className={styles.large_thumbnail_wrapper}>
+            <LargeThumbnail youtubeID="lPW5D3uHFvI" />
+          </div>
+          <div className={styles.small_thumbnail_wrapper}>
+            <SmallThumbnail youtubeID="HWcemG6YO_U" />
+          </div>
+          <div className={styles.large_thumbnail_wrapper}>
+            <LargeThumbnail youtubeID="S7f5htYwawA" />
+          </div>
         </div>
       </div>
       {(() => {

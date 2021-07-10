@@ -11,13 +11,11 @@ interface Props {
  * @param {string} youtubeID: 表示したい画像のyoutubeID
  */
 const LargeThumbnail: React.FC<Props> = ({ youtubeID }) => (
-  <div className={styles.frame}>
-    <img
-      className={styles.image}
-      src={`https://i.ytimg.com/vi/${youtubeID}/hqdefault.jpg`}
-      alt="youtubeのサムネイル"
-    />
-  </div>
+  <img
+    className={styles.image}
+    src={`https://i.ytimg.com/vi/${youtubeID}/mqdefault.jpg`}
+    alt="youtubeのサムネイル"
+  />
 );
 
 export default LargeThumbnail;

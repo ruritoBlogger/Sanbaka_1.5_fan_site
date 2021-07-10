@@ -1,4 +1,4 @@
-import styles from './index.module.scss';
+import styles from "./index.module.scss";
 
 interface Props {
   youtubeID: string;
@@ -11,9 +11,11 @@ interface Props {
  * @param {string} youtubeID: 表示したい画像のyoutubeID
  */
 const SmallThumbnail: React.FC<Props> = ({ youtubeID }) => (
-  <div className={styles.frame}>
-    <img className={styles.image} src={`https://i.ytimg.com/vi/${youtubeID}/hqdefault.jpg`} alt="youtubeのサムネイル" />
-  </div>
+  <img
+    className={styles.image}
+    src={`https://i.ytimg.com/vi/${youtubeID}/mqdefault.jpg`}
+    alt="youtubeのサムネイル"
+  />
 );
 
 export default SmallThumbnail;

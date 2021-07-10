@@ -1,15 +1,5 @@
-.frame {
-  position: relative;
-  padding: 10px;
-}
-
 .image {
-  height: 11vh;
-  width: 20vw;
-  object-fit: cover;
-
-  @media screen and (min-width: 1025px) {
-    height: 13vh;
-    width: 12vw;
-  }
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
